@@ -141,7 +141,7 @@ export async function fetchBlogs(): Promise<Blog> {
 }
 
 export async function fetchBlogsPaginated(limit: number, offset: number): Promise<Blog> {
-    const response =limit!=0? await fetch(`https://www.realsta.com/api/get_data.php?limit=${limit}&offset=${offset}`):await fetch(`/api/get_data.php`);
+    const response =limit!=0? await fetch(`https://api.realsta.com/get_data.php?limit=${limit}&offset=${offset}`):await fetch(`https://api.realsta.com/get_data.php`);
     if (!response.ok) {
         throw new Error('Failed to fetch blogs');
     }
@@ -149,7 +149,7 @@ export async function fetchBlogsPaginated(limit: number, offset: number): Promis
 }
 
 export async function fetchBlogsByCategory(limit: number, offset: number, catid: number): Promise<Blog> {
-    const response = limit!=0? await fetch(`https://www.realsta.com/api/get_data.php?catid=${catid}&limit=${limit}&offset=${offset}`) : await fetch(`/api/get_data.php?catid=${catid}`);
+    const response = limit!=0? await fetch(`https://api.realsta.com/get_data.php?catid=${catid}&limit=${limit}&offset=${offset}`) : await fetch(`https://api.realsta.com/get_data.php?catid=${catid}`);
     if (!response.ok) {
         throw new Error('Failed to fetch blogs');
     }
@@ -157,7 +157,7 @@ export async function fetchBlogsByCategory(limit: number, offset: number, catid:
 }
 
 export async function fetchBlogByURL(postURL: string): Promise<IndividualBlog> {
-    const response = await fetch(`https://www.realsta.com/api/get_data.php?postURL=${postURL}`);
+    const response = await fetch(`https://api.realsta.com/get_data.php?postURL=${postURL}`);
     if (!response.ok) {
         throw new Error('Failed to fetch blog');
     }
@@ -165,9 +165,10 @@ export async function fetchBlogByURL(postURL: string): Promise<IndividualBlog> {
 }
 
 export async function fetchBlogsBySearch(text: string): Promise<Blog> {
-    const response = await fetch(`https://www.realsta.com/api/get_data.php?q=${encodeURIComponent(text)}`);
+    const response = await fetch(`https://api.realsta.com/get_data.php?q=${encodeURIComponent(text)}`);
     if (!response.ok) {
         throw new Error('Failed to fetch blogs');
     }
     return response.json();
 }
+
