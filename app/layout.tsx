@@ -7,10 +7,7 @@ import WhatsappFloatingIcon from "@/components/WhatsappFloatingIcon";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
 import localFont from "next/font/local";
-<<<<<<< HEAD
-=======
 import ChatLoader from "@/components/chatLoader";
->>>>>>> 7c3b30b (initial commit)
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",
@@ -41,10 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsappFloatingIcon />
         {children}
         <Footer />
-<<<<<<< HEAD
-=======
         <ChatLoader />
->>>>>>> 7c3b30b (initial commit)
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -64,8 +58,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-<<<<<<< HEAD
-=======
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
@@ -96,7 +88,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fbq('track', 'PageView');
           `}
         </Script>
->>>>>>> 7c3b30b (initial commit)
       </body>
     </html>
   );

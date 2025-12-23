@@ -5,19 +5,10 @@ import IncludedServices from "./IncludedServices";
 import FAQ from "./FAQ";
 import TextBrief from "./TextBrief";
 import TableSection from "./TableSection";
-<<<<<<< HEAD
-import ReadyToTalk from './ReadyToTalk';
-import { Row,Container } from 'react-bootstrap';
-import { useState } from 'react';
-import FormModal from './FormModal';
-import Head from 'next/head';
-
-=======
 import { Row,Container } from 'react-bootstrap';
 import { useState } from 'react';
 import FormModal from './FormModal';
 import dynamic from "next/dynamic";
->>>>>>> 7c3b30b (initial commit)
 
 interface FAQItem {
   question: string;
@@ -42,11 +33,7 @@ interface TableSectionItem {
 
 }
 
-<<<<<<< HEAD
-interface BriefTextItem{
-=======
 interface BriefTextItem {
->>>>>>> 7c3b30b (initial commit)
     text:string;
     image:string;
 }
@@ -55,13 +42,10 @@ const BriefTextData: BriefTextItem = {
   text:"At Realsta, our Workspace Solutions deliver premium managed office and serviced office spaces with bespoke interior designs in Gurgaon. We create turnkey commercial real estate environments that boost productivity and reflect your brand, tailored to your business needs in Gurgaon’s top business hubs.",
   image:"Workplace_Solutions"
 }
-<<<<<<< HEAD
-=======
  const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
                       loading: () => null,
           });
 
->>>>>>> 7c3b30b (initial commit)
 const TableSectionData: TableSectionItem = {
   titleNormal: "Why Businesses are choosing ",
   titleBold: "Managed Services?",
@@ -163,14 +147,6 @@ function WorkspaceSolutions() {
 
   return (
     <>
-<<<<<<< HEAD
-    <Head>
-      <title>Serviced Office & Workspace Solutions | Realsta Gurgaon</title> 
-          <meta name="description" content="Tailored workspace solutions in Gurgaon from Realsta: fully serviced offices, plug and play workspaces, and private suites —all designed for modern professional needs." />
-          <link rel="canonical" href="https://realsta.com/our-services/workspace-solutions" />
-    </Head>
-=======
->>>>>>> 7c3b30b (initial commit)
       <section className="ws-hero-section">
           <NavigationMenu />
         <div className="customContainer">

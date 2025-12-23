@@ -3,8 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "standalone",
-<<<<<<< HEAD
-=======
   // images: {
   //   formats: ["image/avif", "image/webp"], // ✅ AVIF first, WebP fallback
   //   deviceSizes: [320, 480, 768, 1024, 1280, 1600, 1920],
@@ -50,7 +48,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
->>>>>>> 7c3b30b (initial commit)
 };
 
 export default nextConfig;
