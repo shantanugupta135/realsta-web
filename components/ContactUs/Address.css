@@ -1,0 +1,24 @@
+.address-heading,
+.phone-heading,
+.email-heading {
+    color: #181A20;
+    font-family: Gilroy;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.245px;
+    text-transform: uppercase;
+}
+
+.address-content,
+.phone-content,
+.email-content {
+    color: rgba(24, 26, 32, 0.70);
+    font-family: Rubik, sans-serif;
+    
+    font-size: clamp(12px, 5vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163%;
+}

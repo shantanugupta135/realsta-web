@@ -1,0 +1,24 @@
+.textBrief{
+    margin-top: 5%;
+}
+.briefText{
+    color: rgba(24, 26, 32, 0.72);
+text-align: justify;
+font-family: Rubik;
+font-size: clamp(18px,5vw,32px);
+font-style: normal;
+font-weight: 400;
+line-height: 154%; /* 68.46px */
+letter-spacing: 0.126px;
+/* margin-right: 10%; */
+}
+
+.textBriefImageBox{
+    margin-left: 0%;
+}
+
+.textBriefImage{
+    object-fit: fill !important;
+    border-radius: 0.35rem;
+    max-width: 100%;
+}

@@ -1,0 +1,701 @@
+.hp-herosection {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hp-hero-bg {
+  position: absolute !important;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Overlay layer */
+.hp-hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+
+@media (max-width: 767.98px) {
+  .hp-herosection {
+    min-height: unset;
+  }
+}
+
+.hp-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.navigation-menu {
+  width: 58rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+
+.hp-herotext {
+  margin-top: 7rem !important;
+}
+
+.hp-herosubtext {
+  font-family: Rubik, sans-serif;
+  color: #000;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 117%;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hp-heroheading {
+  font-family: Gilroy, sans-serif;
+  color: #181A20;
+  font-size: clamp(60px, 10vw, 90px);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.336px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.hp-commercialheading {
+  text-transform: capitalize;
+  font-size: clamp(34px, 3vw, 46px);
+  font-family: Gilroy, sans-serif;
+  font-weight: 600;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  color: #181A20;
+  font-style: normal;
+  line-height: 145%;
+  letter-spacing: 0.138px;
+}
+
+.hp-microwrap {
+  margin-top: 4.75rem;
+}
+
+.hp-micromarkets {
+  color: #181A20;
+  font-family: Gilroy, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.066px;
+  text-transform: uppercase;
+}
+
+.hp-micromarkettext {
+  font-family: Rubik, sans-serif;
+  color: rgba(24, 26, 32, 0.72);
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  letter-spacing: 0.06px;
+  padding-right: 2%;
+}
+
+.hp-funds {
+  color: white;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  border-radius: 16px;
+  background: #181A20;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.09);
+  justify-content: center;
+}
+
+.hp-dividerHome {
+  border-top: 1px solid #444;
+}
+
+.hp-image-box img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hp-stat-box {
+  text-align: left;
+  padding: 20px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.06);
+  height: 9rem;
+}
+
+.hp-stat-wrap {
+  /* width: max-content; */
+  font-family: Rubik, sans-serif;
+}
+
+/* Our Services */
+.hp-our-services-wrapper {
+  background: #F7F8FC;
+}
+
+.hp-our-services-subheading {
+  color: var(--Light-Text-Color-Body-2, #9A9AB0);
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 120%;
+  text-transform: uppercase;
+}
+
+.hp-our-services-heading-bold {
+  font-family: Gilroy, sans-serif;
+  font-weight: 900;
+}
+
+.hp-our-services-heading {
+  color: #181A20;
+  font-family: Gilroy, sans-serif;
+  font-size: clamp(29px, 3vw, 40px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 144%;
+  letter-spacing: 0.245px;
+  text-transform: uppercase;
+
+}
+
+.hp-services-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--Light-Base-Color-White, #FFF);
+  padding: 60px 20px 45px 20px;
+  position: relative;
+}
+
+.hp-services-card:hover {
+  border-radius: 20px;
+  background: #181A20;
+  box-shadow: 0px 28px 52px 0px rgba(0, 61, 113, 0.20);
+  color: #F2F4F9;
+}
+
+.hp-card-heading {
+  font-family: Gilroy-Semibold, sans-serif;
+  font-weight: 600;
+  color: var(--Light-Text-Color-Title, #11142D);
+  font-size: 33px;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.099px;
+  margin-top: 1.75rem;
+  overflow-wrap: break-word;
+}
+
+.hp-services-card:hover .hp-card-heading {
+  color: #DD2525;
+}
+
+.hp-services-card:hover .hp-card-text {
+  color: var(--Light-Text-Link-Color-White, #FFF);
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%;
+  letter-spacing: 0.08px;
+}
+
+.hp-services-card:hover .hp-card-button {
+  color: #FFF;
+  border: 0.3px solid #F4F6FA;
+}
+
+.hp-card-button:hover {
+  background: #F2F4F9;
+  color: #181A20 !important;
+  border: 0.3px solid #F4F6FA
+}
+
+.hp-card-button {
+  font-family: Rubik, sans-serif;
+  border-radius: 5px;
+  border: 0.3px solid #181A20;
+  padding: 7px 22px 7px 11px;
+  width: fit-content;
+  position: absolute;
+  bottom: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 117%;
+}
+
+.hp-card-text {
+  font-family: Rubik, sans-serif;
+  color: rgba(77, 77, 82, 0.90);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%;
+  letter-spacing: 0.08px;
+}
+
+/* Our Expertise */
+
+.pt-8 {
+  padding-top: 8rem;
+}
+
+.hp-our-expertise-wrapper {
+  background: #F7F8FC;
+}
+
+.hp-our-expertise-subheading {
+  color: var(--Light-Text-Color-Body-2, #9A9AB0);
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.hp-our-expertise-heading {
+  color: #181A20;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 49px;
+  line-height: 120%;
+  letter-spacing: 0.245px;
+  text-transform: capitalize;
+}
+
+.accordianWrap {
+  width: 100%;
+  padding: 31px 60px 31px 60px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 10.6px 1px rgba(0, 0, 0, 0.04);
+}
+
+.accordianWrap:nth-of-type(n+2) {
+  margin-top: 1rem;
+}
+
+.accordianHeading {
+  color: #181A20;
+  font-family: Gilroy-SemiBold, sans-serif;
+  font-size: clamp(22px, 3vw, 30px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.15px;
+}
+
+.accordianHeadingExpanded {
+  color: #DD2525;
+}
+
+.plusIcon {
+  color: #DD2525;
+}
+
+.expandbutton {
+  background: none;
+  border: none;
+}
+
+.accordianDescription {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  color: rgba(24, 26, 32, 0.90);
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 0.06px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.accordianDescription.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Leadership Quotes */
+
+.hp-leadership-heading {
+  color: #181A20;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.245px;
+  text-transform: capitalize;
+}
+
+.hp-leadership-quote {
+  color: rgba(24, 26, 32, 0.72);
+  font-family: Rubik, sans-serif;
+  font-size: clamp(20px, 3vw, 33px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  /* transition: transform 0.6s ease-in-out;
+  transform: '`translateY(-${index * 100}%)`' */
+}
+
+.hp-leadership-name {
+  color: #181A20;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  gap: 10rem;
+}
+
+.hp-wrapper-position {
+  position: absolute;
+  bottom: 5rem;
+  left: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .hp-wrapper-position {
+    bottom: unset;
+  }
+}
+
+.hp-leadership-position {
+  color: #181A20;
+  font-family: Rubik, sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 24.7px;
+}
+
+
+.mt4 {
+  margin-top: 4rem;
+}
+
+.hp-channel-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* this works with a parent flex container */
+  min-height: 300px;
+  /* set based on your design */
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.hp-channel-details {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #181A20;
+  padding: 20px 20px 30px 20px;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 5;
+  min-height: 15rem;
+}
+
+.hp-channel-img {
+  border-radius: 20px 20px 0px 0px;
+  /* transform: scale(1.2); */
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.5s ease;
+
+}
+
+.hp-channel-img:hover {
+  transform: scale(1.06);
+}
+
+.hp-partner-name {
+  color: #DD2525;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.099px;
+}
+
+.hp-industry,
+.hp-location {
+  color: #FFF;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%;
+  letter-spacing: 0.08px;
+  margin-bottom: 2.5rem;
+}
+
+.hp-partner-heading-text {
+  color: #181A20;
+  font-family: Gilroy, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 0.245px;
+  text-transform: uppercase;
+}
+
+.hp-partner-heading-bold {
+  color: #181A20;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.195px;
+  text-transform: uppercase;
+
+}
+
+.hp-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hp-partner-image {
+  width: 136px;
+  flex-shrink: 0;
+  filter: grayscale(100%) !important;
+}
+
+.hp-partner-button {
+  width: 70px;
+  height: 70px;
+  fill: #D9D9D9;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+}
+
+.hp-partner-button:hover {
+  background-color: #181A20;
+  color: #DD2525;
+}
+
+.hp-partner-button:first-child {
+  margin-right: 16px;
+}
+
+.hp-partner-image:hover {
+  filter: invert(0) !important;
+}
+
+/* Learn More Button */
+.hp-buttonArrow {
+  transform: rotate(-45deg);
+  color: #DD2525;
+}
+
+.hp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.hp-dot.active {
+  background-color: #181A20;
+}
+
+.hp-button-wrapper {
+  position: absolute;
+  bottom: 5rem;
+  left: 18rem;
+}
+
+.hp-leadership-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+}
+
+.hp-leadership-button:hover {
+  background: #181A20;
+  color: #DD2525;
+}
+
+.pb5 {
+  padding-bottom: 5rem;
+}
+
+.hp-years-of-experience-icon,
+.hp-Buildings45,
+.hp-ChannelPartners,
+.hp-commercial-space {
+  height: 3rem;
+}
+
+.hp-years-of-experience-icon:hover,
+.hp-Buildings45:hover,
+.hp-ChannelPartners:hover,
+.hp-commercial-space:hover {
+  filter: invert(33%) sepia(88%) saturate(7472%) hue-rotate(355deg) brightness(108%) contrast(124%) !important;
+}
+
+.hp-icon {
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: fit-content;
+  background: rgba(20, 56, 98, 0.05);
+}
+
+.hp-experience-number {
+  color: rgba(0, 0, 0, 0.63);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.hp-experience-text {
+  color: #181A20;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hp-card-icon-wrapper {
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: #181A20;
+}
+
+.hp-card-icon {
+  filter: invert(100%) sepia(0%) saturate(7446%) hue-rotate(264deg) brightness(94%) contrast(92%) !important;
+  width: 60px;
+  padding: 0.85rem;
+}
+
+.hp-services-card:hover .hp-card-icon-wrapper {
+  background: #FFF;
+}
+
+.hp-services-card:hover .hp-card-icon {
+  filter: invert(33%) sepia(88%) saturate(7472%) hue-rotate(355deg) brightness(108%) contrast(124%) !important;
+}
+
+.hp-funds-under-advice,
+.hp-assets-under-mgmt {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.hp-link {
+  color: #181A20 !important;
+}
+
+.hp-channel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 80s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee {
+  animation-play-state: paused;
+}
+
+.marquee-group {
+  display: flex;
+}
+
+.logo {
+  height: 120px;
+  margin: 0 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  width: 136px;
+  flex-shrink: 0;
+  filter: grayscale(100%) !important;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) !important;
+}
+
+
+/* Keyframe for continuous left scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    height: 40px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hp-leadership-image {
+    width: -webkit-fill-available;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,145 @@
+.mt5 {
+    margin-top: 5rem !important;
+}
+
+.footer-description {
+    color: rgba(0, 0, 0, 0.63);
+    text-align: justify;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Rubik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 200% */
+    padding-right: 10%;
+}
+
+.footer-column{
+    margin-right: 10%;
+}
+
+.get-in-touch,
+.resources,
+.connect {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    /* font-family: Raleway; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.333px;
+    margin-right: 20%;
+}
+
+.get-in-touch-list,
+.resources-list,
+.connect-list,
+.social-media-text {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.touch-icons{
+    width: 32px;
+height: 32px;
+flex-shrink: 0;
+font-size: 32px;
+}
+
+.touch-text{
+    color: rgba(0, 0, 0, 0.63);
+    text-align: justify;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Rubik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 200% */
+    margin-right: 5%;
+    padding-right: 10%;
+}
+
+.resources-items{
+    color: rgba(0, 0, 0, 0.63);
+    text-align: justify;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Rubik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 200% */
+    margin-right: 5%;
+    padding-right: 10%;
+    text-decoration: none;
+}
+
+.resources-items:hover{
+    color: red;
+}
+
+.social-icon{
+    align-self: center;
+    font-size: 2rem;
+    margin-left: 0.6rem;
+    cursor: pointer;
+    /* font-size: large; */
+}
+.social-icon:hover{
+    filter: invert(20%) sepia(70%) saturate(7356%) hue-rotate(356deg) brightness(103%) contrast(120%);
+}
+.socialIconBox{
+    padding: 0px 0px 0px 0px !important;
+    height:3rem !important;
+    width: 3rem !important;
+    align-content: center;
+    margin-right: 10px;
+}
+
+
+.footer-end-socials{
+    color: #000;
+font-family: Rubik;
+font-size: clamp(11px,2vw,14px) ;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 16px */
+text-transform: uppercase;
+text-decoration: none;
+
+}
+
+.footer-end-socials:hover{
+    color: red;
+}
+
+.footerEndRealsta{
+    color: rgba(0, 0, 0, 0.63);
+leading-trim: both;
+text-edge: cap;
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 35px; /* 218.75% */
+align-content: end;
+text-align: right
+}
+
+.footerSection{
+    margin-right:clamp(0%,5vw,5%) ;
+}
+
+.footerServiceRow{
+    margin-bottom: 5rem;
+}

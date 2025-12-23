@@ -1,0 +1,64 @@
+.git-form-wrapper {
+    padding-top: 4rem;
+    border-radius: 58px 58px 0px 0px;
+    background: #181A20;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+}
+
+.git-heading {
+    color: #FFF;
+    font-family: Gilroy, sans-serif;
+    font-size: clamp(29px, 3vw, 39px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.195px;
+    text-transform: uppercase;
+}
+
+.git-heading-part {
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
+}
+
+.git-subheading {
+    padding-right: 3rem;
+    color: rgba(255, 255, 255, 0.72);
+    font-family: Rubik, sans-serif;
+    font-size: clamp(16px, 3vw, 20px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%;
+    letter-spacing: 0.06px;
+}
+
+.git-form {}
+
+.git-myform input,
+.git-myform textarea,
+.git-myform select {
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.git-myform input::placeholder,
+.git-myform textarea::placeholder,
+.git-myform select,
+.git-myform select option {
+    color: rgba(255, 255, 255, 0.70) !important;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%;
+    letter-spacing: 0.06px;
+}
+
+.git-myform select option {
+    background-color: #181A20;
+}
+
+.border-danger {
+    border-bottom: 2px solid #dc3545 !important;
+}

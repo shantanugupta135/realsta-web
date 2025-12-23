@@ -1,0 +1,2554 @@
+{
+  "components\\HomePage.tsx": {
+    "f": "HomePage.tsx",
+    "p": "components\\HomePage.tsx",
+    "v": "v1",
+    "c": {
+      "3fbd41": {
+        "user": "Shantanu Gupta",
+        "model": "gpt-4o",
+        "extraContext": "tbd",
+        "timestamp": 1765365833,
+        "hash": "2f769c0a",
+        "messageId": "system_697eb3f0-d5ba-11f0-86cf-81fd3a2feafc",
+        "codeBlockId": "system_697eb3f0-d5ba-11f0-86cf-81fd3a2feafc-Codeblock-1",
+        "isActive": true,
+        "type": "pasteCode"
+      }
+    },
+    "l": {
+      "1": {
+        "chunkId": "3fbd41",
+        "hash": "c80b9e6a",
+        "encoded": "import%20React,%20%7B%20useRef,%20useState,%20useEffect%20%7D%20from%20%22react%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "3fbd41",
+        "hash": "ea5ca5b1",
+        "encoded": "import%20'./HomePage.css';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "3fbd41",
+        "hash": "db1c7d9c",
+        "encoded": "import%20NavigationMenu%20from%20%22./NavigationMenu%22;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "3fbd41",
+        "hash": "7c43410e",
+        "encoded": "import%20%22slick-carousel/slick/slick.css%22;",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "3fbd41",
+        "hash": "00bd1f15",
+        "encoded": "import%20%22slick-carousel/slick/slick-theme.css%22;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "3fbd41",
+        "hash": "545736f4",
+        "encoded": "import%20Link%20from%20%22next/link%22;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "3fbd41",
+        "hash": "61e29b5b",
+        "encoded": "import%20GetInTouch%20from%20%22./GetInTouch%22;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "3fbd41",
+        "hash": "2172f528",
+        "encoded": "const%20accordionData%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "3fbd41",
+        "hash": "7db1534b",
+        "encoded": "%7B%20title:%20%22Micro-Market%20Mastery%22,%20content:%20%22With%20deep%20on-the-ground%20intelligence%20across%20Gurgaon's%20micro-markets,%20we%20identify%20asymmetric%20commercial%20real%20estate%20opportunities%20ahead%20of%20the%20curve%E2%80%94driving%20alpha%20for%20institutional%20and%20global%20capital%20partners%20interested%20in%20office%20space%20for%20lease%20and%20commercial%20property%20investment%20in%20Gurgaon.%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "3fbd41",
+        "hash": "74096e9a",
+        "encoded": "%7B%20title:%20%22In-House%20Monetization%20Ecosystem%22,%20content:%20%22Our%20in-house%20integrated%20model%20operates%20as%20a%20comprehensive%20end-to-end%20ecosystem,%20uniting%20multiple%20verticals%E2%80%94from%20acquisition%20and%20tenant%20profiling%20to%20office%20design,%20commercial%20property%20management,%20and%20exit.%20This%20ensures%20predictable%20monetization%20and%20complete%20operational%20control,%20unlocking%20stable,%20long-term%20value%20across%20all%20market%20cycles%20for%20our%20clientele.%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "3fbd41",
+        "hash": "a5a5e252",
+        "encoded": "%7B%20title:%20%22Research-Led%20Discipline%22,%20content:%20%22Our%20investment%20decisions%20are%20grounded%20in%20proprietary%20data%20and%20deep%20market%20research.%20This%20disciplined,%20data-driven%20framework%20enables%20us%20to%20deliver%20risk-adjusted%20returns%20in%20volatile%20environments%20even%20for%20niche%20segments%20like%20high-demand%20serviced%20office%20clusters.%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "3fbd41",
+        "hash": "1d6fe824",
+        "encoded": "%7B%20title:%20%22Built%20on%20Principles%22,%20content:%20%22We%20lead%20with%20transparency%20and%20integrity.%20Our%20reputation%20is%20built%20on%20trust,%20long-term%20alignment,%20and%20a%20commitment%20to%20doing%20what%E2%80%99s%20right%E2%80%94for%20our%20partners,%20our%20communities,%20and%20our%20portfolio%20of%20Gurgaon%20commercial%20property%20assets.%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "3fbd41",
+        "hash": "e94001d1",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "3fbd41",
+        "hash": "ddd10a92",
+        "encoded": "const%20testimonials%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "3fbd41",
+        "hash": "5e8aef52",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "3fbd41",
+        "hash": "505883c0",
+        "encoded": "text:%20%22With%20Realsta,%20we%20are%20building%20a%20transparent%20and%20reliable%20real%20estate%20investment%20environment%20for%20our%20clients.%20We%20are%20a%20group%20of%20ambitious%20and%20competitive%20go-getters%20looking%20forward%20to%20getting%20ahead%20without%20compromising%20our%20core%20values%20and%20ethics.%22,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "3fbd41",
+        "hash": "38d18967",
+        "encoded": "author:%20%22Dishant%20Malik%22,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "3fbd41",
+        "hash": "7c2aef0c",
+        "encoded": "role:%20%22Founder%20&%20CEO%22",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "3fbd41",
+        "hash": "ae69351d",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "3fbd41",
+        "hash": "ea63eb27",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "3fbd41",
+        "hash": "75d08cdc",
+        "encoded": "text:%20%22We%20strive%20to%20deliver%20excellence%20with%20every%20investment.%20Realsta%20is%20not%20just%20a%20platform%20but%20a%20movement%20towards%20ethical%20and%20high-return%20real%20estate%20investments.%22,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "3fbd41",
+        "hash": "3128c5d6",
+        "encoded": "author:%20%22Dishant%20Malik%22,",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "3fbd41",
+        "hash": "354ab7d2",
+        "encoded": "role:%20%22Founder%20&%20CEO%22",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "3fbd41",
+        "hash": "da01a3bd",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "3fbd41",
+        "hash": "727aa47f",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "3fbd41",
+        "hash": "9cc19311",
+        "encoded": "text:%20%22Our%20mission%20is%20to%20transform%20the%20way%20people%20invest%20in%20real%20estate%20by%20providing%20clarity,%20transparency,%20and%20strong%20investor%20support.%22,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "3fbd41",
+        "hash": "bd514f00",
+        "encoded": "author:%20%22Dishant%20Malik%22,",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "3fbd41",
+        "hash": "e2a51898",
+        "encoded": "role:%20%22Founder%20&%20CEO%22",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "3fbd41",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "3fbd41",
+        "hash": "5f054bfc",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "3fbd41",
+        "hash": "b537913a",
+        "encoded": "const%20logos%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "3fbd41",
+        "hash": "83a752ba",
+        "encoded": "%22/assets/channel-partner/db.webp%22,",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "3fbd41",
+        "hash": "7db4c405",
+        "encoded": "%22/assets/channel-partner/ontogeny.webp%22,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "3fbd41",
+        "hash": "0bc833e0",
+        "encoded": "%22/assets/channel-partner/gabit.webp%22,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "3fbd41",
+        "hash": "901a709a",
+        "encoded": "%22/assets/channel-partner/ve.webp%22,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "3fbd41",
+        "hash": "120388e8",
+        "encoded": "%22/assets/channel-partner/crimson.webp%22,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "3fbd41",
+        "hash": "cac2b9c4",
+        "encoded": "%22/assets/channel-partner/mercados.webp%22,",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "3fbd41",
+        "hash": "06ead8a9",
+        "encoded": "%22/assets/channel-partner/purse.webp%22,",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "3fbd41",
+        "hash": "f572fb78",
+        "encoded": "%22/assets/channel-partner/walmart-logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "3fbd41",
+        "hash": "9a736405",
+        "encoded": "%22/assets/channel-partner/vistara-logo_brandlogos.net_pvmrk.webp%22,",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "3fbd41",
+        "hash": "a1f5f962",
+        "encoded": "%22/assets/channel-partner/TOSHIBA_Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "3fbd41",
+        "hash": "9a9bba97",
+        "encoded": "%22/assets/channel-partner/Sujan%20Industries.webp%22,",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "3fbd41",
+        "hash": "d990c429",
+        "encoded": "%22/assets/channel-partner/sony-vector-logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "3fbd41",
+        "hash": "d82611e7",
+        "encoded": "%22/assets/channel-partner/sebia-logo-vector.webp%22,",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "3fbd41",
+        "hash": "e2bdc5cb",
+        "encoded": "%22/assets/channel-partner/Reliance-Industries-Limited-Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "3fbd41",
+        "hash": "4ee88044",
+        "encoded": "%22/assets/channel-partner/PP%20Jeweller.webp%22,",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "3fbd41",
+        "hash": "3c18a9b0",
+        "encoded": "%22/assets/channel-partner/philips-logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "3fbd41",
+        "hash": "cc670c52",
+        "encoded": "%22/assets/channel-partner/Mydala.webp%22,",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "3fbd41",
+        "hash": "97bef240",
+        "encoded": "%22/assets/channel-partner/McKinsey_&_Company-Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "3fbd41",
+        "hash": "bbf17839",
+        "encoded": "%22/assets/channel-partner/logo-final.webp%22,",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "3fbd41",
+        "hash": "ae735938",
+        "encoded": "%22/assets/channel-partner/Logo_blue.webp%22,",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "3fbd41",
+        "hash": "83428c98",
+        "encoded": "%22/assets/channel-partner/Kalpatru%20Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "3fbd41",
+        "hash": "a2f71c71",
+        "encoded": "%22/assets/channel-partner/ITC_Limited_Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "3fbd41",
+        "hash": "bca47edb",
+        "encoded": "%22/assets/channel-partner/Infoglen-Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "3fbd41",
+        "hash": "af62e14b",
+        "encoded": "%22/assets/channel-partner/Hero_MotoCorp_Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "3fbd41",
+        "hash": "ccaa7b72",
+        "encoded": "%22/assets/channel-partner/Dell_Logo.webp%22,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "3fbd41",
+        "hash": "0afe19be",
+        "encoded": "%22/assets/channel-partner/CREMICA-LOGO-1.webp%22,",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "3fbd41",
+        "hash": "310d9be7",
+        "encoded": "%22/assets/channel-partner/bitm-logo-png_seeklogo-368920.webp%22,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "3fbd41",
+        "hash": "1f0927aa",
+        "encoded": "%22/assets/channel-partner/Birgma%20Asia%20logo.webp%22",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "3fbd41",
+        "hash": "d995d017",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "3fbd41",
+        "hash": "ab41e32c",
+        "encoded": "type%20AccordionItemProps%20=%20Readonly%3C%7B",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "3fbd41",
+        "hash": "e51ac54a",
+        "encoded": "title:%20string;",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "3fbd41",
+        "hash": "1591fcd4",
+        "encoded": "content:%20string;",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "3fbd41",
+        "hash": "b22ed121",
+        "encoded": "%7D%3E;",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "3fbd41",
+        "hash": "6ca6bb89",
+        "encoded": "function%20AccordionItem(%7B%20title,%20content%20%7D:%20AccordionItemProps)%20%7B",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "3fbd41",
+        "hash": "04cdcff4",
+        "encoded": "const%20%5BisOpen,%20setIsOpen%5D%20=%20useState(false);",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "3fbd41",
+        "hash": "35f50ce4",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "3fbd41",
+        "hash": "32019d52",
+        "encoded": "%3Cdiv%20className=%22accordianWrap%22%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "3fbd41",
+        "hash": "2c541849",
+        "encoded": "%3Cdiv%20className=%22accordianHeading%20d-flex%20align-items-center%20justify-content-between%22%3E",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "3fbd41",
+        "hash": "6bcc5f6f",
+        "encoded": "%3Cdiv%20className=%7BisOpen%20?%20'accordianHeadingExpanded'%20:%20''%7D%3E%7Btitle%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "3fbd41",
+        "hash": "fbf93828",
+        "encoded": "%3Cbutton%20className=%22expandbutton%22%20onClick=%7B()%20=%3E%20setIsOpen(!isOpen)%7D%3E",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "3fbd41",
+        "hash": "8d807a6b",
+        "encoded": "%3Ci%20className=%7B%60fa-solid%20$%7BisOpen%20?%20'fa-minus'%20:%20'fa-plus'%7D%20plusIcon%60%7D%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "3fbd41",
+        "hash": "1e60c5b6",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "3fbd41",
+        "hash": "cd61a4cd",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "3fbd41",
+        "hash": "1068c894",
+        "encoded": "%7BisOpen%20&&%20(",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "3fbd41",
+        "hash": "6ea25536",
+        "encoded": "%3Cdiv%20className=%7B%60mt-4%20accordianDescription%20$%7BisOpen%20?%20'open'%20:%20''%7D%60%7D%3E",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "3fbd41",
+        "hash": "1066207e",
+        "encoded": "%7Bcontent%7D",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "3fbd41",
+        "hash": "f687fb74",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "3fbd41",
+        "hash": "43398dda",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "3fbd41",
+        "hash": "290e4883",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "3fbd41",
+        "hash": "fd7f7fe7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "3fbd41",
+        "hash": "9b477039",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "3fbd41",
+        "hash": "520484a5",
+        "encoded": "function%20HomePage()%20%7B",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "3fbd41",
+        "hash": "fd8918b7",
+        "encoded": "const%20%5Bindex,%20setIndex%5D%20=%20useState(0);",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "3fbd41",
+        "hash": "b6cd1498",
+        "encoded": "const%20handleNext%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "3fbd41",
+        "hash": "a7c3bdeb",
+        "encoded": "setIndex((prevIndex)%20=%3E%20(prevIndex%20+%201)%20%25%20testimonials.length);",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "3fbd41",
+        "hash": "e153936b",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "3fbd41",
+        "hash": "679f9b8e",
+        "encoded": "const%20handlePrev%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "3fbd41",
+        "hash": "5c5b7279",
+        "encoded": "setIndex((prevIndex)%20=%3E%20(prevIndex%20-%201%20+%20testimonials.length)%20%25%20testimonials.length);",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "3fbd41",
+        "hash": "891eea05",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "3fbd41",
+        "hash": "41b0235f",
+        "encoded": "useEffect(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "3fbd41",
+        "hash": "db401a3d",
+        "encoded": "const%20interval%20=%20setInterval(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "3fbd41",
+        "hash": "cf7fd72d",
+        "encoded": "setIndex((prev)%20=%3E%20(prev%20+%201)%20%25%20testimonials.length);",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "3fbd41",
+        "hash": "2df37347",
+        "encoded": "%7D,%205000);",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "3fbd41",
+        "hash": "46403681",
+        "encoded": "return%20()%20=%3E%20clearInterval(interval);",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "3fbd41",
+        "hash": "14ea7d6f",
+        "encoded": "%7D,%20%5B%5D);",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "3fbd41",
+        "hash": "8326d016",
+        "encoded": "const%20serviceSectionRef%20=%20useRef%3CHTMLElement%3E(null);",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "3fbd41",
+        "hash": "41e344c0",
+        "encoded": "const%20leadersSectionRef%20=%20useRef%3CHTMLElement%3E(null);",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "3fbd41",
+        "hash": "561d9476",
+        "encoded": "const%20handleScrollToService%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "3fbd41",
+        "hash": "4dd37762",
+        "encoded": "serviceSectionRef.current?.scrollIntoView(%7B%20behavior:%20'smooth'%20%7D);",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "3fbd41",
+        "hash": "c51545e4",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "3fbd41",
+        "hash": "9cb463cb",
+        "encoded": "const%20handleScrollToLeader%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "3fbd41",
+        "hash": "f886f7f8",
+        "encoded": "leadersSectionRef.current?.scrollIntoView(%7B%20behavior:%20'smooth'%20%7D);",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "3fbd41",
+        "hash": "77429274",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "3fbd41",
+        "hash": "186a5838",
+        "encoded": "const%20channelPartners%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "3fbd41",
+        "hash": "8606b228",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "3fbd41",
+        "hash": "36427908",
+        "encoded": "name:%20%22Vistara%22,",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "3fbd41",
+        "hash": "ee667814",
+        "encoded": "image:%20%22Vistara.webp%22,",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "3fbd41",
+        "hash": "f9adbd1e",
+        "encoded": "description:%20%22Building%20a%20State-of-the-Art%20Training%20Centre%20for%20Vistara%22",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "3fbd41",
+        "hash": "98d23168",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "3fbd41",
+        "hash": "8a624a4f",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "3fbd41",
+        "hash": "50ec6882",
+        "encoded": "name:%20%22Sebia%22,",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "3fbd41",
+        "hash": "b368b412",
+        "encoded": "image:%20%22Sebia.webp%22,",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "3fbd41",
+        "hash": "b8890f44",
+        "encoded": "description:%20%22Engineering%20customised%20diagnostic%20labs%20for%20Sebia%22",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "3fbd41",
+        "hash": "fd6b6ded",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "3fbd41",
+        "hash": "ebe819f4",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "3fbd41",
+        "hash": "df6ab647",
+        "encoded": "name:%20%22ITC%22,",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "3fbd41",
+        "hash": "cdb86abe",
+        "encoded": "image:%20%22ITC.webp%22,",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "3fbd41",
+        "hash": "74d21047",
+        "encoded": "description:%20%22Providing%20Branch%20Office%20for%20ITC%E2%80%99s%20OGP%20Operations%22",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "3fbd41",
+        "hash": "89469418",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "3fbd41",
+        "hash": "37abe54b",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "3fbd41",
+        "hash": "74d3522f",
+        "encoded": "name:%20%22Cremica%22,",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "3fbd41",
+        "hash": "a9651c26",
+        "encoded": "image:%20%22Cremica.webp%22,",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "3fbd41",
+        "hash": "1d7e26d6",
+        "encoded": "description:%20%22Designing%20Specialty%20Office%20for%20Cremica%22",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "3fbd41",
+        "hash": "4e2389e2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "3fbd41",
+        "hash": "d8bccb77",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "3fbd41",
+        "hash": "fb1c767d",
+        "encoded": "const%20%5BchannelIndex,%20setChannelIndex%5D%20=%20useState(0);",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "3fbd41",
+        "hash": "f84fb32f",
+        "encoded": "const%20visibleCards%20=%203;",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "3fbd41",
+        "hash": "4e0b9a64",
+        "encoded": "const%20handleChannelPrev%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "3fbd41",
+        "hash": "b16c8e59",
+        "encoded": "if%20(channelIndex%20===%200)%20return;",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "3fbd41",
+        "hash": "6b7a211f",
+        "encoded": "setChannelIndex((prev)%20=%3E%20prev%20-%201);",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "3fbd41",
+        "hash": "108b74ca",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "3fbd41",
+        "hash": "68d066f3",
+        "encoded": "const%20handleChannelNext%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "3fbd41",
+        "hash": "d6e3b6e5",
+        "encoded": "if%20(channelIndex%20%3E=%20channelPartners.length%20-%20visibleCards)%20return;",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "3fbd41",
+        "hash": "ae4b7fe9",
+        "encoded": "setChannelIndex((prev)%20=%3E%20prev%20+%201);",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "3fbd41",
+        "hash": "f069dfd4",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "3fbd41",
+        "hash": "f6d3df2a",
+        "encoded": "const%20router%20=%20useRouter();%20//%20CHANGE:%20Ensure%20useRouter%20is%20used%20correctly",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "3fbd41",
+        "hash": "f0655ab7",
+        "encoded": "const%20navigateTo%20=%20(path:%20string)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "3fbd41",
+        "hash": "2bdbc4ae",
+        "encoded": "router.push(path);",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "3fbd41",
+        "hash": "efd54f90",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "3fbd41",
+        "hash": "72dff57a",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "3fbd41",
+        "hash": "bc1d9be4",
+        "encoded": "%3C%3E",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "3fbd41",
+        "hash": "5b5fef8b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "3fbd41",
+        "hash": "ebef1f4c",
+        "encoded": "%3Csection%20ref=%7BleadersSectionRef%7D%3E",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "3fbd41",
+        "hash": "d4fbb088",
+        "encoded": "%3Cdiv%20className=%22customContainer%20d-flex%20justify-content-center%20flex-column%20align-items-center%22%3E",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "3fbd41",
+        "hash": "970d5297",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "3fbd41",
+        "hash": "78aae629",
+        "encoded": "%3Cdiv%20className=%22col-12%22%3E",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "3fbd41",
+        "hash": "be21a433",
+        "encoded": "%3Cdiv%20className=%22hp-commercialheading%20text-left%20text-md-center%22%3ELeaders%20of%20commercial%20property%20Investment%20in%20Gurgaon%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "3fbd41",
+        "hash": "53fc24e2",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "3fbd41",
+        "hash": "a25dc329",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "3fbd41",
+        "hash": "0f9141cf",
+        "encoded": "%3Cdiv%20className=%22row%20justify-content-between%20w-100%20hp-microwrap%20mt-4%20pb-5%22%3E",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "3fbd41",
+        "hash": "445c89bb",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-8%22%3E",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "3fbd41",
+        "hash": "e2dd650d",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "3fbd41",
+        "hash": "bc9a3ab8",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%22%3E",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "3fbd41",
+        "hash": "e01cb5a5",
+        "encoded": "%3Cp%20className=%22hp-micromarkets%22%3EMicro%20Markets.%20Maximum%20Value.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "3fbd41",
+        "hash": "7abcdfae",
+        "encoded": "%3Cp%20className=%22hp-micromarkettext%22%3E",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "3fbd41",
+        "hash": "73e95dbb",
+        "encoded": "Founded%20by%20CEO%20Dishant%20Malik%20in%202012,%20Realsta%20is%20a%20leading%20real%20estate%20consultancy%20in%20Gurgaon,%20known%20for%20its%20data-driven%20approach%20with%20deep%20expertise%20as%20a%20real%20estate%20advisory%20in%20Gurgaon%20and%20its%20micro-markets.%20We%20manage%20the%20entire%20asset%20lifecycle%20-%20including%20corporate%20leasing,%20commercial%20property%20investment%20in%20Gurgaon,%20real%20estate%20asset%20management,%20acquisition%20of%20commercial%20property%20in%20Gurgaon,%20office%20design,%20and%20monetization%20-%20forming%20an%20integrated%20ecosystem%20that%20maximizes%20returns%20and%20minimizes%20risk%20for%20a%20distinguished%20clientele%20that%20includes%20UHNIs,%20NRIs,%20and%20global%20brands%20such%20as%20ITC,%20Sebia,%20and%20Vistara.",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "3fbd41",
+        "hash": "3da16329",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "3fbd41",
+        "hash": "ec859f2e",
+        "encoded": "%3Cbutton%20className=%22btn-secondary-alternative-custom%20mt-2%22%20onClick=%7BhandleScrollToService%7D%3E",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "3fbd41",
+        "hash": "ddb7f17b",
+        "encoded": "Our%20Services%3Ci%20className=%22fa-solid%20fa-arrow-right%20p-browse-more-arrow%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "3fbd41",
+        "hash": "ed6c7a36",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "3fbd41",
+        "hash": "7e426e5f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "3fbd41",
+        "hash": "4879eaad",
+        "encoded": "%3Cdiv%20className=%22col-1%22%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "3fbd41",
+        "hash": "0116bc5e",
+        "encoded": "%3Cdiv%20className=%22hp-funds%20col-12%20col-md-5%20mt-3%20mt-md-0%22%3E",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "3fbd41",
+        "hash": "94c687bb",
+        "encoded": "%3Cdiv%20className=%22hp-funds-under-advice%22%3E",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "3fbd41",
+        "hash": "f0c78143",
+        "encoded": "%3Cdiv%20className=%22fs-6%22%3EFUNDS%20UNDER%20ADVICE%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "3fbd41",
+        "hash": "3f40fa77",
+        "encoded": "%3Cdiv%20className=%22fs-1%22%3E%E2%82%B91,360+%20Cr%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "3fbd41",
+        "hash": "a1f73d4f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "3fbd41",
+        "hash": "eda76d70",
+        "encoded": "%3Cdiv%20className=%22hp-dividerHome%22%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "3fbd41",
+        "hash": "82f13126",
+        "encoded": "%3Cdiv%20className=%22hp-assets-under-mgmt%22%3E",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "3fbd41",
+        "hash": "e1df4173",
+        "encoded": "%3Cdiv%20className=%22fs-1%22%3E2.86%20Lakh%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "3fbd41",
+        "hash": "68e390ef",
+        "encoded": "%3Cdiv%20className=%22fs-6%22%3ESQ.%20FT.%20UNDER%20MANAGEMENT%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "3fbd41",
+        "hash": "2d880cc3",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "3fbd41",
+        "hash": "b1d156d1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "3fbd41",
+        "hash": "6a8f30d0",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "3fbd41",
+        "hash": "b4eb3cc9",
+        "encoded": "%3Cdiv%20className=%22row%20text-center%20mt-5%20g-3%20hp-stat-wrap%22%3E",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "3fbd41",
+        "hash": "aa427937",
+        "encoded": "%3Cdiv%20className=%22col-6%20col-md-3%22%3E",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "3fbd41",
+        "hash": "6b0e6dce",
+        "encoded": "%3Cdiv%20className=%22hp-stat-box%22%3E",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "3fbd41",
+        "hash": "3a6be6af",
+        "encoded": "%3Cdiv%20className=%22d-flex%20align-items-center%20gap-3%22%3E",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "3fbd41",
+        "hash": "1cc393d5",
+        "encoded": "%3Cdiv%20className=%22hp-icon%22%3E",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "3fbd41",
+        "hash": "3bc62a32",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%22/assets/icons/14Yearsofexperience.svg%22%20className=%22hp-years-of-experience-icon%22%20alt=%2214%20years%20experience%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "3fbd41",
+        "hash": "4e52b613",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "3fbd41",
+        "hash": "4cf7c307",
+        "encoded": "%3Cdiv%20className=%22hp-experience-number%22%3E14+%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "3fbd41",
+        "hash": "9d41698b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "3fbd41",
+        "hash": "ca941743",
+        "encoded": "%3Cp%20className=%22mb-0%20pt-2%20hp-experience-text%22%3EYears%20of%20Experience%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "3fbd41",
+        "hash": "597c6afb",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "3fbd41",
+        "hash": "be80c797",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "3fbd41",
+        "hash": "0eb00250",
+        "encoded": "%3Cdiv%20className=%22col-6%20col-md-3%22%3E",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "3fbd41",
+        "hash": "1c281d37",
+        "encoded": "%3Cdiv%20className=%22hp-stat-box%22%3E",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "3fbd41",
+        "hash": "01302321",
+        "encoded": "%3Cdiv%20className=%22d-flex%20align-items-center%20gap-3%22%3E",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "3fbd41",
+        "hash": "b64a5f2e",
+        "encoded": "%3Cdiv%20className=%22hp-icon%22%3E",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "3fbd41",
+        "hash": "fc45105c",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%22/assets/icons/45Buildings.svg%22%20className=%22hp-Buildings45%22%20alt=%2245+%20Buildings%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "3fbd41",
+        "hash": "05f1305a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "3fbd41",
+        "hash": "99bb9be5",
+        "encoded": "%3Cdiv%20className=%22hp-experience-number%22%3E45+%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "3fbd41",
+        "hash": "bcb10048",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "3fbd41",
+        "hash": "cec28311",
+        "encoded": "%3Cp%20className=%22mb-0%20pt-2%20hp-experience-text%22%3EBuildings%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "3fbd41",
+        "hash": "b36c6340",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "3fbd41",
+        "hash": "b80aa576",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "3fbd41",
+        "hash": "1b2e3cae",
+        "encoded": "%3Cdiv%20className=%22col-6%20col-md-3%22%3E",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "3fbd41",
+        "hash": "3175672d",
+        "encoded": "%3Cdiv%20className=%22hp-stat-box%22%3E",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "3fbd41",
+        "hash": "9a1ad318",
+        "encoded": "%3Cdiv%20className=%22d-flex%20align-items-center%20gap-3%22%3E",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "3fbd41",
+        "hash": "410c20f8",
+        "encoded": "%3Cdiv%20className=%22hp-icon%22%3E",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "3fbd41",
+        "hash": "f6969615",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%22/assets/icons/700ChannelPartners.svg%22%20className=%22hp-ChannelPartners%22%20alt=%22700+%20Channel%20Partners%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "3fbd41",
+        "hash": "90299403",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "3fbd41",
+        "hash": "b3e7c64f",
+        "encoded": "%3Cdiv%20className=%22hp-experience-number%22%3E700+%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "3fbd41",
+        "hash": "eabc388b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "3fbd41",
+        "hash": "25ee49e4",
+        "encoded": "%3Cp%20className=%22mb-0%20pt-2%20hp-experience-text%22%3EChannel%20Partners%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "3fbd41",
+        "hash": "02548352",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "3fbd41",
+        "hash": "28a9cc8c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "3fbd41",
+        "hash": "659a9184",
+        "encoded": "%3Cdiv%20className=%22col-6%20col-md-3%22%3E",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "3fbd41",
+        "hash": "d6d07379",
+        "encoded": "%3Cdiv%20className=%22hp-stat-box%22%3E",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "3fbd41",
+        "hash": "442f8f77",
+        "encoded": "%3Cdiv%20className=%22d-flex%20align-items-center%20gap-3%22%3E",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "3fbd41",
+        "hash": "1cb609ee",
+        "encoded": "%3Cdiv%20className=%22hp-icon%22%3E",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "3fbd41",
+        "hash": "e2b8d778",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%22/assets/icons/commercialspace.svg%22%20className=%22hp-commercial-space%22%20alt=%2222%20Lakh+%20Sq.%20Ft.%20Commercial%20Space%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "3fbd41",
+        "hash": "35a88187",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "3fbd41",
+        "hash": "f2e8cfee",
+        "encoded": "%3Cdiv%20className=%22hp-experience-number%22%20style=%7B%7B%20fontSize:%20%2222px%22%20%7D%7D%3E22%20Lakh+%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "3fbd41",
+        "hash": "d48a015d",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "3fbd41",
+        "hash": "70cdac81",
+        "encoded": "%3Cp%20className=%22mb-0%20pt-2%20hp-experience-text%22%20style=%7B%7B%20fontSize:%20%2214px%22%20%7D%7D%3ESq.%20Ft.%20Commercial%20Space%20Leased%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "3fbd41",
+        "hash": "11a08d62",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "3fbd41",
+        "hash": "59359f79",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "3fbd41",
+        "hash": "4b56816c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "3fbd41",
+        "hash": "3781687b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "3fbd41",
+        "hash": "7f62a351",
+        "encoded": "%3Cdiv%20className=%22col-3%20hp-image-box%20d-none%20d-md-block%22%3E",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "3fbd41",
+        "hash": "b3c8d3f4",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%22/assets/Section2.webp%22%20alt=%22Architecture%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "3fbd41",
+        "hash": "2a5cf071",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "3fbd41",
+        "hash": "e36caf12",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "3fbd41",
+        "hash": "d2b1763d",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "3fbd41",
+        "hash": "a9896048",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "3fbd41",
+        "hash": "4b9b00f2",
+        "encoded": "%3Csection%20className=%22hp-our-services-wrapper%20pb-5%22%20ref=%7BserviceSectionRef%7D%3E",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "3fbd41",
+        "hash": "5ef6be6b",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "3fbd41",
+        "hash": "d58b5590",
+        "encoded": "%3Cdiv%20className=%22hp-our-services-subheading%22%3EOur%20Services%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "3fbd41",
+        "hash": "c569e9db",
+        "encoded": "%3Cdiv%20className=%22hp-our-services-heading%20pt-3%22%3EOur%20Umbrella%20Of%20%3Cspan%20className='hp-our-services-heading-bold'%3EServices%3C/span%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "3fbd41",
+        "hash": "16c7e722",
+        "encoded": "%3Cdiv%20className=%22row%20mt-5%22%3E",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "3fbd41",
+        "hash": "f33ba057",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-3%20%22%3E",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "3fbd41",
+        "hash": "15c1e9ce",
+        "encoded": "%3Cdiv%20className=%22hp-services-card%20mx-3%22%3E",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "3fbd41",
+        "hash": "b1d3ec66",
+        "encoded": "%3Cdiv%20className=%22hp-card-icon-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "3fbd41",
+        "hash": "cb698773",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20className=%22hp-card-icon%22%20src=%22/assets/icons/InvestmentAdvisory.svg%22%20alt=%22investment-advisory%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "3fbd41",
+        "hash": "0a874113",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "3fbd41",
+        "hash": "432d5f6f",
+        "encoded": "%3Cp%20className=%22hp-card-heading%22%3EInvestment%3Cbr%20/%3EAdvisory%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "3fbd41",
+        "hash": "bac682ef",
+        "encoded": "%3Cp%20className=%22hp-card-text%20mb-5%22%3EBacked%20by%20rigorous%20analysis%20and%20deep%20market%20insight,%20our%20investment%20management%20platform%20enables%20UHNIs%20and%20NRIs%20to%20deploy%20capital%20in%20commercial%20property%20investment%20and%20more%20in%20Gurgaon%20with%20confidence%E2%80%94identifying%20high-yield%20opportunities%20and%20constructing%20resilient%20real%20estate%20portfolios%20in%20high-demand%20nodes%20like%20Emaar%20Digital%20Greens%20and%20Grand%20View%20Tower.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "3fbd41",
+        "hash": "48077bd8",
+        "encoded": "%7B%3CLink%20href=%22/our-services/investment-advisory%22%20className=%22hp-link%22%3E%3Cdiv%20className=%22hp-card-button%22%3ELearn%20More%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20hp-buttonArrow%22%3E%3C/i%3E%3C/div%3E%3C/Link%3E%7D",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "3fbd41",
+        "hash": "4c1f18ed",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "3fbd41",
+        "hash": "947a6b32",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "3fbd41",
+        "hash": "9c66b616",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-3%20mt-4%20mt-md-0%22%3E",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "3fbd41",
+        "hash": "33005101",
+        "encoded": "%3Cdiv%20className=%22hp-services-card%20mx-3%22%3E",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "3fbd41",
+        "hash": "85903dec",
+        "encoded": "%3Cdiv%20className=%22hp-card-icon-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "3fbd41",
+        "hash": "b1388063",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20className=%22hp-card-icon%22%20src=%22/assets/icons/AssetManagement.svg%22%20alt=%22investment-advisory%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "3fbd41",
+        "hash": "5428a2d0",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "3fbd41",
+        "hash": "58cfe593",
+        "encoded": "%3Cp%20className=%22hp-card-heading%22%3EAsset%3Cbr%20/%3EManagement%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "3fbd41",
+        "hash": "d73fac86",
+        "encoded": "%3Cp%20className=%22hp-card-text%20mb-5%22%3EWe%20manage%20commercial%20real%20estate%20and%20other%20real%20estate%20assets%20with%20an%20institutional%20mindset%E2%80%94maximizing%20operational%20efficiency,%20enhancing%20tenant%20experience,%20and%20protecting%20long-term%20value%20through%20disciplined%20execution%20and%20proactive%20oversight.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "3fbd41",
+        "hash": "ef70e611",
+        "encoded": "%7B%3CLink%20href=%22/our-services/asset-management%22%20className=%22hp-link%22%3E%3Cdiv%20className=%22hp-card-button%22%3ELearn%20More%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20hp-buttonArrow%22%3E%3C/i%3E%3C/div%3E%3C/Link%3E%7D",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "3fbd41",
+        "hash": "90179b74",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "3fbd41",
+        "hash": "24c10650",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "3fbd41",
+        "hash": "0b87d732",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-3%20mt-4%20mt-md-0%22%3E",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "3fbd41",
+        "hash": "5cf9d937",
+        "encoded": "%3Cdiv%20className=%22hp-services-card%20mx-3%22%3E",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "3fbd41",
+        "hash": "8db93271",
+        "encoded": "%3Cdiv%20className=%22hp-card-icon-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "3fbd41",
+        "hash": "98176aa7",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20className=%22hp-card-icon%22%20src=%22/assets/icons/CorporateLeasing.svg%22%20alt=%22investment-advisory%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "3fbd41",
+        "hash": "aa947f33",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "3fbd41",
+        "hash": "9e8b96e4",
+        "encoded": "%3Cp%20className=%22hp-card-heading%22%3ECorporate%3Cbr%20/%3ELeasing%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "3fbd41",
+        "hash": "a13e0dda",
+        "encoded": "%3Cp%20className=%22hp-card-text%20mb-5%22%3EWe%20secure%20premium%20office%20spaces%20for%20lease%20as%20a%20leading%20office%20space%20rental%20agency%20aligned%20with%20the%20strategic%20objectives%20of%20global%20enterprises.%20By%20matching%20high-caliber%20tenants%20with%20institutional-grade%20assets-such%20as%20AIPL%20Business%20Club-we%20drive%20enduring%20value%20and%20consistent%20rental%20income%20for%20stakeholders.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "3fbd41",
+        "hash": "4337d9da",
+        "encoded": "%7B%3CLink%20href=%22/our-services/corporate-leasing%22%20className=%22hp-link%22%3E%3Cdiv%20className=%22hp-card-button%22%3ELearn%20More%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20hp-buttonArrow%22%3E%3C/i%3E%3C/div%3E%3C/Link%3E%7D",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "3fbd41",
+        "hash": "3883f1f8",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "3fbd41",
+        "hash": "036da430",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "3fbd41",
+        "hash": "4c9cd19e",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-3%20mt-4%20mt-md-0%22%3E",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "3fbd41",
+        "hash": "bad4e3ca",
+        "encoded": "%3Cdiv%20className=%22hp-services-card%20mx-3%22%3E",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "3fbd41",
+        "hash": "82ce59c0",
+        "encoded": "%3Cdiv%20className=%22hp-card-icon-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "3fbd41",
+        "hash": "e39e1cdf",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20className=%22hp-card-icon%22%20src=%22/assets/icons/WorkspaceSolutions.svg%22%20alt=%22investment-advisory%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "3fbd41",
+        "hash": "8cb69868",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "3fbd41",
+        "hash": "f398f4cd",
+        "encoded": "%3Cp%20className=%22hp-card-heading%22%3EWorkspace%3Cbr%20/%3ESolutions%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "3fbd41",
+        "hash": "e4fb8ed5",
+        "encoded": "%3Cp%20className=%22hp-card-text%20mb-5%22%3EWe%20deliver%20fully%20integrated,%20turnkey%20workspace%20solutions%E2%80%94designing,%20developing,%20and%20managing%20high-performance%20serviced%20offices%20that%20align%20with%20each%20client's%20strategic,%20operational,%20and%20brand%20objectives.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "3fbd41",
+        "hash": "dd21c2ce",
+        "encoded": "%7B%3CLink%20href=%22/our-services/workspace-solutions%22%20className=%22hp-link%22%3E%20%3Cdiv%20className=%22hp-card-button%22%3E",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "3fbd41",
+        "hash": "6bc70ee2",
+        "encoded": "Learn%20More",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "3fbd41",
+        "hash": "d6e9197d",
+        "encoded": "%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20hp-buttonArrow%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "3fbd41",
+        "hash": "28e0781c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "3fbd41",
+        "hash": "9df8efd2",
+        "encoded": "%3C/Link%3E%7D",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "3fbd41",
+        "hash": "28f56a29",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "3fbd41",
+        "hash": "1d6a0cef",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "3fbd41",
+        "hash": "f3f9f086",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "3fbd41",
+        "hash": "110db266",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "3fbd41",
+        "hash": "fd289ff8",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "3fbd41",
+        "hash": "eee67318",
+        "encoded": "%3Csection%20className=%22hp-our-channel-partner%22%3E",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "3fbd41",
+        "hash": "d2fe7360",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "3fbd41",
+        "hash": "888168cf",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "3fbd41",
+        "hash": "910eeabc",
+        "encoded": "%3Cdiv%20className=%22marquee-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "3fbd41",
+        "hash": "786ecd8e",
+        "encoded": "%3Cdiv%20className=%22marquee%22%3E",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "3fbd41",
+        "hash": "65eb6039",
+        "encoded": "%3Cdiv%20className=%22marquee-group%22%3E",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "3fbd41",
+        "hash": "870ea55b",
+        "encoded": "%7Blogos.map((src,%20idx)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "3fbd41",
+        "hash": "e165882d",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20key=%7B%601-$%7Bidx%7D%60%7D%20className=%22logo%22%20src=%7Bsrc%7D%20alt=%7B%60partner-$%7Bidx%7D%60%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "3fbd41",
+        "hash": "3e6f0bcd",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "3fbd41",
+        "hash": "bcb2e7cc",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "3fbd41",
+        "hash": "ab046ed3",
+        "encoded": "%3Cdiv%20className=%22marquee-group%22%3E",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "3fbd41",
+        "hash": "3da7d667",
+        "encoded": "%7Blogos.map((src,%20idx)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "3fbd41",
+        "hash": "c9bd2bb1",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20key=%7B%602-$%7Bidx%7D%60%7D%20className=%22logo%22%20src=%7Bsrc%7D%20alt=%7B%60partner-duplicate-$%7Bidx%7D%60%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "3fbd41",
+        "hash": "56c5ee8a",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "3fbd41",
+        "hash": "46a703f6",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "3fbd41",
+        "hash": "41213ef1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "3fbd41",
+        "hash": "90c57cb2",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "3fbd41",
+        "hash": "c2230c71",
+        "encoded": "%3Cdiv%20className=%22col-10%22%3E",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "3fbd41",
+        "hash": "a0e564e7",
+        "encoded": "%3Cdiv%20className=%22hp-our-services-heading%20pt-3%22%3E",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "3fbd41",
+        "hash": "ac90b7cd",
+        "encoded": "Success%20%3Cspan%20className='hp-our-services-heading-bold'%3EStories%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "3fbd41",
+        "hash": "8ba02117",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "3fbd41",
+        "hash": "c764d59b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "3fbd41",
+        "hash": "c6b321f4",
+        "encoded": "%3Cdiv%20className=%22col-2%20d-none%20d-md-flex%20justify-content-end%22%3E",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "3fbd41",
+        "hash": "d9facfb1",
+        "encoded": "%3Cbutton%20className=%22hp-partner-button%22%20onClick=%7BhandleChannelPrev%7D%20disabled=%7BchannelIndex%20===%200%7D%3E",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "3fbd41",
+        "hash": "1c533ece",
+        "encoded": "%3Ci%20className=%22fa-solid%20fa-chevron-left%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "3fbd41",
+        "hash": "52328d80",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "3fbd41",
+        "hash": "d0bfe130",
+        "encoded": "%3Cbutton%20className=%22hp-partner-button%22%20onClick=%7BhandleChannelNext%7D%20disabled=%7BchannelIndex%20%3E=%20channelPartners.length%20-%20visibleCards%7D%3E",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "3fbd41",
+        "hash": "f7ecdfd2",
+        "encoded": "%3Ci%20className=%22fa-solid%20fa-chevron-right%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "3fbd41",
+        "hash": "c28ac392",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "3fbd41",
+        "hash": "4345a888",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "3fbd41",
+        "hash": "f1bd3862",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "3fbd41",
+        "hash": "0866686f",
+        "encoded": "%3Cdiv%20className=%22row%20overflow-hidden%20mt-5%22%3E",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "3fbd41",
+        "hash": "a64b6600",
+        "encoded": "%3Cdiv%20className=%22d-none%20d-md-flex%20hp-channel-slider%20p-0%22",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "3fbd41",
+        "hash": "fde3463a",
+        "encoded": "style=%7B%7B",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "3fbd41",
+        "hash": "2f7b9a85",
+        "encoded": "transition:%20'transform%200.5s%20cubic-bezier(0.4,0,0.2,1)',",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "3fbd41",
+        "hash": "43e575c4",
+        "encoded": "transform:%20%60translateX(-$%7BchannelIndex%20*%20(100%20/%20visibleCards)%7D%25)%60,",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "3fbd41",
+        "hash": "d7a782ef",
+        "encoded": "width:%20%60$%7B(channelPartners.length%20/%20visibleCards)%20*%20100%7D%25%60,",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "3fbd41",
+        "hash": "46724c67",
+        "encoded": "%7D%7D",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "3fbd41",
+        "hash": "70ff395c",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "3fbd41",
+        "hash": "f6e3c5e6",
+        "encoded": "%7BchannelPartners.map((partner,%20idx)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "3fbd41",
+        "hash": "99c6b527",
+        "encoded": "%3Cdiv%20className=%22col-4%20hp-channel-wrapper%22%20key=%7Bidx%7D%3E",
+        "prevChunkIds": []
+      },
+      "384": {
+        "chunkId": "3fbd41",
+        "hash": "f22e3168",
+        "encoded": "%3Cdiv%20className=%22hp-channel-card%20mx-2%22%3E",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "3fbd41",
+        "hash": "20dfb7d6",
+        "encoded": "%3Cimg",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "3fbd41",
+        "hash": "b9bbb6e2",
+        "encoded": "loading=%22lazy%22",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "3fbd41",
+        "hash": "d654eaab",
+        "encoded": "className=%22hp-channel-img%22",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "3fbd41",
+        "hash": "9cc2a0a2",
+        "encoded": "src=%7B%60/assets/channel-partner/$%7Bpartner.image%7D%60%7D",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "3fbd41",
+        "hash": "877c1e81",
+        "encoded": "alt=%7Bpartner.name%7D",
+        "prevChunkIds": []
+      },
+      "390": {
+        "chunkId": "3fbd41",
+        "hash": "5d17c348",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "3fbd41",
+        "hash": "d6b514d9",
+        "encoded": "%3Cdiv%20className=%22hp-channel-details%22%3E",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "3fbd41",
+        "hash": "dedaa8ed",
+        "encoded": "%3Cdiv%20className=%22hp-partner-name%22%3E%7Bpartner.name%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "3fbd41",
+        "hash": "c40f5d51",
+        "encoded": "%3Cdiv%20className=%22hp-industry%20pt-3%22%3E%7Bpartner.description%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "3fbd41",
+        "hash": "acac63df",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "3fbd41",
+        "hash": "5bc6568f",
+        "encoded": "%7B%3Cbutton%20className='btn-secondary-alternative-custom'%20style=%7B%7B%20alignSelf:%20'end'%20%7D%7D%20onClick=%7B()%20=%3E%20navigateTo(%60/case-study/$%7Bpartner.name%7D%60)%7D%3ELearn%20More%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20hp-buttonArrow%22%3E%3C/i%3E%3C/button%3E%7D",
+        "prevChunkIds": []
+      },
+      "396": {
+        "chunkId": "3fbd41",
+        "hash": "2a9b1e7a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "3fbd41",
+        "hash": "8495bcd7",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "3fbd41",
+        "hash": "c1ba8b5c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "3fbd41",
+        "hash": "6cdc2915",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "3fbd41",
+        "hash": "5247ef75",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "3fbd41",
+        "hash": "b054f37e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "3fbd41",
+        "hash": "71b759ef",
+        "encoded": "%3Cdiv%20className=%22d-flex%20d-md-none%20flex-column%20w-100%20p-0%22%3E",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "3fbd41",
+        "hash": "eb20a77b",
+        "encoded": "%7BchannelPartners.map((partner,%20idx)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "3fbd41",
+        "hash": "f377d8f4",
+        "encoded": "%3Cdiv%20className=%22col-12%20hp-channel-wrapper%20w-100%20mb-3%22%20key=%7Bidx%7D%3E",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "3fbd41",
+        "hash": "547186b4",
+        "encoded": "%3Cdiv%20className=%22hp-channel-card%20mx-2%22%3E",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "3fbd41",
+        "hash": "70905a11",
+        "encoded": "%3Cimg",
+        "prevChunkIds": []
+      },
+      "407": {
+        "chunkId": "3fbd41",
+        "hash": "076c7a03",
+        "encoded": "className=%22hp-channel-img%22",
+        "prevChunkIds": []
+      },
+      "408": {
+        "chunkId": "3fbd41",
+        "hash": "f3454adf",
+        "encoded": "src=%7B%60/assets/channel-partner/$%7Bpartner.image%7D%60%7D",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "3fbd41",
+        "hash": "72a9069c",
+        "encoded": "alt=%7Bpartner.name%7D",
+        "prevChunkIds": []
+      },
+      "410": {
+        "chunkId": "3fbd41",
+        "hash": "a9c92270",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "3fbd41",
+        "hash": "e6f74d4c",
+        "encoded": "%3Cdiv%20className=%22hp-channel-details%22%3E",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "3fbd41",
+        "hash": "fbeffa4d",
+        "encoded": "%3Cdiv%20className=%22hp-partner-name%22%3E%7Bpartner.name%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "413": {
+        "chunkId": "3fbd41",
+        "hash": "384dc041",
+        "encoded": "%3Cdiv%20className=%22hp-industry%20pt-3%22%3E%7Bpartner.description%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "3fbd41",
+        "hash": "99378bbb",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "3fbd41",
+        "hash": "69b43b9b",
+        "encoded": "%3Cbutton%20className='btn-secondary-alternative-custom'%20style=%7B%7B%20alignSelf:%20'end'%20%7D%7D%3ELearn%20More%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20hp-buttonArrow%22%3E%3C/i%3E%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "3fbd41",
+        "hash": "0e7bc15c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "3fbd41",
+        "hash": "75bce95b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "3fbd41",
+        "hash": "14af245a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "3fbd41",
+        "hash": "166d5c7e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "420": {
+        "chunkId": "3fbd41",
+        "hash": "dfd350a3",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "3fbd41",
+        "hash": "d13eeec6",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "422": {
+        "chunkId": "3fbd41",
+        "hash": "08f002ff",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "3fbd41",
+        "hash": "17ba1698",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "424": {
+        "chunkId": "3fbd41",
+        "hash": "f603cddf",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "3fbd41",
+        "hash": "b2039a21",
+        "encoded": "%3Csection%20className=%22hp-our-expertise-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "426": {
+        "chunkId": "3fbd41",
+        "hash": "6d71b8f4",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "3fbd41",
+        "hash": "a2b47853",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "3fbd41",
+        "hash": "4110a0e1",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-5%22%3E",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "3fbd41",
+        "hash": "567bd90f",
+        "encoded": "%3Cdiv%20className=%22hp-our-services-subheading%22%3EOur%20Expertise%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "430": {
+        "chunkId": "3fbd41",
+        "hash": "f2c09f51",
+        "encoded": "%3Cdiv%20className=%22hp-our-services-heading%20pt-3%22%3EHow%20We%20Deliver%3Cbr%20/%3E%3Cspan%20className='hp-our-services-heading-bold'%3EPerformance%3C/span%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "3fbd41",
+        "hash": "8dc0096f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "3fbd41",
+        "hash": "d3ec0b89",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-7%20mt-4%20mt-md-0%22%3E",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "3fbd41",
+        "hash": "9d7bd591",
+        "encoded": "%7BaccordionData.map((item,%20index)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "3fbd41",
+        "hash": "d573871b",
+        "encoded": "%3CAccordionItem%20key=%7Bindex%7D%20title=%7Bitem.title%7D%20content=%7Bitem.content%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "3fbd41",
+        "hash": "6c59c240",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "3fbd41",
+        "hash": "aec54ad3",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "3fbd41",
+        "hash": "2dfb39b2",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "3fbd41",
+        "hash": "a8ea829b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "3fbd41",
+        "hash": "4ef95432",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "440": {
+        "chunkId": "3fbd41",
+        "hash": "a44b5f7b",
+        "encoded": "%3Csection%20className=%22hp-leadership-wrapper%22%3E",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "3fbd41",
+        "hash": "78f1c7fb",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "3fbd41",
+        "hash": "7e60fa77",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "443": {
+        "chunkId": "3fbd41",
+        "hash": "30cf12fa",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%22%3E",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "3fbd41",
+        "hash": "c013178b",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%22/assets/LeadershipDishant.webp%22%20className=%22hp-leadership-image%20mt4%22%20alt=%22leadership-quotes%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "445": {
+        "chunkId": "3fbd41",
+        "hash": "f54b165c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "447": {
+        "chunkId": "3fbd41",
+        "hash": "e4779894",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%20d-flex%20flex-column%20justify-content-center%20position-relative%22%3E",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "3fbd41",
+        "hash": "ed8e06f1",
+        "encoded": "%3Cdiv%20className=%22hp-leadership-quote%20mt-4%22%3E",
+        "prevChunkIds": []
+      },
+      "449": {
+        "chunkId": "3fbd41",
+        "hash": "b87fa61b",
+        "encoded": "%7Btestimonials%5Bindex%5D.text%7D",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "3fbd41",
+        "hash": "4334fe6e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "3fbd41",
+        "hash": "89885f29",
+        "encoded": "%3Cdiv%20className=%22hp-leadership-name%20mt-5%20d-flex%22%3E",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "3fbd41",
+        "hash": "bdb61bfa",
+        "encoded": "%3Cdiv%20className=%22hp-wrapper-position%22%3E",
+        "prevChunkIds": []
+      },
+      "453": {
+        "chunkId": "3fbd41",
+        "hash": "44794448",
+        "encoded": "%3Cdiv%20className=%22hp-name%22%3E%7Btestimonials%5Bindex%5D.author%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "454": {
+        "chunkId": "3fbd41",
+        "hash": "a77aa2b1",
+        "encoded": "%3Cdiv%20className=%22hp-leadership-position%20mt-1%22%3E%7Btestimonials%5Bindex%5D.role%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "455": {
+        "chunkId": "3fbd41",
+        "hash": "c4acd120",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "456": {
+        "chunkId": "3fbd41",
+        "hash": "f0f85dfd",
+        "encoded": "%3Cdiv%20className=%22d-none%20d-md-flex%20hp-button-wrapper%20d-flex%20align-items-center%20gap-2%22%3E",
+        "prevChunkIds": []
+      },
+      "457": {
+        "chunkId": "3fbd41",
+        "hash": "3040b324",
+        "encoded": "%3Cbutton%20className=%22hp-leadership-button%20m-0%22%20onClick=%7BhandlePrev%7D%3E",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "3fbd41",
+        "hash": "80a7f96f",
+        "encoded": "%3Ci%20className=%22fa-solid%20fa-arrow-left%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "459": {
+        "chunkId": "3fbd41",
+        "hash": "08e21878",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "3fbd41",
+        "hash": "80f9d61c",
+        "encoded": "%3Cdiv%20className=%22d-flex%20gap-2%22%20style=%7B%7B%20margin:%20%220%201rem%22%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "461": {
+        "chunkId": "3fbd41",
+        "hash": "de16b609",
+        "encoded": "%7Btestimonials.map((_,%20i)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "3fbd41",
+        "hash": "b46b9e5c",
+        "encoded": "%3Cspan",
+        "prevChunkIds": []
+      },
+      "463": {
+        "chunkId": "3fbd41",
+        "hash": "a737f802",
+        "encoded": "key=%7Bi%7D",
+        "prevChunkIds": []
+      },
+      "464": {
+        "chunkId": "3fbd41",
+        "hash": "191aee75",
+        "encoded": "className=%7B%60hp-dot%20$%7Bi%20===%20index%20?%20%22active%22%20:%20%22%22%7D%60%7D",
+        "prevChunkIds": []
+      },
+      "465": {
+        "chunkId": "3fbd41",
+        "hash": "429bca08",
+        "encoded": "%3E%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "466": {
+        "chunkId": "3fbd41",
+        "hash": "0c6ddc91",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "467": {
+        "chunkId": "3fbd41",
+        "hash": "1f0b039e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "468": {
+        "chunkId": "3fbd41",
+        "hash": "15aafe5a",
+        "encoded": "%3Cbutton",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "3fbd41",
+        "hash": "e893d379",
+        "encoded": "className=%22hp-leadership-button%22",
+        "prevChunkIds": []
+      },
+      "470": {
+        "chunkId": "3fbd41",
+        "hash": "d0750e0f",
+        "encoded": "style=%7B%7B%20transform:%20%22rotate(180deg)%22%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "3fbd41",
+        "hash": "b0fbfbfe",
+        "encoded": "onClick=%7BhandleNext%7D",
+        "prevChunkIds": []
+      },
+      "472": {
+        "chunkId": "3fbd41",
+        "hash": "262d35aa",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "3fbd41",
+        "hash": "4ee26ad4",
+        "encoded": "%3Ci%20className=%22fa-solid%20fa-arrow-left%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "3fbd41",
+        "hash": "e4ee7b80",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "475": {
+        "chunkId": "3fbd41",
+        "hash": "a9c7aa00",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "476": {
+        "chunkId": "3fbd41",
+        "hash": "f13906d4",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "477": {
+        "chunkId": "3fbd41",
+        "hash": "0240d100",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "478": {
+        "chunkId": "3fbd41",
+        "hash": "f4073509",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "3fbd41",
+        "hash": "077ff4e6",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "480": {
+        "chunkId": "3fbd41",
+        "hash": "f0749988",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "3fbd41",
+        "hash": "8014043d",
+        "encoded": "%7B%3CGetInTouch%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "482": {
+        "chunkId": "3fbd41",
+        "hash": "a31fa61c",
+        "encoded": "%3C/%3E",
+        "prevChunkIds": []
+      },
+      "483": {
+        "chunkId": "3fbd41",
+        "hash": "25018833",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "3fbd41",
+        "hash": "5f2b1053",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "486": {
+        "chunkId": "3fbd41",
+        "hash": "2e7968e5",
+        "encoded": "export%20default%20HomePage;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

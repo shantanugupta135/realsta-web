@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Vistara",
+        "description": "Building a State-of-the-Art Training Centre for Vistara",
+        "img": "/assets/success-stories/vistara.webp",
+        "alt": "Vistara"
+    },
+    {
+        "id": 2,
+        "name": "Sebia",
+        "description": "Engineering customised diagnostic labs for Sebia",
+        "img": "/assets/success-stories/sebia.webp",
+        "alt": "Sebia"
+    },
+    {
+        "id": 3,
+        "name": "ITC",
+        "description": "Providing Branch Office for ITC's OGP Operations",
+        "img": "/assets/success-stories/ITC.webp",
+        "alt": "ITC"
+    },
+    {
+        "id": 4,
+        "name": "Cremica",
+        "description": "Designing Specialty Office for Cremica",
+        "img": "/assets/success-stories/cremica.webp",
+        "alt": "Cremica"
+    }
+]

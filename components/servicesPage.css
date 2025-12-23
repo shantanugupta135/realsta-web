@@ -1,0 +1,162 @@
+.service-top-section {
+  background-image: url('../public/assets/servicesBG.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.services-heading-wrapper {
+  margin-top: 9rem;
+  max-width: 650px;
+}
+
+.services-subtext {
+  color: rgba(0, 0, 0, 0.60);
+font-family: Rubik;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 184%; /* 34.96px */
+letter-spacing: 0.095px;
+text-transform: capitalize;
+  /* width: 500px; */
+}
+
+.services-heading {
+  font-family: Gilroy, sans-serif;
+  color: #181A20;
+  /* font-size: 4.625rem; */
+  font-size: clamp(3rem,10vw,4.625rem);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.336px;
+  text-transform: uppercase;
+}
+
+.services-section{
+  margin: 5% 9% 0% 9%;
+}
+
+.service-box{
+  border: 0.5px solid #FFFFFF;
+  border-radius: 1rem;
+  box-shadow: 0px 15px 30px #d3d9e5;
+  margin-bottom: 6rem;
+  opacity: 0.99;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-box:hover{
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: 0px 20px 40px #d3d9e5;
+}
+
+.service-descriptor{
+  padding: 7% 3% 4% 7%;
+  background-color: #111923;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  height: 100%;
+}
+
+.service-heading{
+  color: #DD2525;
+font-family: Gilroy;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 49.2px */
+letter-spacing: 0.123px;
+  margin-bottom:  1rem;
+}
+
+.service-brief{
+ color: rgba(255, 255, 255, 0.90);
+font-family: Rubik;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 148%; /* 23.68px */
+letter-spacing: 0.08px;
+padding-right: 1rem;
+}
+
+.service-discription{
+  color: rgba(255, 255, 255, 0.90);
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 148%; /* 23.68px */
+letter-spacing: 0.08px;
+padding-right: 3rem;
+}
+
+.service-highlight{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.service-image-box{
+  object-fit: fill;
+  flex: 0 1 auto;
+}
+
+.service-image{
+  width: inherit;
+  height: 100%;
+  border-top-right-radius: 1rem;
+}
+
+.service-pointers{
+  color: rgba(77, 77, 82, 0.90);
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 148%; /* 34.04px */
+letter-spacing: 0.115px;
+  margin-left: 2rem;
+}
+
+.service-button{
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin: 0rem 0rem 1rem 1rem;
+  width: 11rem;
+  font-size: larger !important;
+}
+
+.service-highlites{
+  margin-top: 1.5rem !important; 
+  margin-bottom: 1rem;
+  flex: 1 1 auto;
+  align-content: end;
+  align-items: end;
+}
+
+.remove-side-padding{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.os_icon_wrapper{
+  width: fit-content;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.os_icon{
+  filter: invert(33%) sepia(88%) saturate(7472%) hue-rotate(355deg) brightness(108%) contrast(124%) !important;
+  width: 45px;
+  padding: 0.5rem;
+}
+
+.service_dot_icon{
+  height: 10px;
+  width:10px;
+}

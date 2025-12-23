@@ -1,0 +1,116 @@
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: #DD2525;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+}
+
+.nav-wrap {
+    align-content: center;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.58);
+    height: 4rem;
+}
+
+.nm-logo {
+    height: 70px;
+}
+
+.nav-link {
+    color: #FFF !important;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 8px;
+    min-width: 180px;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    list-style-type: none;
+    /* <-- Add this line */
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu-link {
+    display: block;
+    color: #FFF !important;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu-link:hover {
+    background: #222;
+    color: #DD2525 !important;
+}
+
+.navbar {
+    top: 3rem !important;
+}
+
+.navbar-nav {
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.58);
+    padding: 1rem !important;
+    color: var(--Light-Text-Link-Color-White, #FFF);
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.09px;
+}
+
+/* Remove Bootstrap's default caret/arrow from dropdown-toggle */
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.link_spacing {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.dropdown-menu {
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+}
+
+.dropdown-item {
+    color: #181A20;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.09px;
+}
+
+.dropdown-menu > *:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.navbar-subtext{
+    color: #181A20;
+font-family: Rubik, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 14.4px */
+letter-spacing: 0.06px;
+}
+
+.dropdown-custom-width {
+width: 24rem !important;
+}

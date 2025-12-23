@@ -1,0 +1,88 @@
+.removePadding{
+    padding: 0px !important;
+}
+.tableTitle{
+    padding-right: 10% !important;
+    align-items: end;
+}
+
+.tableSectionTitle{
+     color: #181A20;
+  font-family: Gilroy, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 0.245px;
+  text-transform: uppercase;
+}
+
+.tableSectionTitleBold{
+   font-family: Gilroy, sans-serif;
+  font-weight: 700;
+}
+
+.tableSectionImage{
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0px 15px 30px #d3d9e5;;
+}
+
+.TableSection{
+    background-color: #F7F8FC;
+}
+
+.tabHeadings{
+    white-space: pre;
+    text-align: left;
+    color: #181A20 !important;
+}
+
+.tabHeadings.active{
+    text-decoration: none;
+    color: red !important;
+
+}
+
+.tabHeadingContainer{
+    border-bottom:solid 2px #ACACAC;
+    align-content: end;
+}
+
+.tabHeadingContainerRed{
+    border-bottom:solid 2px red;
+}
+
+.tabContent{
+    color: rgba(24, 26, 32, 0.72);
+font-family: Rubik;
+font-size: clamp(30px,5vw,40px);
+font-style: normal;
+font-weight: 400;
+line-height: 153%; /* 76.5px */
+letter-spacing: 0.15px;
+padding-left: 5%;
+padding-right: 1rem;
+
+}
+
+.tabTitleTop{
+    margin-bottom: 5rem;
+}
+
+.tabDivider{
+    margin: 0;
+    font-weight: 700;
+    background-color: #000000;
+    height: 0.1rem;
+}
+
+.tabtopColLeft{
+    padding-right:0 !important;
+}
+
+.tabtopColRight{
+    align-content: end;
+    padding-left:0 !important;
+}

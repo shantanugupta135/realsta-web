@@ -1,0 +1,59 @@
+ .blogHeaderlink {
+    color: #181A20;
+
+font-family: "Rubik";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 21.6px */
+letter-spacing: 0.09px;
+text-decoration: none;
+}
+
+.blogHeaderlink:hover {
+    color: red;
+}
+
+.blogHeadertext{
+    color: #181A20;
+
+font-family: "Rubik";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 21.6px */
+letter-spacing: 0.09px;
+text-decoration: none;
+}
+.blogHeaderdate {
+    color: #DD2525;
+font-family: "Rubik";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 21.6px */
+letter-spacing: 0.09px;
+width:fit-content!important;
+align-content: center;
+}
+
+.blogHeaderTitle{
+color: #181A20;
+font-family: Gilroy;
+font-size: clamp(3rem, 10vw, 4.625rem);
+font-style: normal;
+font-weight: 500;
+line-height: 121%; /* 101.64px */
+letter-spacing: 0.252px;
+text-transform: uppercase;
+}
+
+.share-social-icon{
+    align-self: center;
+    font-size: 1.5rem;
+    margin-left: 0.6rem;
+    /* font-size: large; */
+}
+.share-social-icon:hover{
+    filter: invert(20%) sepia(70%) saturate(7356%) hue-rotate(356deg) brightness(103%) contrast(120%);
+}

@@ -1,0 +1,26 @@
+.blogContent{
+    color: rgba(24, 26, 32, 0.72);
+font-family: Rubik;
+font-size: 19px;
+font-style: normal;
+line-height: 163%; /* 30.97px */
+letter-spacing: 0.057px;
+}
+
+.blogContent a{
+    text-decoration: none;
+    color: #dd2525
+}
+
+.blogContent h1,
+.blogContent h2,
+.blogContent h3,
+.blogContent h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.blogContent a:hover{
+    color: red
+}

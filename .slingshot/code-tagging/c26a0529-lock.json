@@ -1,0 +1,1666 @@
+{
+  "components\\AboutUs.tsx": {
+    "f": "AboutUs.tsx",
+    "p": "components\\AboutUs.tsx",
+    "v": "v1",
+    "c": {
+      "fca33b": {
+        "user": "Shantanu Gupta",
+        "model": "gpt-4o",
+        "extraContext": "tbd",
+        "timestamp": 1765393159,
+        "hash": "2de0eab4",
+        "messageId": "system_2191ed70-d5f9-11f0-86cf-81fd3a2feafc",
+        "codeBlockId": "system_2191ed70-d5f9-11f0-86cf-81fd3a2feafc-Codeblock-1",
+        "isActive": true,
+        "type": "pasteCode"
+      }
+    },
+    "l": {
+      "2": {
+        "chunkId": "fca33b",
+        "hash": "1f1d7fda",
+        "encoded": "import%20NavigationMenu%20from%20'./NavigationMenu';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "fca33b",
+        "hash": "a12a26b6",
+        "encoded": "import%20ReadyToTalk%20from%20'./ReadyToTalk';",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "fca33b",
+        "hash": "d6ed2b4a",
+        "encoded": "function%20AboutUs()%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "fca33b",
+        "hash": "bc14b5b1",
+        "encoded": "const%20cardData%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "fca33b",
+        "hash": "4d42a486",
+        "encoded": "%7B%20image:%20'/assets/AboutUs/Dishant_Malik.webp',%20name:%20'Dishant%20Malik',%20role:%20'Founder%20&%20CEO',%20about:%20'Dishant%20Malik%20is%20the%20Founder%20and%20CEO%20of%20Realsta%20Infratech%20Pvt.%20Ltd.,%20a%20leading%20real%20estate%20advisory%20firm%20based%20in%20Gurugram.%20With%20over%2014%20years%20of%20industry%20experience,%20he%20has%20successfully%20advised%20and%20facilitated%20real%20estate%20strategies%20for%20numerous%20multinational%20corporations%20and%20high-net-worth%20individuals.%20Known%20for%20his%20strategic%20thinking,%20client-first%20approach,%20and%20in-depth%20market%20expertise.',%20linkedin:%20'https://www.linkedin.com/in/dishant-malik-322233164/'%20%7D,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "fca33b",
+        "hash": "02308431",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "fca33b",
+        "hash": "bab660e0",
+        "encoded": "const%20bizCards%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "fca33b",
+        "hash": "bb25dd7e",
+        "encoded": "%7B%20image:%20'/assets/AboutUs/BlueChipCRE.webp',%20hoverImage:%20'/assets/AboutUs/BlueChipCREGrayscale.webp',%20imgalt:%20'Blue%20Chip%20Real%20Estate',%20title:%20'Blue-Chip%20Real%20Estate%20Only',%20description:%20'Every%20asset%20is%20a%20rigorously%20selected,%20Grade-A%20commercial%20opportunity.'%20%7D,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "fca33b",
+        "hash": "19d517e8",
+        "encoded": "%7B%20image:%20'/assets/AboutUs/downside-risk-mitigation.webp',%20hoverImage:%20'/assets/AboutUs/downside-risk-mitigationGrayscale.webp',%20imgalt:%20'Downside%20Risk%20Mitigation',%20title:%20'Downside%20Risk%20Mitigation',%20description:%20'Our%20underwriting%20model%20is%20designed%20to%20protect%20capital%20first,%20then%20multiply%20it.'%20%7D,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "fca33b",
+        "hash": "dd599fdb",
+        "encoded": "%7B%20image:%20'/assets/AboutUs/HyperlocalExpertise.webp',%20hoverImage:%20'/assets/AboutUs/HyperlocalExpertiseGrayscale.webp',%20imgalt:%20'Hyperlocal%20Expertise',%20title:%20'Hyperlocal%20Expertise',%20description:%20'Specialists%20in%20high-growth%20zones%20and%20micro%20markets%20across%20Gurugram,%20powered%20by%20real-time%20intel.'%20%7D,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "fca33b",
+        "hash": "b859348d",
+        "encoded": "%7B%20image:%20'/assets/AboutUs/inhousemonitization.webp',%20hoverImage:%20'/assets/AboutUs/inhousemonitizationGrayscale.webp',%20imgalt:%20'In-House%20Monetization%20Ecosystem',%20title:%20'In-House%20Monetization%20Ecosystem',%20description:%20'Integrates%20all%20commercial%20real%20estate%20investment%20verticals%E2%80%94including%20acquisition,%20leasing,%20tenant%20management,%20office%20design,%20sale,%20and%20exit%E2%80%94under%20one%20roof%20to%20monetize%20results%20within%20a%20controlled%20environment.'%20%7D,",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "fca33b",
+        "hash": "f7c267cb",
+        "encoded": "%22name%22:%20%22Realsta%20Profile%22,",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "fca33b",
+        "hash": "37e8c7b9",
+        "encoded": "%22path%22:%20%22assets/download/resources/Realsta%20Profile%20-%20FINAL.pdf%22,",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "fca33b",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "fca33b",
+        "hash": "b8cf2b6c",
+        "encoded": "const%20%5Bindex,%20setIndex%5D%20=%20useState(0);",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "fca33b",
+        "hash": "fe9ce337",
+        "encoded": "const%20cardsPerPage%20=%204;",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "fca33b",
+        "hash": "cfd6d42d",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "fca33b",
+        "hash": "529781ba",
+        "encoded": "const%20%5BshowModal,%20setShowModal%5D%20=%20useState(false);",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "fca33b",
+        "hash": "ca477235",
+        "encoded": "const%20%5BpendingDownload,%20setPendingDownload%5D%20=%20useState%3C%7B%20path:%20string;%20name:%20string%20%7D%20%7C%20null%3E(null);",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "fca33b",
+        "hash": "bc8a29e8",
+        "encoded": "const%20handleDownloadRequest%20=%20(filePath:%20string,%20fileName:%20string)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "fca33b",
+        "hash": "0314cb6d",
+        "encoded": "setPendingDownload(%7B%20path:%20filePath,%20name:%20fileName%20%7D);",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "fca33b",
+        "hash": "7fbcd4eb",
+        "encoded": "setShowModal(true);",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "fca33b",
+        "hash": "32ff0a6f",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "fca33b",
+        "hash": "5553b6d4",
+        "encoded": "const%20handleModalClose%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "fca33b",
+        "hash": "5c7dc4a2",
+        "encoded": "setShowModal(false);",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "fca33b",
+        "hash": "c65cbd8b",
+        "encoded": "setPendingDownload(null);",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "fca33b",
+        "hash": "07fbdddc",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "fca33b",
+        "hash": "a201271b",
+        "encoded": "const%20handleModalDownload%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "fca33b",
+        "hash": "b4356765",
+        "encoded": "if%20(pendingDownload)%20%7B",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "fca33b",
+        "hash": "1ff4250f",
+        "encoded": "fetch(pendingDownload.path)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "fca33b",
+        "hash": "c1b13208",
+        "encoded": ".then(response%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "fca33b",
+        "hash": "575a74e9",
+        "encoded": "if%20(!response.ok)%20throw%20new%20Error('Network%20response%20was%20not%20ok');",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "fca33b",
+        "hash": "75d97993",
+        "encoded": "return%20response.blob();",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "fca33b",
+        "hash": "6a0abcc7",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "fca33b",
+        "hash": "ca9918a1",
+        "encoded": ".then(blob%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "fca33b",
+        "hash": "535a7c9e",
+        "encoded": "const%20url%20=%20window.URL.createObjectURL(blob);",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "fca33b",
+        "hash": "18ec6067",
+        "encoded": "const%20a%20=%20document.createElement('a');",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "fca33b",
+        "hash": "86f2d2d9",
+        "encoded": "a.href%20=%20url;",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "fca33b",
+        "hash": "32083ccc",
+        "encoded": "a.download%20=%20pendingDownload.name;",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "fca33b",
+        "hash": "8888d592",
+        "encoded": "document.body.appendChild(a);",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "fca33b",
+        "hash": "36ac8146",
+        "encoded": "a.click();",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "fca33b",
+        "hash": "42151ec7",
+        "encoded": "a.remove();",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "fca33b",
+        "hash": "0c4dcc74",
+        "encoded": "window.URL.revokeObjectURL(url);",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "fca33b",
+        "hash": "7dbfc4c0",
+        "encoded": "alert(",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "fca33b",
+        "hash": "e4556a38",
+        "encoded": "%22Thank%20you%20for%20downloading%20our%20report!%5Cn%5CnWe%E2%80%99re%20excited%20to%20share%20these%20insights%20with%20you.%20Please%20feel%20free%20to%20reach%20out%20at%20enquiry@realsta.com%20if%20you'd%20like%20to%20discuss%20the%20findings%20further.%22",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "fca33b",
+        "hash": "caa4e59c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "fca33b",
+        "hash": "e1190f01",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "fca33b",
+        "hash": "6977450e",
+        "encoded": ".catch(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "fca33b",
+        "hash": "7ff0ba97",
+        "encoded": "alert(",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "fca33b",
+        "hash": "ee9f35d4",
+        "encoded": "%22Sorry%20we%20couldn%E2%80%99t%20complete%20your%20request.%5CnPlease%20check%20your%20connection%20or%20try%20again.%22",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "fca33b",
+        "hash": "68f14e46",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "fca33b",
+        "hash": "23f7427f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "fca33b",
+        "hash": "715028b0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "fca33b",
+        "hash": "0556c610",
+        "encoded": "setShowModal(false);",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "fca33b",
+        "hash": "27bd19b7",
+        "encoded": "setPendingDownload(null);",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "fca33b",
+        "hash": "39231b1c",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "fca33b",
+        "hash": "7269d669",
+        "encoded": "%3C%3E",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "fca33b",
+        "hash": "7e543ad6",
+        "encoded": "%3Csection%20className=%22au-section%22%20style=%7B%7B%20filter:%20'grayscale(50%25)'%20%7D%7D%3E",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "fca33b",
+        "hash": "93382141",
+        "encoded": "%3CNavigationMenu%20/%3E",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "fca33b",
+        "hash": "8798371a",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "fca33b",
+        "hash": "c369f914",
+        "encoded": "%3Cdiv%20className=%22row%20mt4%22%3E",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "fca33b",
+        "hash": "a2249d96",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-7%22%3E",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "fca33b",
+        "hash": "12016bee",
+        "encoded": "%3Cdiv%20className='au-heading'%3EMicro-Level%20Insight.%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "fca33b",
+        "hash": "979eca12",
+        "encoded": "%3Cdiv%20className='au-heading'%3EMacro-Level%20Investment.%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "fca33b",
+        "hash": "73c994cf",
+        "encoded": "%3Cp%20className='au-subtext%20mt-2'%3E",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "fca33b",
+        "hash": "c46db82c",
+        "encoded": "Realsta%20specializes%20in%20unlocking%20exceptional%20value%E2%80%94grounded%20in%20granular%20data%20and%20built%20for%20scale%E2%80%94from%20the%20most%20promising%20micro-markets%20of%20Gurugram.%20By%20combining%20active,%20high-performance%20commercial%20real%20estate%20investing%20with%20complementary%20CRE%20verticals,%20we%20are%20not%20just%20passive%20participants%E2%80%94we%20are%20catalysts%20in%20Gurugram's%20most%20competitive%20CRE%20corridors%20and%20micro-markets.",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "fca33b",
+        "hash": "53d623fa",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "fca33b",
+        "hash": "31349daa",
+        "encoded": "%3Chr%20className='au-divider'%20/%3E",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "fca33b",
+        "hash": "2d1df3ce",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "fca33b",
+        "hash": "1dd37496",
+        "encoded": "%3Cdiv%20className=%22col-4%22%3E",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "fca33b",
+        "hash": "3ebdacbd",
+        "encoded": "%3Cdiv%20className='au-details'%3E45+%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "fca33b",
+        "hash": "dd7547ac",
+        "encoded": "%3Cdiv%20className='au-subdetails'%3EBuildings%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "fca33b",
+        "hash": "0d6893cf",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "fca33b",
+        "hash": "760ded30",
+        "encoded": "%3Cdiv%20className=%22col-4%22%3E",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "fca33b",
+        "hash": "ab86a9fb",
+        "encoded": "%3Cdiv%20className='au-details'%3E700+%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "fca33b",
+        "hash": "3445e459",
+        "encoded": "%3Cdiv%20className='au-subdetails'%3EChannel%20Partners%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "fca33b",
+        "hash": "65124490",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "fca33b",
+        "hash": "69fd3691",
+        "encoded": "%3Cdiv%20className=%22col-4%22%3E",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "fca33b",
+        "hash": "44604c76",
+        "encoded": "%3Cdiv%20className='au-details'%3E14+%20Years%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "fca33b",
+        "hash": "bf9974b8",
+        "encoded": "%3Cdiv%20className='au-subdetails'%3EReal%20Estate%20Market%20Presence%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "fca33b",
+        "hash": "1259ad79",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "fca33b",
+        "hash": "8cd9d5da",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "fca33b",
+        "hash": "dd68cce9",
+        "encoded": "%3Chr%20className='au-divider'%20/%3E",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "fca33b",
+        "hash": "0924cf95",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "fca33b",
+        "hash": "e62c4581",
+        "encoded": "%3Cdiv%20className=%22col-4%22%3E",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "fca33b",
+        "hash": "129c311a",
+        "encoded": "%3Cdiv%20className='au-details'%20style=%7B%7B%20fontSize:%20'25px'%20%7D%7D%3E%E2%82%B91,360+%3Cbr%20/%3Ecrore%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "fca33b",
+        "hash": "acf9298d",
+        "encoded": "%3Cdiv%20className='au-subdetails'%3EFunds%20Under%20Advice%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "fca33b",
+        "hash": "d1c8c5f9",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "fca33b",
+        "hash": "dfac7aad",
+        "encoded": "%3Cdiv%20className=%22col-4%22%3E",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "fca33b",
+        "hash": "b99765e4",
+        "encoded": "%3Cdiv%20className='au-details'%20style=%7B%7B%20fontSize:%20'25px'%20%7D%7D%3E2.86%20Lakh%3Cbr%20/%3Esq.%20ft.%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "fca33b",
+        "hash": "f54f4350",
+        "encoded": "%3Cdiv%20className='au-subdetails'%3EAssets%20Under%20Management%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "fca33b",
+        "hash": "d1dd481e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "fca33b",
+        "hash": "5fff7257",
+        "encoded": "%3Cdiv%20className=%22col-4%22%3E",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "fca33b",
+        "hash": "c4412746",
+        "encoded": "%3Cdiv%20className='au-details'%20style=%7B%7B%20fontSize:%20'25px'%20%7D%7D%3E22+%20lakh%3Cbr%20/%3Esq.%20ft.%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "fca33b",
+        "hash": "cbc79141",
+        "encoded": "%3Cdiv%20className='au-subdetails'%3ECommercial%20Space%20Leased%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "fca33b",
+        "hash": "ae1aab76",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "fca33b",
+        "hash": "aed13a6e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "fca33b",
+        "hash": "118c6dd2",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "fca33b",
+        "hash": "b603c7e5",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-5%20d-flex%20justify-content-start%20justify-content-md-end%20align-items-end%20gap-3%20mt-5%20mt-md-0%22%3E",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "fca33b",
+        "hash": "8e6d52a9",
+        "encoded": "%3Cbutton%20className='btn-secondary-custom'%20onClick=%7B()%20=%3E%20navigateTo('/our-services/investment-advisory')%7D%3E",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "fca33b",
+        "hash": "6095fe81",
+        "encoded": "Start%20Investing%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20au-learn-more-button%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "fca33b",
+        "hash": "d1d516ee",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "fca33b",
+        "hash": "db08d678",
+        "encoded": "%3Cbutton%20className='btn-secondary-custom'%20onClick=%7B()%20=%3E%20navigateTo('/our-services/corporate-leasing')%7D%3E",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "fca33b",
+        "hash": "f62467d6",
+        "encoded": "Lease%20an%20Office%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20au-learn-more-button%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "fca33b",
+        "hash": "4b2268ed",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "fca33b",
+        "hash": "d43e07da",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "fca33b",
+        "hash": "a51cf4d3",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "fca33b",
+        "hash": "dc787cdb",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "fca33b",
+        "hash": "0b5497de",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "fca33b",
+        "hash": "58d4dd84",
+        "encoded": "%3Csection%20className=%22au-uniqueness-section%22%3E",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "fca33b",
+        "hash": "6e9d0cbe",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "fca33b",
+        "hash": "31040853",
+        "encoded": "%3Cdiv%20className=%22au-sub-heading-clientele%22%3EOur%20Uniqueness%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "fca33b",
+        "hash": "4e3f0346",
+        "encoded": "%3Cdiv%20className=%22au-heading-clientele%20pt-3%22%3EWhat%20sets%20us%20%3Cspan%20className='au-apart-text'%3Eapart?%3C/span%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "fca33b",
+        "hash": "a94251d3",
+        "encoded": "%3Cdiv%20className=%22row%20mt-5%20au-biz-unique-section%22%3E",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "fca33b",
+        "hash": "1332e701",
+        "encoded": "%7BbizCards.map((card,%20i)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "fca33b",
+        "hash": "8b7e9fb9",
+        "encoded": "%3Cdiv%20className=%22au-biz-card%20col-12%20col-md-3%20mt-4%20mt-md-0%22%20key=%7Bi%7D%3E",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "fca33b",
+        "hash": "66f06e2d",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%7Bcard.hoverImage%7D%20alt=%7Bcard.title%7D%20className=%22au-biz-image%20default%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "fca33b",
+        "hash": "5bc9c876",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%7Bcard.image%7D%20alt=%7Bcard.title%7D%20className=%22au-biz-image%20hover%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "fca33b",
+        "hash": "ba00762c",
+        "encoded": "%3Cdiv%20className=%22au-biz-description%20au-card-title%22%3E",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "fca33b",
+        "hash": "d81fbb0e",
+        "encoded": "%3Ch4%3E%7Bcard.title%7D%3C/h4%3E",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "fca33b",
+        "hash": "1e15884e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "fca33b",
+        "hash": "e3a4c0f4",
+        "encoded": "%3Cdiv%20className=%22au-biz-overlay%22%3E",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "fca33b",
+        "hash": "be0d2e82",
+        "encoded": "%3Cdiv%20className=%22au-biz-description%22%3E",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "fca33b",
+        "hash": "9017ff42",
+        "encoded": "%3Ch4%3E%7Bcard.title%7D%3C/h4%3E",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "fca33b",
+        "hash": "e7953807",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "fca33b",
+        "hash": "f1a90d93",
+        "encoded": "%3Cdiv%20className=%22au-biz-footer%22%3E%7Bcard.description%7D%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "fca33b",
+        "hash": "ecee1159",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "fca33b",
+        "hash": "1c304c3c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "fca33b",
+        "hash": "6a2de40a",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "fca33b",
+        "hash": "c043ced1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "fca33b",
+        "hash": "539e9011",
+        "encoded": "%3Cdiv%20className=%22row%20mt-5%22%3E",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "fca33b",
+        "hash": "a41a271d",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-9%22%3E",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "fca33b",
+        "hash": "c8032525",
+        "encoded": "%3Cdiv%20className='d-flex%20align-items-start%20align-items-md-center%20au-custom-gap-4%20flex-column%20flex-md-row'%3E",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "fca33b",
+        "hash": "839f1652",
+        "encoded": "%3Cdiv%20className=%22au-clientele-includes%22%3EOur%20Clientele%20Includes%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "fca33b",
+        "hash": "7d22c004",
+        "encoded": "%3Cul%20className='au-clientele-list%20mb-0%20d-sm-flex%20flex-sm-column%20flex-md-row'%3E",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "fca33b",
+        "hash": "d912cf03",
+        "encoded": "%3Cli%3EHNIs%20&%20UHNIs%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "fca33b",
+        "hash": "6b08cc0b",
+        "encoded": "%3Cli%3ENRIs%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "fca33b",
+        "hash": "df098b1d",
+        "encoded": "%3Cli%3ECorporates%20&%20Business%20Owners%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "fca33b",
+        "hash": "7cbb8d6f",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "fca33b",
+        "hash": "c3dc052a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "fca33b",
+        "hash": "c9e882fe",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "fca33b",
+        "hash": "920ec290",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "fca33b",
+        "hash": "a8c3bff9",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-3%20d-flex%20d-flex%20justify-content-start%20justify-content-md-end%22%3E",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "fca33b",
+        "hash": "5f52d273",
+        "encoded": "%3CResourcesModal%20show=%7BshowModal%7D%20onClose=%7BhandleModalClose%7D%20onDownload=%7BhandleModalDownload%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "fca33b",
+        "hash": "4d611080",
+        "encoded": "%3Cbutton",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "fca33b",
+        "hash": "837eb2b3",
+        "encoded": "type=%22button%22",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "fca33b",
+        "hash": "0c4c5b4f",
+        "encoded": "className=%22btn-secondary-alternative-custom%22",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "fca33b",
+        "hash": "8cd7964d",
+        "encoded": "onClick=%7B()%20=%3E%20handleDownloadRequest(file.path,%20file.name.endsWith('.pdf')%20?%20file.name%20:%20file.name%20+%20'.pdf')%7D",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "fca33b",
+        "hash": "703f2e2a",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "fca33b",
+        "hash": "6fcbcb99",
+        "encoded": "Download%20Corporate%20Profile",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "fca33b",
+        "hash": "9d270a5e",
+        "encoded": "%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20au-learn-more-button%22%3E%3C/i%3E",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "fca33b",
+        "hash": "17283ff4",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "fca33b",
+        "hash": "63890680",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "fca33b",
+        "hash": "cccd90ec",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "fca33b",
+        "hash": "7e426e5f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "fca33b",
+        "hash": "61ee85bd",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "fca33b",
+        "hash": "879bec8c",
+        "encoded": "%3Csection%20className='au-vision'%3E",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "fca33b",
+        "hash": "e6d9317d",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "fca33b",
+        "hash": "63680c34",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "fca33b",
+        "hash": "7880f208",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%22%3E",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "fca33b",
+        "hash": "bf05910a",
+        "encoded": "%3Cdiv%20className='au-vision-heading'%3EVISION%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "fca33b",
+        "hash": "c0e19d58",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20className='au-vision-img'%20src='/assets/AboutUs/vision.webp'%20alt='vision'%20/%3E",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "fca33b",
+        "hash": "4f0154ac",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "fca33b",
+        "hash": "6ddf9275",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%22%3E",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "fca33b",
+        "hash": "48e2d798",
+        "encoded": "%3Cdiv%20className=%22au-vision-text%22%3E",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "fca33b",
+        "hash": "3de37f68",
+        "encoded": "To%20be%20globally%20synonymous%20with%20Grade-A%20commercial%20real%20estate%20investment.",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "fca33b",
+        "hash": "b1d156d1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "fca33b",
+        "hash": "6a8f30d0",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "fca33b",
+        "hash": "ee69b6bd",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "fca33b",
+        "hash": "34a9d529",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "fca33b",
+        "hash": "7a1ef1dd",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "fca33b",
+        "hash": "c60b63f6",
+        "encoded": "%3Csection%20className='au-mission'%3E",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "fca33b",
+        "hash": "ee580550",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "fca33b",
+        "hash": "7a04308e",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "fca33b",
+        "hash": "455c0712",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%22%3E",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "fca33b",
+        "hash": "1adffc90",
+        "encoded": "%3Cdiv%20className='au-mission-heading'%3EMISSION%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "fca33b",
+        "hash": "c05902f4",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "fca33b",
+        "hash": "d9a27d52",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%22%3E",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "fca33b",
+        "hash": "b9f1a343",
+        "encoded": "%3Cdiv%20className=%22au-mission-text%22%3E",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "fca33b",
+        "hash": "ecb8d524",
+        "encoded": "Deliver%20exceptional%20long-term%20value%20to%20clients%20by%20identifying,%20engineering%20and%20executing%20the%20highest%20yield%20opportunities%20in%20Grade-A%20commercial%20assets.",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "fca33b",
+        "hash": "fe3c3d81",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "fca33b",
+        "hash": "fe7b163a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "fca33b",
+        "hash": "cfacaf7a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "fca33b",
+        "hash": "10886443",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "fca33b",
+        "hash": "4d8860a7",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "fca33b",
+        "hash": "8984cc4b",
+        "encoded": "%3Csection%20className='customContainer'%3E",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "fca33b",
+        "hash": "20da2ebe",
+        "encoded": "%3Cdiv%20className=%22au-core-values%22%3E",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "fca33b",
+        "hash": "caf6468f",
+        "encoded": "%3Cdiv%20className=%22au-core-value-heading%22%3E",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "fca33b",
+        "hash": "dfceb4df",
+        "encoded": "Our%20Core%20%3Cspan%20className='au-value-text'%3EValues%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "fca33b",
+        "hash": "b80aa576",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "fca33b",
+        "hash": "b1d1f2ea",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "fca33b",
+        "hash": "aac4599c",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%20mb-4%22%3E",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "fca33b",
+        "hash": "f294e40b",
+        "encoded": "%3Cdiv%20className=%22au-core-card%20au-rigor%22%3E",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "fca33b",
+        "hash": "ab7338ff",
+        "encoded": "%3Cdiv%20className=%22au-overlay%22%3E",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "fca33b",
+        "hash": "d805b76b",
+        "encoded": "%3Ch3%3EReliability%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "fca33b",
+        "hash": "4dbf9d05",
+        "encoded": "%3Cp%3ETrusted%20by%20MNCs%20&%20UHNIs%20for%2014+%20years,%20we%20manage%20wealth%20steadfastly,%20even%20during%20COVID.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "fca33b",
+        "hash": "f1348fb2",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "fca33b",
+        "hash": "eabc388b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "fca33b",
+        "hash": "589b0cfd",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "fca33b",
+        "hash": "54586af2",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%20mb-4%22%3E",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "fca33b",
+        "hash": "305b073a",
+        "encoded": "%3Cdiv%20className=%22au-core-card%20au-transparency%22%3E",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "fca33b",
+        "hash": "7c537644",
+        "encoded": "%3Cdiv%20className=%22au-overlay%22%3E",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "fca33b",
+        "hash": "28f15ec6",
+        "encoded": "%3Ch3%3ETransparency%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "fca33b",
+        "hash": "6d4ef03a",
+        "encoded": "%3Cp%3EHonest,%20data-driven%20transparency%20builds%20trust,%20enabling%20confident,%20high-return%20investments.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "fca33b",
+        "hash": "caead8da",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "fca33b",
+        "hash": "2c73cf7f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "fca33b",
+        "hash": "35a88187",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "fca33b",
+        "hash": "aa0b5ea4",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%20mb-4%22%3E",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "fca33b",
+        "hash": "06e0b8bd",
+        "encoded": "%3Cdiv%20className=%22au-core-card%20au-alignment%22%3E",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "fca33b",
+        "hash": "02150482",
+        "encoded": "%3Cdiv%20className=%22au-overlay%22%3E",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "fca33b",
+        "hash": "34c19f9a",
+        "encoded": "%3Ch3%3EExpertise%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "fca33b",
+        "hash": "afc9af21",
+        "encoded": "%3Cp%3EResults-driven%20expertise%20in%20investing,%20leasing,%20&%20value%20creation%20with%20deep%20market%20insight.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "fca33b",
+        "hash": "4b56816c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "fca33b",
+        "hash": "3781687b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "fca33b",
+        "hash": "388bc325",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "fca33b",
+        "hash": "ff2fb259",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-6%20mb-4%22%3E",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "fca33b",
+        "hash": "b69b406c",
+        "encoded": "%3Cdiv%20className=%22au-core-card%20au-performance%22%3E",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "fca33b",
+        "hash": "6bb20955",
+        "encoded": "%3Cdiv%20className=%22au-overlay%22%3E",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "fca33b",
+        "hash": "6d54c5a9",
+        "encoded": "%3Ch3%3EPerformance%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "fca33b",
+        "hash": "98ba13a1",
+        "encoded": "%3Cp%3ELong-term,%20risk-adjusted%20returns%20deliver%20superior%20performance%20over%20traditional%20assets.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "fca33b",
+        "hash": "ff8e44b1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "fca33b",
+        "hash": "a955f30b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "fca33b",
+        "hash": "b3cf2ffc",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "fca33b",
+        "hash": "9922d857",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "fca33b",
+        "hash": "3e86d180",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "fca33b",
+        "hash": "774119ba",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "fca33b",
+        "hash": "6abc43c9",
+        "encoded": "%3Csection%20className='au-services'%3E",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "fca33b",
+        "hash": "a35d959e",
+        "encoded": "%3Cdiv%20className=%22customContainer%22%3E",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "fca33b",
+        "hash": "5ed1cb72",
+        "encoded": "%3Cdiv%20className=%22row%22%3E",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "fca33b",
+        "hash": "ec7f44b1",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-5%20au-services-left-heading%22%3Eservices%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "fca33b",
+        "hash": "d2c09597",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-7%20%20au-services-right-heading%22%3EMaking%20Real%3Cbr%20/%3EEstate%20Work%3Cbr%20/%3Efor%20you%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "fca33b",
+        "hash": "fe1e3545",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "fca33b",
+        "hash": "54b63cb9",
+        "encoded": "%3Cdiv%20className='row%20au-services-list-wrapper'%3E",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "fca33b",
+        "hash": "83fc665d",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-5%20pt-2%20d-flex%20flex-column%20align-items-start%20justify-content-evenly%22%3E",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "fca33b",
+        "hash": "8153b061",
+        "encoded": "%3Cp%20className='au-service-description'%3ERealsta%20is%20a%20Gurgaon-based%20real%20estate%20advisory%20firm%20offering%20end-to-end%20solutions%20for%20property%20investment,%20management,%20and%20design.%20We%20cater%20to%20UHNIs%20and%20NRIs,%20providing%20services%20from%20acquisition%20and%20legal%20support%20to%20interior%20execution%20and%20strategic%20asset%20management.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "fca33b",
+        "hash": "1191a07c",
+        "encoded": "%3Cbutton%20className='btn-secondary-alternative-custom'%20onClick=%7B()%20=%3E%20navigateTo('/our-services')%7D%3ELearn%20More%3Ci%20className=%22fa-solid%20fa-arrow-right%20ms-2%20au-learn-more-button%22%3E%3C/i%3E%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "fca33b",
+        "hash": "4218ddd7",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "fca33b",
+        "hash": "8f725a8c",
+        "encoded": "%3Cdiv%20className=%22col-12%20col-md-7%20pt-4%22%3E",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "fca33b",
+        "hash": "55c39e50",
+        "encoded": "%3Cul%20className='au-services-list'%3E",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "fca33b",
+        "hash": "8384699b",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "fca33b",
+        "hash": "5b814a89",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "fca33b",
+        "hash": "4b0b083c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "fca33b",
+        "hash": "ca7b5946",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "fca33b",
+        "hash": "ce73aa57",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "fca33b",
+        "hash": "b00cd59a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "fca33b",
+        "hash": "2acb8ae6",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "fca33b",
+        "hash": "67a912a8",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "fca33b",
+        "hash": "f3f9f086",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "fca33b",
+        "hash": "c83a029e",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "fca33b",
+        "hash": "50fa2365",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "fca33b",
+        "hash": "cf0705d8",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "fca33b",
+        "hash": "53beb76a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "fca33b",
+        "hash": "07da1ca5",
+        "encoded": "%3Csection%20className=%22au-consultants%22%3E",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "fca33b",
+        "hash": "abba1b54",
+        "encoded": "%3Cdiv%20className=%22customContainer%20py-5%22%3E",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "fca33b",
+        "hash": "d962d62f",
+        "encoded": "%3Cdiv%20className=%22row%20au-consulatnt-row%22%3E",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "fca33b",
+        "hash": "696ed5b5",
+        "encoded": "%3Cspan%20className='au-international-heading'%3E%3Cspan%20className='au-apart-text'%20style=%7B%7B%20color:%20'#DD2525'%20%7D%7D%3EInternational%3C/span%3E%20Property%20Consultants%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "fca33b",
+        "hash": "c7146777",
+        "encoded": "%3Chr%20className='ip_hr'%20/%3E",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "fca33b",
+        "hash": "a40a577d",
+        "encoded": "%3Cdiv%20className=%22row%20mt4%22%3E",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "fca33b",
+        "hash": "2460e478",
+        "encoded": "%3Cdiv%20className=%22col-12%20au-consultant-logo%22%3E",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "fca33b",
+        "hash": "fbd0274b",
+        "encoded": "%7BconsultantLogos.international.map((imgPath,%20idx)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "fca33b",
+        "hash": "035747cc",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%7BimgPath%7D%20alt=%22%22%20className='au-intntl'%20key=%7Bidx%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "fca33b",
+        "hash": "46ab0b17",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "fca33b",
+        "hash": "bf76e3ef",
+        "encoded": "%3Cdiv%20className=%22row%20mt6%20au-consulatnt-row%22%3E",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "fca33b",
+        "hash": "0fb9a1dd",
+        "encoded": "%3Cspan%20className='au-domestic-heading'%3E%3Cspan%20className='au-apart-text'%20style=%7B%7B%20color:%20'#DD2525'%20%7D%7D%3EDomestic%3C/span%3E%20Property%20Consultants%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "fca33b",
+        "hash": "c63d6611",
+        "encoded": "%3Chr%20className='ip_hr'%20/%3E",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "fca33b",
+        "hash": "1bbc63b6",
+        "encoded": "%3Cdiv%20className=%22row%20mt3%22%3E",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "fca33b",
+        "hash": "177f18f9",
+        "encoded": "%3Cdiv%20className=%22col-12%20au-consultant-logo%22%3E",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "fca33b",
+        "hash": "d2569847",
+        "encoded": "%7BconsultantLogos.domestic.map((imgPath,%20idx)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "fca33b",
+        "hash": "49d0da9b",
+        "encoded": "%3Cimg%20loading=%22lazy%22%20src=%7BimgPath%7D%20alt=%22%22%20className='au-intntl'%20key=%7Bidx%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "fca33b",
+        "hash": "3b3e104c",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "fca33b",
+        "hash": "a7a86bfe",
+        "encoded": "%3CReadyToTalk%20/%3E",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "fca33b",
+        "hash": "9b6c51e8",
+        "encoded": "%3C/%3E",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "fca33b",
+        "hash": "c9d5bfdb",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "384": {
+        "chunkId": "fca33b",
+        "hash": "897542c5",
+        "encoded": "export%20default%20AboutUs;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

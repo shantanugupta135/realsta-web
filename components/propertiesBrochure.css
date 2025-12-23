@@ -1,0 +1,37 @@
+poi.brochure-container {
+  position: relative; /* allows button to be placed over the image */
+  display: inline-block;
+  width: 100%;
+}
+
+.brochure-image {
+  height: auto;
+  /* border-radius: 12px; optional for rounded corners */
+  min-height: 300px;
+  object-fit: fill;
+  width: 100%;
+  max-width: 547px;
+  filter: brightness(0.8) !important;
+}
+
+.brochure-image:hover {
+  filter: brightness(1) !important;
+}
+
+.download-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  /* background: white;
+  color: black; */
+  /* border: none; */
+  /* padding: 8px 16px; */
+  /* border-radius: 8px; */
+  /* font-size: 14px; */
+  /* font-weight: 500; */
+  /* box-shadow: 0px 2px 6px rgba(0,0,0,0.2); */
+  /* cursor: pointer; */
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 6px;
+}

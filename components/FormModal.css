@@ -1,0 +1,82 @@
+.modal-wrapper .modal-content {
+    border-radius: 43px;
+    background: #FFF;
+}
+
+.modal-wrapper .modal-header {
+    padding-right: 2rem;
+}
+
+.modal-wrapper .btn-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.25rem;
+    opacity: 1;
+}
+
+.modal-wrapper .modal-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.modal-wrapper .modal-footer {
+    padding-top: 2rem;
+}
+
+.modal-wrapper .form-heading {
+    color: #181A20;
+    font-family: Gilroy, sans-serif;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.195px;
+    text-transform: uppercase;
+}
+
+.modal-wrapper .form-highlight {
+    color: #181A20;
+    font-family: Gilroy, sans-serif;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.195px;
+    text-transform: uppercase;
+}
+
+.modal-wrapper .form-subheading {
+    color: #181A20;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%;
+    letter-spacing: 0.06px;
+}
+
+.form-popup input,
+.form-popup textarea,
+.form-popup select {
+    border-radius: 0;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.form-popup input::placeholder, .form-popup textarea::placeholder, .form-popup select, .form-popup select option {
+    color: #181A20 !important;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%;
+    letter-spacing: 0.06px;
+}
+
+.form-popup select option {
+    background-color: #fff;
+}
+
+.form-popup{
+    gap: 2rem;
+}

@@ -1,0 +1,60 @@
+.ip_blue_card{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: #181818;
+}
+
+.ip_blue_card_point_normal{
+    color: #FFF;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 159%;
+letter-spacing: 0.145px;
+}
+
+.ip_blue_card_heading{
+    color: #FFF;
+font-family: Gilroy;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 43.2px */
+letter-spacing: 0.18px;
+text-transform: uppercase;
+}
+
+.ip_blue_card_point_bold{
+    color: #FFF;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: 209%; /* 75.11px */
+letter-spacing: 0.145px;
+}
+
+.ip_description_text{
+    color: rgba(24, 26, 32, 0.72);
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 163%; /* 57.05px */
+letter-spacing: 0.105px;
+text-align: justify;
+padding-right: 2rem;
+margin-top: 2rem;
+}
+
+.ip_description_heading{
+    color: #181A20;
+font-family: Gilroy;
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 58.8px */
+letter-spacing: 0.245px;
+text-transform: uppercase;
+}

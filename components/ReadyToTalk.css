@@ -1,0 +1,59 @@
+.contact-section{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contact-slogan{
+  color: #181A20;
+font-family: Gilroy;
+font-size: 46px;
+font-style: normal;
+font-weight: 700;
+line-height: 122%; /* 68.32px */
+letter-spacing: 0.28px;
+text-transform: uppercase;
+}
+
+.contact-panal{
+  margin-top: 5rem !important;
+  background-color: #181A20;
+  /* background-color: #212529; */
+  background-image: url("../public/assets/contactBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.5%;
+  border-radius: 2rem;
+  
+}
+
+.contact-text{
+  color: #FFF;
+font-family: Gilroy;
+font-size: 44px;
+font-style: normal;
+font-weight: 300;
+line-height: 124%; /* 62px */
+letter-spacing: 0.25px;
+text-transform: capitalize;
+}
+
+.contact-button-container{
+  align-content: center;
+}
+
+.contact-button{
+  height: 3rem;
+  align-content: center;
+}
+
+.contact-button:hover{
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF !important;
+  background-color: #181A20 !important;
+
+}
+/* Learn More Button */
+.au-learn-more-button {
+    transform: rotate(-45deg);
+    color: #DD2525;
+}

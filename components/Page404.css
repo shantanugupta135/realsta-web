@@ -1,0 +1,63 @@
+.title_404{
+color: #181A20;
+text-align: center;
+font-family: Gilroy;
+font-size:clamp(44px, 10vw, 98px);
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 134.4px */
+letter-spacing: 0.336px;
+text-transform: uppercase;
+margin-top:clamp(4rem, 10vw, 11rem);
+}
+/* clamp(28px, 10vw, 40px); */
+.description_404{
+    color: #131519;
+text-align: center;
+font-family: Rubik;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 171%; /* 30.78px */
+letter-spacing: 0.054px;
+margin-top:clamp(1rem, 10vw, 3rem);
+
+}
+
+.enquiery_404{
+    color: #131519;
+text-align: center;
+font-family: Rubik;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 171%; /* 30.78px */
+letter-spacing: 0.054px;
+margin-top: clamp(3rem, 10vw, 6rem);
+}
+.button_404{
+    margin-top: clamp(1rem, 10vw, 3rem);
+}
+
+.box_404{
+    text-align: -webkit-center;
+}
+
+.container_404{
+     background-image: url('../public/assets/404.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.link_404{
+    color: #DD2525;
+font-family: Rubik;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 171%;
+letter-spacing: 0.054px;
+text-decoration: none;
+}

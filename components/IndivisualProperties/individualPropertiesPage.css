@@ -1,0 +1,7 @@
+.sidepaddingright{
+    padding-right: clamp(0rem,3vw,3rem) !important;
+}
+
+.sidepaddingleft{
+    padding-left: clamp(0rem,3vw,3rem) !important;
+}   

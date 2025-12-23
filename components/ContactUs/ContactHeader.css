@@ -1,0 +1,27 @@
+.ch-container {
+    background-image: url("../../public/assets/contact-us/contact-bg.webp");
+    height: 100vh;
+    background-size: cover;
+}
+
+.ch-heading {
+    font-family: Gilroy, sans-serif;
+  color: #181A20;
+  /* font-size: 4.625rem; */
+  font-size: clamp(3rem,10vw,6rem);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.336px;
+  text-transform: uppercase;
+margin-top: 20%;
+}
+
+.ch-subheading {
+    color: #131519;
+    font-family: Rubik, sans-serif;
+    font-size: clamp(0.7rem,10vw,1.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.075px;
+}

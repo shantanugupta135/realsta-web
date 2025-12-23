@@ -1,0 +1,16 @@
+.blogPage{
+    background-color: #F7F8FC;
+}
+
+.blogBackgroundSection{
+    padding-top: 3rem;
+   padding-bottom: 2rem;
+    padding-right: 3%;
+    padding-left: 3%; 
+}
+
+.blogimage{
+    /* height:100% !important; */
+    width:100%;
+    max-height: 650px;
+}

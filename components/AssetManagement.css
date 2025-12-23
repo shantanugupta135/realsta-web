@@ -1,0 +1,118 @@
+.hero-section {
+    background-image: url('../public/assets/AssetManagement.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.am-heading {
+    font-family: Gilroy, sans-serif;
+  color: #181A20;
+  font-size: clamp(3rem,10vw,4.625rem);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.336px;
+  text-transform: uppercase;
+}
+
+.am-subtext {
+    color: rgba(24, 26, 32, 1);
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 171%;
+    letter-spacing: 0.045px;
+    text-transform: uppercase;
+}
+
+.am-FundsUndrAdv{
+    border-radius: 16px;
+    background: #181A20;
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.09);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.am-FundsUndrAdvSubTxt{
+    color: #FFF;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.051px;
+    text-transform: uppercase;
+}
+
+.am-FundsUndrAdvTxt{
+    color: #DD2525;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.147px;
+}
+
+.btn-start-investing {
+    background: #FFF;
+    color: #181A20;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+.learn-more-button {
+    transform: rotate(-45deg);
+    color: #DD2525;
+}
+
+.btn-lease-an-office {
+    background: #181A20;
+    color: #FFF;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+.am-subheading{
+    color: #000;
+font-family: Rubik;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 145%; /* 21.75px */
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+
+am-marker{
+    height: 10px;
+    width: 10px;
+}
+
+.am-List-text{
+  color: rgba(0, 0, 0, 0.60);
+font-family: Rubik;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 184%; /* 34.96px */
+letter-spacing: 0.095px;
+text-transform: capitalize;
+  /* width: 500px; */
+
+}
+
+@media (min-width: 768px) {
+    .am-cta-sction {
+        height: 60vh;
+    }
+}

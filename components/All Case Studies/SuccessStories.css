@@ -1,0 +1,24 @@
+.ss-container {
+    background-image: url("../public/assets/success-stories/successbg.webp");
+    background-image: url("../../public/assets/success-stories/successbg.webp");
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.ss-heading {
+    font-family: Gilroy, sans-serif;
+    color: #181A20;
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.336px;
+    text-transform: uppercase;
+    margin-top: 35%;
+    margin-bottom: 25%;
+}
+
+.ss-content {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}

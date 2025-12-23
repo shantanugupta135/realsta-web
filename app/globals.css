@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn-primary-custom,
+.btn-secondary-custom,
+.btn-primary-alternative-custom,
+.btn-secondary-alternative-custom {
+  border-radius: 10px;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+} 
+
+ .btn-primary-custom {
+  border: 1px solid black;
+  background: #FFF;
+  color: #181A20;
+}
+
+.btn-primary-custom:hover {
+  background: #181A20;
+  color: #FFF;
+}
+
+.btn-secondary-custom {
+  border: none;
+  background: #181A20;
+  color: #FFF;
+}
+
+.btn-secondary-custom:hover {
+  background: #FFF;
+  color: #181A20;
+}
+
+.btn-primary-alternative-custom {
+  border: 1px solid black;
+  background: #FFF;
+  color: #181A20;
+}
+
+.btn-primary-alternative-custom:hover {
+  background: #181A20;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+.btn-secondary-alternative-custom {
+  border: none;
+  background: #181A20;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+.btn-secondary-alternative-custom:hover {
+  background: #FFF;
+  color: #181A20;
+  border: 1px solid #000;
+}
+
+.customContainer {
+  margin-right: 3% !important;
+  margin-left: 3% !important;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.p-browse-more {
+    padding-left: 0.75rem;
+    color: #181A20;
+    font-family: Rubik, sans-serif;
+    font-size: 17px;
+    line-height: 117%;
+    text-transform: capitalize;
+    padding: 0.75rem 1rem;
+    display: flex;
+    width: fit-content !important;
+    border-radius: 10px;
+    border: 1px solid #181A20;
+    background: #FFF;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.p-browse-more-arrow {
+    transform: rotate(90deg);
+    color: #DD2525;
+    display: inline-flex;
+}
+
+.p-browse-more-wrapper {
+    display: flex;
+}
+
+.p-browse-more:hover {
+    background: #181A20;
+    color: #FFF;
+}
+
+/* *{
+transition-delay: 100ms !important;
+animation-delay: 100ms !important;
+} */
+
+/* On hover: add 150ms delay */

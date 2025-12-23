@@ -1,0 +1,22 @@
+.rp-card-wrapper {
+    display: flex;
+    overflow: auto;
+    gap: 2rem;
+    scrollbar-width: none;
+}
+
+.rp-header{
+    color: #181A20;
+    font-family: Gilroy, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0.245px;
+    text-transform: uppercase;
+}
+
+.rp-properties{
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
+}
