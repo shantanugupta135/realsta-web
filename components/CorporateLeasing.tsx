@@ -5,6 +5,7 @@ import IncludedServices from "./IncludedServices";
 import FAQ from "./FAQ";
 import TextBrief from "./TextBrief";
 import TableSection from "./TableSection";
+<<<<<<< HEAD
 import ReadyToTalk from './ReadyToTalk';
 import { Row, Container } from 'react-bootstrap';
 import { useState } from 'react';
@@ -13,6 +14,13 @@ import FormModal from './FormModal';
 // import { Helmet } from 'react-helmet';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
+=======
+import { Row, Container } from 'react-bootstrap';
+import { useState } from 'react';
+import FormModal from './FormModal';
+import { useRouter } from 'next/navigation';
+import dynamic from "next/dynamic";
+>>>>>>> 7c3b30b (initial commit)
 
 interface FAQItem {
   question: string;
@@ -45,6 +53,13 @@ const BriefTextData: BriefTextItem = {
   text: "At Realsta, we lease premium office space for rent in Gurgaon, designed to elevate your business operations. Our corporate leasing services deliver customized commercial real estate solutions, ensuring your workspace aligns with your brand and operational goals in Gurgaon’s top business districts.",
   image: "Corporate_Leasing"
 }
+<<<<<<< HEAD
+=======
+ const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
+                      loading: () => null,
+          });
+
+>>>>>>> 7c3b30b (initial commit)
 const TableSectionData: TableSectionItem = {
   titleNormal: "Why Brands ",
   titleBold: "Prefer Us?",
@@ -157,11 +172,19 @@ function CorporateLeasing() {
 
   return (
     <>
+<<<<<<< HEAD
     <Head>
       <title>Corporate Leasing in Gurgaon | Office Space Experts – Realsta</title> 
                 <meta name="description" content="Need flexible, high-quality office space in Gurgaon? Realsta’s corporate leasing team offers tailored solutions. Contact us for office space leasing services." />
                 <link rel="canonical" href="https://realsta.com/our-services/corporate-leasing" />
     </Head>
+=======
+    {/* <Head>
+      <title>Corporate Leasing in Gurgaon | Office Space Experts – Realsta</title> 
+                <meta name="description" content="Need flexible, high-quality office space in Gurgaon? Realsta’s corporate leasing team offers tailored solutions. Contact us for office space leasing services." />
+                <link rel="canonical" href="https://realsta.com/our-services/corporate-leasing" />
+    </Head> */}
+>>>>>>> 7c3b30b (initial commit)
       <section className="cl-hero-section">
         <NavigationMenu />
         <div className="customContainer">

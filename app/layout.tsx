@@ -7,6 +7,10 @@ import WhatsappFloatingIcon from "@/components/WhatsappFloatingIcon";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
 import localFont from "next/font/local";
+<<<<<<< HEAD
+=======
+import ChatLoader from "@/components/chatLoader";
+>>>>>>> 7c3b30b (initial commit)
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",
@@ -37,6 +41,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsappFloatingIcon />
         {children}
         <Footer />
+<<<<<<< HEAD
+=======
+        <ChatLoader />
+>>>>>>> 7c3b30b (initial commit)
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -56,6 +64,39 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+<<<<<<< HEAD
+=======
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+          strategy="lazyOnload"
+        />
+
+        <Script id="ga-init" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXX');
+          `}
+        </Script>
+
+        {/* Facebook Pixel (example) */}
+        <Script id="fb-pixel" strategy="lazyOnload">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', 'XXXX');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+>>>>>>> 7c3b30b (initial commit)
       </body>
     </html>
   );

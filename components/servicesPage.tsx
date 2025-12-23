@@ -5,6 +5,10 @@ import './servicesPage.css';
 import ReadyToTalk from "./ReadyToTalk";
 import { Container,Row } from "react-bootstrap";
 import { useRouter } from "next/navigation";
+<<<<<<< HEAD
+=======
+import Image from "next/image";
+>>>>>>> 7c3b30b (initial commit)
 
 
 function ServicesPage() {
@@ -21,16 +25,27 @@ function ServicesPage() {
                     <div className="services-heading">Personalized Real Estate Advisory</div>
                     <Row className="mt-4">
                         <Container>
+<<<<<<< HEAD
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" /><span className="services-subtext">HNIs</span></li>
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" /><span className="services-subtext">UHNIs</span></li>
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" /><span className="services-subtext">NRIs</span></li>
+=======
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" width={16} height={16} /><span className="services-subtext">HNIs</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" width={16} height={16} /><span className="services-subtext">UHNIs</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" width={16} height={16} /><span className="services-subtext">NRIs</span></li>
+>>>>>>> 7c3b30b (initial commit)
                         
                         </Container>
                     </Row>
                     <Row className="mt-3">
                         <Container>
+<<<<<<< HEAD
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" /><span className="services-subtext">Business Owners</span></li>
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" /><span className="services-subtext">Corporates</span></li>
+=======
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" width={16} height={16} /><span className="services-subtext">Business Owners</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="service_dot_icon" alt="list marker" width={16} height={16} /><span className="services-subtext">Corporates</span></li>
+>>>>>>> 7c3b30b (initial commit)
                         </Container>
                     </Row>
                     {/* <div className="d-flex">

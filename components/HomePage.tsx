@@ -6,8 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import Image from "next/image";
+<<<<<<< HEAD
 import GetInTouch from "./GetInTouch";
 import { useRouter } from "next/navigation";
+=======
+import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+>>>>>>> 7c3b30b (initial commit)
 
 const accordionData = [
   { title: "Micro-Market Mastery", content: "With deep on-the-ground intelligence across Gurgaon's micro-markets, we identify asymmetric commercial real estate opportunities ahead of the curve—driving alpha for institutional and global capital partners interested in office space for lease and commercial property investment in Gurgaon." },
@@ -160,6 +165,14 @@ function HomePage() {
     router.push(path);
   };
 
+<<<<<<< HEAD
+=======
+
+  const GetInTouch = dynamic(() => import("./GetInTouch"), {
+    loading: () => null,
+  });
+
+>>>>>>> 7c3b30b (initial commit)
   return (
     <>
       <section className="hp-herosection">

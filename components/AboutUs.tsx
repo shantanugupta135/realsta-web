@@ -2,12 +2,19 @@
 import './AboutUs.css';
 import NavigationMenu from './NavigationMenu';
 import { useState } from 'react';
+<<<<<<< HEAD
 import ReadyToTalk from './ReadyToTalk';
+=======
+>>>>>>> 7c3b30b (initial commit)
 import Link from 'next/link';
 // import FormModal from "./components/FormModal";
 // import { Helmet } from 'react-helmet';
 import ResourcesModal from './ResourcesModal';
 import { useRouter } from "next/navigation";
+<<<<<<< HEAD
+=======
+ import dynamic from "next/dynamic";
+>>>>>>> 7c3b30b (initial commit)
 
 function AboutUs() {
 
@@ -88,6 +95,12 @@ function AboutUs() {
             setShowModal(false);
             setPendingDownload(null);
         };
+<<<<<<< HEAD
+=======
+        const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
+                      loading: () => null,
+          });
+>>>>>>> 7c3b30b (initial commit)
     
         // Download file directly from modal
         const handleModalDownload = () => {
@@ -377,7 +390,11 @@ function AboutUs() {
                     </div>
                 </div>
             </section>
+<<<<<<< HEAD
             <ReadyToTalk />
+=======
+            { <ReadyToTalk />}
+>>>>>>> 7c3b30b (initial commit)
         </>
     );
 }
