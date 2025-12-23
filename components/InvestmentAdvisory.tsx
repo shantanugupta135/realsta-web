@@ -160,11 +160,19 @@ function InvestmentAdvisory() {
 
   return (
     <>
+<<<<<<< HEAD
     <Head>
           <title>Gurgaon Real Estate Investment Advisory Services | Realsta</title> 
           <meta name="description" content="Looking to invest in commercial property in Gurgaon? Our expert advisory team delivers market intelligence, portfolio planning, and investment solutions for maximum ROI." />
           <link rel="canonical" href="https://realsta.com/our-services/investment-advisory" />
       </Head>
+=======
+    {/* <Head>
+          <title>Gurgaon Real Estate Investment Advisory Services | Realsta</title> 
+          <meta name="description" content="Looking to invest in commercial property in Gurgaon? Our expert advisory team delivers market intelligence, portfolio planning, and investment solutions for maximum ROI." />
+          <link rel="canonical" href="https://realsta.com/our-services/investment-advisory" />
+      </Head> */}
+>>>>>>> 7c3b30b (initial commit)
       <section className="hero-section">
           <NavigationMenu />
         <div className="customContainer">
