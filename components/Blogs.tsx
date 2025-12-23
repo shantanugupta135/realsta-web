@@ -3,11 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import './Blogs.css';
 import {  fetchBlogsByCategory,fetchBlogsPaginated, fetchBlogsBySearch, Blog,BlogCategory } from '../services/blogService';
 import NavigationMenu from './NavigationMenu';
-<<<<<<< HEAD
-import ReadyToTalk from './ReadyToTalk';
-=======
 import dynamic from "next/dynamic";
->>>>>>> 7c3b30b (initial commit)
 import Link from 'next/link';
 
 // export enum BlogCategory {
@@ -97,13 +93,10 @@ const mergeBlogData = (oldBlog: Blog | null, freshBlogs: Blog): Blog => {
     };
 };
 
-<<<<<<< HEAD
-=======
   const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
     loading: () => null,
   });
 
->>>>>>> 7c3b30b (initial commit)
     const handleCategoryChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
         setLoadOffset(0)
         setShowMore(true)

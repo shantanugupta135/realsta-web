@@ -5,18 +5,10 @@ import IncludedServices from "./IncludedServices";
 import FAQ from "./FAQ";
 import TextBrief from "./TextBrief";
 import TableSection from "./TableSection";
-<<<<<<< HEAD
-import ReadyToTalk from './ReadyToTalk';
-import { Row,Container } from 'react-bootstrap';
-import { useState } from 'react';
-import FormModal from './FormModal';
-import Head from 'next/head';
-=======
 import { Row,Container } from 'react-bootstrap';
 import { useState } from 'react';
 import FormModal from './FormModal';
 import dynamic from "next/dynamic";
->>>>>>> 7c3b30b (initial commit)
 
 
 interface FAQItem {
@@ -39,10 +31,6 @@ interface TableSectionItem {
         content: string;
         image: string;
     }[]
-<<<<<<< HEAD
-
-=======
->>>>>>> 7c3b30b (initial commit)
 }
 
 interface BriefTextItem{
@@ -54,15 +42,12 @@ const BriefTextData: BriefTextItem = {
     text:"At Realsta, we don't just manage assets — we optimize, enhance, and future-proof your commercial real estate investments. Our proactive asset management approach drives operational excellence and ensures sustainable value creation across your portfolio.",
     image:"Asset_Managment"
 }
-<<<<<<< HEAD
-=======
 
 const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
     loading: () => null,
 });
 
 
->>>>>>> 7c3b30b (initial commit)
 const TableSectionData: TableSectionItem = {
     titleNormal: "Why we ",
     titleBold: "excel?",
@@ -193,19 +178,11 @@ const [show, setShow] = useState(false);
 
     return (
         <>
-<<<<<<< HEAD
-            <Head>
-                <title>Commercial Real Estate Asset Management in Gurgaon | Realsta</title> 
-                <meta name="description" content="Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information." />
-                <link rel="canonical" href="https://realsta.com/our-services/asset-management" />
-            </Head>
-=======
             {/* <Head>
                 <title>Commercial Real Estate Asset Management in Gurgaon | Realsta</title> 
                 <meta name="description" content="Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information." />
                 <link rel="canonical" href="https://realsta.com/our-services/asset-management" />
             </Head> */}
->>>>>>> 7c3b30b (initial commit)
             <section className="hero-section">
                     <NavigationMenu />
                 <div className="customContainer">
@@ -218,10 +195,6 @@ const [show, setShow] = useState(false);
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">HNIs</span></li>
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">UHNIs</span></li>
                             <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">NRIs</span></li>
-<<<<<<< HEAD
-                        
-=======
->>>>>>> 7c3b30b (initial commit)
                         </Container>
                     </Row>
                     <Row className="mt-2">
