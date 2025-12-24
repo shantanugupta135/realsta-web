@@ -11,6 +11,7 @@ interface cardData{
 }
 
 function PropertyCard({ data }: Readonly<{ data: CardItem |cardData}>) {
+    data.card_image = data.card_image.startsWith('http') ? data.card_image : `https://api.realsta.com/${data.card_image}`;
     return (
         <div className="col-12 col-md-4 d-flex">
             <div className="card-wrapper">

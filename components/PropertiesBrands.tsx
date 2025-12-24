@@ -5,7 +5,7 @@ import { Row,Col } from "react-bootstrap";
 
 function PropertiesBrands({ data }: { data: CardItem }){
 
-    console.log(data.tenents)
+console.log(data.tenents)
 return(data.tenents?
     <section className="customContainer">
         <Row>
@@ -19,7 +19,7 @@ return(data.tenents?
                     {JSON.parse(data.tenents).map((logo: string, i: number) => (
                         <img
                             loading="lazy"
-                            src={logo}
+                            src={'https://api.realsta.com/' + logo}
                             alt="logo"
                             key={i}
                             className="mt-4"
