@@ -35,7 +35,7 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
             </Row>
             <Row className="mt-4" style={{ flex: 1, minHeight: 0, alignItems: "flex-end", display: "flex" }}>
                 <Col md={8} className="brochure-container d-flex flex-column justify-content-end align-items-center" style={{ height: "100%" }}>
-                    <img src={data.brocher_image} alt="brocher" className="brochure-image" />
+                    <img src={'https://api.realsta.com/' + data.brocher_image} alt="brocher" className="brochure-image" />
                     <button
                         className="btn-primary-alternative-custom download-btn"
                         onClick={() => setShowModal(true)}
