@@ -25,6 +25,9 @@ function Properties() {
 
     useEffect(() => {
          getProperties().then(data => {
+            data.forEach(property => {
+                property.card_image = 'https://api.realsta.com/' + property.card_image;
+            });
                 setPropertiesData(data);
       })}, []);
      

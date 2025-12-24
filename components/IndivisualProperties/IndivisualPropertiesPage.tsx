@@ -51,12 +51,13 @@ function IndivisualPropertiesPage({prop_url}: {prop_url?: string}){
         getProperties().then(data => {
             const property = data.find((property) => property.url === url);
             if (property){
+                property.card_image = 'https://api.realsta.com/' + property.card_image;
                  setPropertyData(property);
                 if (property) {
                     setPropertyMetaData({
                      metaTitle: property.metaTitle,
                      metaDescription: property.metaDescription,
-                        url: property.url
+                    url:  property.url
                 });
                 }
             setRelatedProperties(data.filter((property) => property.url !== url));
