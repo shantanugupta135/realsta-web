@@ -3,7 +3,7 @@ import { CardItem } from "./types";
 import "./PropertiesLocation.css"
 import MapEmbed from "./MapEmbed";
 import { Col, Container, Row } from "react-bootstrap";
-import "../pages/IndivisualProperties/individualPropertiesPage.css"
+import "../components/IndivisualProperties/individualPropertiesPage.css";
 
 function PropertyLocation({data}:{data:CardItem}){
     return(

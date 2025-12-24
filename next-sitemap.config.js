@@ -37,7 +37,7 @@ module.exports = {
 
     // Properties (example – replace with API)
     const properties = await fetch (
-      'https://realsta.com/get_properties.php'
+      'https://api.realsta.com/get_properties.php'
     ).then(res => res.json());
 
     properties.forEach((item) => {
@@ -51,7 +51,7 @@ module.exports = {
 
     // Blog posts (example)
   try {
-      const res = await fetch('https://www.realsta.com/api/get_data.php');
+      const res = await fetch('https://api.realsta.com/api/get_data.php');
       const json = await res.json();
 
       // ✅ SAFETY CHECK
