@@ -9,14 +9,15 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const scrollRef = useRef<HTMLDivElement | null>(null);
+    const BASE_URL = "https://api.realsta.com";
 
     // Parse floor_plan as array of image URLs
-    const images: string[] = Array.isArray(data.floor_plan)
+    const rawImages: string[] = Array.isArray(data.floor_plan)
         ? data.floor_plan
         : typeof data.floor_plan === "string" && data.floor_plan.trim() !== ""
             ? JSON.parse(data.floor_plan)
             : [];
-
+     const images = rawImages.map(img => img.startsWith('http') ? img : `${BASE_URL}${img}`);
     // Horizontal scroll on wheel (like RelatedProperties)
     useEffect(() => {
         const el = scrollRef.current;
