@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { CardItem } from "../types";
 import PropertyDescription from "../../components/PropertyDescription";
@@ -37,10 +38,10 @@ interface propertyMeta{
 }
 
 
-function IndivisualPropertiesPage(){
+function IndivisualPropertiesPage({prop_url}: {prop_url?: string}){
 
     // const id = Number(useParams<{ id: string }>().id);
-    const url=String(useParams<{ url: string }>().url)
+    const url=prop_url
     const [relatedProperties,setRelatedProperties]=useState<CardItem[]>([])
     const [propertyData,setPropertyData]=useState<CardItem>()
     const [propertyMetaData,setPropertyMetaData]=useState<propertyMeta>()

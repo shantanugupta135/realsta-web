@@ -1,6 +1,12 @@
-import DlfPage from "@/components/dlfPage";
+import IndivisualPropertiesPage from "@/components/IndivisualProperties/IndivisualPropertiesPage";
 
 import type { Metadata } from "next";
+
+interface PageProps {
+  params: Promise<{
+    url: string;
+  }>;
+}
 
 export const metadata: Metadata = {
   title:"DLF Cybercity Gurgaon – Premium Commercial Office Spaces",
@@ -11,6 +17,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PropertyPage() {
-  return <DlfPage/>;
+
+export default async function Page({ params }: PageProps) {
+  const { url } = await params;
+
+  return(
+  <>
+  <IndivisualPropertiesPage prop_url={url}/>
+  </>
+);
 }
