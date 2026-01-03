@@ -1,4 +1,5 @@
 import WorkspaceSolutions from "@/components/WorkspaceSolutions";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 

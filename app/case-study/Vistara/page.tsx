@@ -1,4 +1,5 @@
 import CaseStudyDetailVistara from "@/components/All Case Studies/CaseStudyDetail/CaseStudyVistara";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 

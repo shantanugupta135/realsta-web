@@ -9,6 +9,7 @@ import { Row,Container } from 'react-bootstrap';
 import { useState } from 'react';
 import FormModal from './FormModal';
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 
 interface FAQItem {
@@ -192,15 +193,15 @@ const [show, setShow] = useState(false);
                             <div className='am-subheading mt-3'>Turn Assets into Long-Term Wealth</div>
                            <Row className="mt-3">
                         <Container>
-                            <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">HNIs</span></li>
-                            <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">UHNIs</span></li>
-                            <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">NRIs</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image  src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" width={12} height={12} /><span className="am-List-text">HNIs</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" width={12} height={12} /><span className="am-List-text">UHNIs</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" width={12} height={12} /><span className="am-List-text">NRIs</span></li>
                         </Container>
                     </Row>
                     <Row className="mt-2">
                         <Container>
-                            <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">Business Owners</span></li>
-                            <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" /><span className="am-List-text">Corporates</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" width={12} height={12} /><span className="am-List-text">Business Owners</span></li>
+                            <li className="d-flex gap-3 align-items-center" ><Image src="/assets/icons/lal_bindu.svg" className="am-Marker" alt="list marker" width={12} height={12} /><span className="am-List-text">Corporates</span></li>
                         </Container>
                     </Row>
                             <div className="col-md-5 am-FundsUndrAdv mt-5">

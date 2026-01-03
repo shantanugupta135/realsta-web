@@ -1,4 +1,5 @@
 import Resources from "@/components/Resources";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 

@@ -51,8 +51,8 @@ const [image,setImage]=useState(props.data.tableContents[0].heading.replace(/[-]
                     </div>
                     <div className='col-12 col-md-7'>
                         <TabContent>
-                            {props.data.tableContents.map((item)=>(
-                                <TabPane eventKey={item.heading}>
+                            {props.data.tableContents.map((item, index)=>(
+                                <TabPane key={`${item.heading}-${index}`} eventKey={item.heading}>
                                     <p className='tabContent mt-3'>{item.content}</p>
                                 </TabPane>
                             ))}

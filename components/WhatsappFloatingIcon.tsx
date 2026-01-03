@@ -1,5 +1,8 @@
 // WhatsAppFloatingButton.js
 "use client";
+
+import Image from "next/image";
+
 const WhatsAppFloatingIcon = () => {
     return (
         <button
@@ -27,7 +30,13 @@ const WhatsAppFloatingIcon = () => {
             }}
             aria-label="Chat on WhatsApp"
         >
-            <i className="fa-solid fa-brands fa-whatsapp"></i>
+            {/* <i className="fa-solid fa-brands fa-whatsapp"></i> */}
+            <Image
+                src="/assets/whatsapp.svg"
+                alt="Chat on WhatsApp"
+                width={24}
+                height={24}
+            />
         </button>
     );
 };

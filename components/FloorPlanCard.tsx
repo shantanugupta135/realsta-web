@@ -4,6 +4,7 @@ import { CardItem } from "./types";
 import { Row, Col } from "react-bootstrap";
 import "./propertiesBrochure.css";
 import ResourcesModal from "./ResourcesModal";
+import Image from "next/image";
 
 function PropertiesBrocure({ data }: { data: CardItem }) {
     const [showModal, setShowModal] = useState(false);
@@ -103,7 +104,7 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
                                     position: "relative"
                                 }}
                             >
-                                <img
+                                <Image
                                     src={img}
                                     alt={`Floor Plan ${idx + 1}`}
                                     style={{

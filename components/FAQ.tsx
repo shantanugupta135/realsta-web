@@ -24,24 +24,28 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
         <h1 className="faqTitle">Frequently Asked <span className='faqQuestionsText'>Questions</span></h1>
         <div className="faqAccordionContainer">
           {data.map((item, index) => (
-            <>
-              <div key={index} className="faqAccordionItem">
-                <button
-                  className={`faqAccordionHeader${expandedIndex === index ? ' faqExpanded' : ''}`}
-                  onClick={() => toggleAccordion(index)}
-                >
-                  <span>{item.question}</span>
-                  <i className={`fa-solid ${expandedIndex === index ? 'fa-minus' : 'fa-plus'} plusIcon`}></i>
-                </button>
-                {/* {expandedIndex === index && ( */}
-                  <div className={`mt-2 px-2 faqAccordionContent${expandedIndex === index ? ' faqAccordionContentOpen' : ' faqAccordionContentClosed'}`}>
-                    {item.answer}
-                  </div>
-                {/* )} */}
-              </div>
-              <hr className='faqDivider'></hr>
-            </>
+            <div
+              key={`${item.question}-${index}`}
+              className="faqAccordionItem"
+            >
+              <button
+                className={`faqAccordionHeader${expandedIndex === index ? ' faqExpanded' : ''
+                  }`}
+                onClick={() =>
+                  setExpandedIndex(expandedIndex === index ? null : index)
+                }
+              >
+                {item.question}
+              </button>
+
+              {expandedIndex === index && (
+                <div className="faqAccordionContent">
+                  {item.answer}
+                </div>
+              )}
+            </div>
           ))}
+
         </div>
       </div>
     </section>

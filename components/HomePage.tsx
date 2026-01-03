@@ -2,8 +2,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import './HomePage.css';
 import NavigationMenu from "./NavigationMenu";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -247,7 +245,7 @@ function HomePage() {
                   <div className="hp-stat-box">
                     <div className="d-flex align-items-center gap-3">
                       <div className="hp-icon">
-                        <img loading="lazy" src="/assets/icons/14Yearsofexperience.svg" className="hp-years-of-experience-icon" alt="14 years experience" />
+                        <Image loading="lazy" src="/assets/icons/14Yearsofexperience.svg" className="hp-years-of-experience-icon" alt="14 years experience" height={50} width={50} />
                       </div>
                       <div className="hp-experience-number">14+</div>
                     </div>
@@ -258,7 +256,7 @@ function HomePage() {
                   <div className="hp-stat-box">
                     <div className="d-flex align-items-center gap-3">
                       <div className="hp-icon">
-                        <img loading="lazy" src="/assets/icons/45Buildings.svg" className="hp-Buildings45" alt="45+ Buildings" />
+                        <Image loading="lazy" src="/assets/icons/45Buildings.svg" className="hp-Buildings45" alt="45+ Buildings" height={50} width={50} />
                       </div>
                       <div className="hp-experience-number">45+</div>
                     </div>
@@ -269,7 +267,7 @@ function HomePage() {
                   <div className="hp-stat-box">
                     <div className="d-flex align-items-center gap-3">
                       <div className="hp-icon">
-                        <img loading="lazy" src="/assets/icons/700ChannelPartners.svg" className="hp-ChannelPartners" alt="700+ Channel Partners" />
+                        <Image loading="lazy" src="/assets/icons/700ChannelPartners.svg" className="hp-ChannelPartners" alt="700+ Channel Partners" height={50} width={50} />
                       </div>
                       <div className="hp-experience-number">700+</div>
                     </div>
@@ -280,7 +278,7 @@ function HomePage() {
                   <div className="hp-stat-box">
                     <div className="d-flex align-items-center gap-3">
                       <div className="hp-icon">
-                        <img loading="lazy" src="/assets/icons/commercialspace.svg" className="hp-commercial-space" alt="22 Lakh+ Sq. Ft. Commercial Space" />
+                        <Image loading="lazy" src="/assets/icons/commercialspace.svg" className="hp-commercial-space" alt="22 Lakh+ Sq. Ft. Commercial Space" height={50} width={50} />
                       </div>
                       <div className="hp-experience-number" style={{ fontSize: "22px" }}>22 Lakh+</div>
                     </div>
@@ -290,7 +288,7 @@ function HomePage() {
               </div>
             </div>
             <div className="col-3 hp-image-box d-none d-md-block">
-              <img loading="lazy" src="/assets/Section2.webp" alt="Architecture" />
+              <Image loading="lazy" src="/assets/Section2.webp" alt="Architecture" height={333} width={629} />
             </div>
           </div>
         </div>
@@ -303,7 +301,7 @@ function HomePage() {
             <div className="col-12 col-md-3 ">
               <div className="hp-services-card mx-3">
                 <div className="hp-card-icon-wrapper">
-                  <img loading="lazy" className="hp-card-icon" src="/assets/icons/InvestmentAdvisory.svg" alt="investment-advisory" />
+                  <Image loading="lazy" className="hp-card-icon" src="/assets/icons/InvestmentAdvisory.svg" alt="investment-advisory" height={60} width={60} />
                 </div>
                 <p className="hp-card-heading">Investment<br />Advisory</p>
                 <p className="hp-card-text mb-5">Backed by rigorous analysis and deep market insight, our investment management platform enables UHNIs and NRIs to deploy capital in commercial property investment and more in Gurgaon with confidence—identifying high-yield opportunities and constructing resilient real estate portfolios in high-demand nodes like Emaar Digital Greens and Grand View Tower.</p>
@@ -313,7 +311,7 @@ function HomePage() {
             <div className="col-12 col-md-3 mt-4 mt-md-0">
               <div className="hp-services-card mx-3">
                 <div className="hp-card-icon-wrapper">
-                  <img loading="lazy" className="hp-card-icon" src="/assets/icons/AssetManagement.svg" alt="investment-advisory" />
+                  <Image loading="lazy" className="hp-card-icon" src="/assets/icons/AssetManagement.svg" alt="investment-advisory" height={60} width={60}/>
                 </div>
                 <p className="hp-card-heading">Asset<br />Management</p>
                 <p className="hp-card-text mb-5">We manage commercial real estate and other real estate assets with an institutional mindset—maximizing operational efficiency, enhancing tenant experience, and protecting long-term value through disciplined execution and proactive oversight.</p>
@@ -323,7 +321,7 @@ function HomePage() {
             <div className="col-12 col-md-3 mt-4 mt-md-0">
               <div className="hp-services-card mx-3">
                 <div className="hp-card-icon-wrapper">
-                  <img loading="lazy" className="hp-card-icon" src="/assets/icons/CorporateLeasing.svg" alt="investment-advisory" />
+                  <Image loading="lazy" className="hp-card-icon" src="/assets/icons/CorporateLeasing.svg" alt="investment-advisory" height={60} width={60}/>
                 </div>
                 <p className="hp-card-heading">Corporate<br />Leasing</p>
                 <p className="hp-card-text mb-5">We secure premium office spaces for lease as a leading office space rental agency aligned with the strategic objectives of global enterprises. By matching high-caliber tenants with institutional-grade assets-such as AIPL Business Club-we drive enduring value and consistent rental income for stakeholders.</p>
@@ -333,7 +331,7 @@ function HomePage() {
             <div className="col-12 col-md-3 mt-4 mt-md-0">
               <div className="hp-services-card mx-3">
                 <div className="hp-card-icon-wrapper">
-                  <img loading="lazy" className="hp-card-icon" src="/assets/icons/WorkspaceSolutions.svg" alt="investment-advisory" />
+                  <Image loading="lazy" className="hp-card-icon" src="/assets/icons/WorkspaceSolutions.svg" alt="investment-advisory" height={60} width={60} />
                 </div>
                 <p className="hp-card-heading">Workspace<br />Solutions</p>
                 <p className="hp-card-text mb-5">We deliver fully integrated, turnkey workspace solutions—designing, developing, and managing high-performance serviced offices that align with each client's strategic, operational, and brand objectives.</p>
@@ -354,12 +352,12 @@ function HomePage() {
               <div className="marquee">
                 <div className="marquee-group">
                   {logos.map((src, idx) => (
-                    <img loading="lazy" key={`1-${idx}`} className="logo" src={src} alt={`partner-${idx}`} />
+                    <Image loading="lazy" key={`1-${idx}`} className="logo" src={src} alt={`partner-${idx}`} height={120} width={136}/>
                   ))}
                 </div>
                 <div className="marquee-group">
                   {logos.map((src, idx) => (
-                    <img loading="lazy" key={`2-${idx}`} className="logo" src={src} alt={`partner-duplicate-${idx}`} />
+                    <Image loading="lazy" key={`2-${idx}`} className="logo" src={src} alt={`partner-duplicate-${idx}`} height={120} width={136} />
                   ))}
                 </div>
               </div>
@@ -389,11 +387,12 @@ function HomePage() {
               {channelPartners.map((partner, idx) => (
                 <div className="col-4 hp-channel-wrapper" key={idx}>
                   <div className="hp-channel-card mx-2">
-                    <img
+                    <Image
                       loading="lazy"
                       className="hp-channel-img"
                       src={`/assets/channel-partner/${partner.image}`}
                       alt={partner.name}
+                      height={346} width={468}
                     />
                     <div className="hp-channel-details">
                       <div className="hp-partner-name">{partner.name}</div>
@@ -410,10 +409,11 @@ function HomePage() {
               {channelPartners.map((partner, idx) => (
                 <div className="col-12 hp-channel-wrapper w-100 mb-3" key={idx}>
                   <div className="hp-channel-card mx-2">
-                    <img
+                    <Image
                       className="hp-channel-img"
                       src={`/assets/channel-partner/${partner.image}`}
                       alt={partner.name}
+                      height={346} width={468}
                     />
                     <div className="hp-channel-details">
                       <div className="hp-partner-name">{partner.name}</div>
@@ -448,7 +448,7 @@ function HomePage() {
         <div className="customContainer">
           <div className="row">
             <div className="col-12 col-md-6">
-              <img loading="lazy" src="/assets/LeadershipDishant.webp" className="hp-leadership-image mt4" alt="leadership-quotes" />
+              <Image loading="lazy" src="/assets/LeadershipDishant.webp" className="hp-leadership-image mt4" alt="leadership-quotes" height={579} width={560} />
             </div>
 
             <div className="col-12 col-md-6 d-flex flex-column justify-content-center position-relative">

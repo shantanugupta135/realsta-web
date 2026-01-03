@@ -1,4 +1,5 @@
 import CaseStudyDetailITC from "@/components/All Case Studies/CaseStudyDetail/CaseStudyDetailITC";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 

@@ -1,6 +1,7 @@
 import IndividualBlogPage from "@/components/IndivisualBlogPage/IndivisualBlogPage";
 import { fetchBlogByURL } from "@/services/blogService";
 import type { Metadata } from "next";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 interface PageProps {
   params: Promise<{

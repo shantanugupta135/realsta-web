@@ -10,6 +10,7 @@ import { useState } from 'react';
 import FormModal from './FormModal';
 import { useRouter } from 'next/navigation';
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 interface FAQItem {
   question: string;
@@ -174,8 +175,8 @@ function CorporateLeasing() {
               </p>
               <Row className="mt-2">
                 <Container>
-                  <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="cl-Marker" alt="list marker" /><span className="cl-List-text">Business Owners</span></li>
-                  <li className="d-flex gap-3 align-items-center" ><img loading="lazy" src="/assets/icons/lal_bindu.svg" className="cl-Marker" alt="list marker" /><span className="cl-List-text">Corporates</span></li>
+                  <li className="d-flex gap-3 align-items-center" ><Image loading="lazy" src="/assets/icons/lal_bindu.svg" className="cl-Marker" alt="list marker" width={12} height={12}/><span className="cl-List-text">Business Owners</span></li>
+                  <li className="d-flex gap-3 align-items-center" ><Image loading="lazy" src="/assets/icons/lal_bindu.svg" className="cl-Marker" alt="list marker" width={12} height={12}/><span className="cl-List-text">Corporates</span></li>
                 </Container>
               </Row>
               <div className="cl-fundsUndrAdv mt-5">

@@ -1,4 +1,5 @@
 import CaseStudyDetailCremica from "@/components/All Case Studies/CaseStudyDetail/CaseStudyCremica";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 
