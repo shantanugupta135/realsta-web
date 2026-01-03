@@ -3,6 +3,7 @@ import './AboutUs.css';
 import NavigationMenu from './NavigationMenu';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 // import FormModal from "./components/FormModal";
 // import { Helmet } from 'react-helmet';
 import ResourcesModal from './ResourcesModal';
@@ -182,7 +183,7 @@ function AboutUs() {
                 <div className="customContainer">
                     <div className="au-sub-heading-clientele">Our Uniqueness</div>
                     <div className="au-heading-clientele pt-3">What sets us <span className='au-apart-text'>apart?</span></div>
-                    <div className="row mt-5 au-biz-unique-section">
+                    {/* <div className="row mt-5 au-biz-unique-section">
                         {bizCards.map((card, i) => (
                             <div className="au-biz-card col-12 col-md-3 mt-4 mt-md-0" key={i}>
                                 <img loading="lazy" src={card.hoverImage} alt={card.title} className="au-biz-image default" />
@@ -198,7 +199,51 @@ function AboutUs() {
                                 </div>
                             </div>
                         ))}
+                    </div> */}
+                    <div className="row mt-5 au-biz-unique-section">
+                        {bizCards.map((card, i) => (
+                            <div
+                                className="au-biz-card col-12 col-md-3 mt-4 mt-md-0"
+                                key={i}
+                            >
+                                {/* Default image */}
+                                {card.hoverImage && (
+                                    <Image
+                                        loading="lazy"
+                                        src={card.hoverImage}
+                                        alt={card.title}
+                                        className="au-biz-image default"
+                                        width={300}
+                                        height={300}
+                                    />
+                                )}
+
+                                {/* Hover image */}
+                                {card.image && (
+                                    <Image
+                                        loading="lazy"
+                                        src={card.image}
+                                        alt={card.title}
+                                        className="au-biz-image hover"
+                                        width={300}
+                                        height={300}
+                                    />
+                                )}
+
+                                <div className="au-biz-description au-card-title">
+                                    <h4>{card.title}</h4>
+                                </div>
+
+                                <div className="au-biz-overlay">
+                                    <div className="au-biz-description">
+                                        <h4>{card.title}</h4>
+                                    </div>
+                                    <div className="au-biz-footer">{card.description}</div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
+
                     <div className="row mt-5">
                         <div className="col-12 col-md-9">
                             <div>
@@ -232,7 +277,8 @@ function AboutUs() {
                     <div className="row">
                         <div className="col-12 col-md-6">
                             <div className='au-vision-heading'>VISION</div>
-                            <img loading="lazy" className='au-vision-img' src='/assets/AboutUs/vision.webp' alt='vision' />
+                            <Image loading="lazy" className='au-vision-img' src='/assets/AboutUs/vision.webp' alt='vision' 
+                            width={480} height={134}/>
                         </div>
                         <div className="col-12 col-md-6">
                             <div className="au-vision-text">
@@ -247,7 +293,8 @@ function AboutUs() {
                     <div className="row">
                         <div className="col-12 col-md-6">
                             <div className='au-mission-heading'>MISSION</div>
-                            <img  loading="lazy"className='au-mission-img' src='/assets/AboutUs/mission.webp' alt='vision' />
+                            <Image loading="lazy" className='au-mission-img' src='/assets/AboutUs/mission.webp' alt='vision' width={480}
+                                        height={134} />
                         </div>
                         <div className="col-12 col-md-6">
                             <div className="au-mission-text">

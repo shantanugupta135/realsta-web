@@ -1,6 +1,7 @@
 import Properties from "@/components/Properties";
-
 import type { Metadata } from "next";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export const metadata: Metadata = {
   title:"Serviced Office & Workspace Solutions | Realsta Gurgaon",

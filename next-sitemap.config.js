@@ -1,8 +1,12 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://www.realsta.com',
-  generateRobotsTxt: false, // you already handle robots.txt
+  generateRobotsTxt: false,
   sitemapSize: 5000,
+  autoLastmod: true,
+
+  changefreq: 'weekly',
+  priority: 0.7,
 
   // We will split sitemaps manually
   generateIndexSitemap: true,

@@ -3,11 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "standalone",
-  // images: {
-  //   formats: ["image/avif", "image/webp"], // ✅ AVIF first, WebP fallback
-  //   deviceSizes: [320, 480, 768, 1024, 1280, 1600, 1920],
-  //   imageSizes: [16, 32, 64, 128, 256, 384],
-  // },
+  images: {
+    formats: ["image/avif", "image/webp"], // ✅ AVIF first, WebP fallback
+    deviceSizes: [320, 480, 768, 1024, 1280, 1600, 1920],
+    imageSizes: [16, 32, 64, 128, 256, 384],
+  },
   async rewrites() {
     return [
       {

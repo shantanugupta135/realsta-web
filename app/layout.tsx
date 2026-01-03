@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import "bootstrap/dist/css/bootstrap.min.css";
-import BootstrapClient from "./BootstrapClient";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import WhatsappFloatingIcon from "@/components/WhatsappFloatingIcon";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
 import localFont from "next/font/local";
-import ChatLoader from "@/components/chatLoader";
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",
@@ -15,11 +12,6 @@ export const metadata: Metadata = {
 
 const gilroy = localFont({
   src: [
-    {
-      path: "../public/fonts/gilroy/gilroy-regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
     {
       path: "../public/fonts/gilroy/gilroy-medium.woff2",
       weight: "700",
@@ -32,13 +24,12 @@ const gilroy = localFont({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={gilroy.className}>
+    // <html lang="en" className={gilroy.className}>
+    <html lang="en">
       <body>
-        <BootstrapClient />
         <WhatsappFloatingIcon />
         {children}
         <Footer />
-        <ChatLoader />
         <Script
           id="organization-schema"
           type="application/ld+json"

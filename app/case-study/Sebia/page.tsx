@@ -1,4 +1,5 @@
 import CaseStudyDetailSebia from "@/components/All Case Studies/CaseStudyDetail/CaseStudySebia";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 

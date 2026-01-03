@@ -1,4 +1,5 @@
 import InvestmentAdvisory from "@/components/InvestmentAdvisory";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
 

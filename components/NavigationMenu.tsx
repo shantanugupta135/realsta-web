@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import "./NavigationMenu.css";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function NavigationMenu() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -38,11 +39,13 @@ export default function NavigationMenu() {
 
         {/* Logo */}
         <Link href="/">
-          <img
-            loading="lazy"
+          <Image
             src="/assets/RealstaLogo.svg"
             className="nm-logo"
             alt="Logo"
+            width={66}
+            height={70}
+            priority
           />
         </Link>
 
