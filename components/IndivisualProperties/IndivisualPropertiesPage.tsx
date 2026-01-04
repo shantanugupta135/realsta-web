@@ -47,6 +47,7 @@ function IndivisualPropertiesPage({prop_url}: {prop_url?: string}){
     const [propertyData,setPropertyData]=useState<CardItem>()
     const [propertyMetaData,setPropertyMetaData]=useState<propertyMeta>()
     const navigate=useRouter()
+    const [notFound, setNotFound] = useState(false);
 
     useEffect(() => {
         getProperties().then(data => {
@@ -64,13 +65,16 @@ function IndivisualPropertiesPage({prop_url}: {prop_url?: string}){
             setRelatedProperties(data.filter((property) => property.url !== url));
             }
             else{
-                <Page404/>
-                navigate.push('*')
+                 setNotFound(true); 
             }
            
         });
     }, [url]);
     // let propertyData:CardItem=getProperty(url);
+ 
+      if (notFound) {
+         return <Page404 />;
+     }
 
     return(
     <>

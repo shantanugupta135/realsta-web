@@ -18,6 +18,12 @@ export default function FloatingCallbackForm() {
     return () => clearTimeout(timer);
   }, []);
 
+    // show after 10 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => setOpen(true), 20000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -53,47 +59,82 @@ export default function FloatingCallbackForm() {
   if (!open) return null;
 
   return (
-    <div className={styles.overlay}>
-      <div className={styles.modal}>
-         <span
-          className={styles.closeIcon}
-          onClick={() => setOpen(false)}
-          aria-label="Close"
-        >
-          ×
-        </span>
 
-        <h2>Helping you find your perfect Office Space!</h2>
-        <p>Speak with a workspace solution expert</p>
+  <div className={styles.overlay}>
+    <div className={styles.modal}>
 
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter your name*"
-          value={form.name}
-          onChange={handleChange}
-        />
+      <span
+        className={styles.closeIcon}
+        onClick={() => setOpen(false)}
+        aria-label="Close"
+      >
+        ×
+      </span>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter work email*"
-          value={form.email}
-          onChange={handleChange}
-        />
+      {/* ✅ LEFT + RIGHT WRAPPER */}
+      <div className={styles.container}>
 
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Enter mobile number*"
-          value={form.phone}
-          onChange={handleChange}
-        />
+        {/* 🔵 LEFT SIDE */}
+        <div className={styles.left}>
+          <h3>
+            Trusted by over <span>5,000+</span> Clients ✨
+          </h3>
 
-        <button onClick={handleSubmit} disabled={loading}>
-          {loading ? "Submitting..." : "Request Callback"}
-        </button>
+          <div className={styles.logos}>
+            <img src="/assets/channel-partner/walmart-logo.wepb" alt="Walmart" />
+            <img src="/assets/channel-partner/Vistara.webp" alt="Vistara" />
+            <img src="/assets/channel-partner/TOSHIBA_Logo.webp" alt="TOSHIBA" />
+            <img src="/assets/channel-partner/Sujan Industries.webp" alt="Sujan Industries" />
+            <img src="/assets/channel-partner/sony-vector-logo.webp" alt="Sony Vector" />
+            <img src="/assets/channel-partner/Sebia.webp" alt="Sebia" />
+          </div>
+
+          <h4>India’s Leading Office Space Provider ⭐</h4>
+
+          <ul>
+            <li>Zero Brokerage Fees</li>
+            <li>Largest Coverage</li>
+            <li>Dedicated Workspace Experts</li>
+            <li>100% Verified Listings</li>
+          </ul>
+        </div>
+
+        <div className={styles.right}>
+          <h2>Helping you find your perfect Office Space!</h2>
+          <p>Speak with a workspace solution expert</p>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name*"
+            value={form.name}
+            onChange={handleChange}
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter work email*"
+            value={form.email}
+            onChange={handleChange}
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter mobile number*"
+            value={form.phone}
+            onChange={handleChange}
+          />
+
+          <button onClick={handleSubmit} disabled={loading}>
+            {loading ? "Submitting..." : "Request Callback"}
+          </button>
+        </div>
+
       </div>
     </div>
-  );
+  </div>
+);
+
 }
