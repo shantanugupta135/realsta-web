@@ -81,7 +81,7 @@ export default function FloatingCallbackForm() {
           </h3>
 
           <div className={styles.logos}>
-            <img src="/assets/channel-partner/walmart-logo.wepb" alt="Walmart" />
+            <img src="/assets/channel-partner/walmart-logo.webp" alt="Walmart" />
             <img src="/assets/channel-partner/Vistara.webp" alt="Vistara" />
             <img src="/assets/channel-partner/TOSHIBA_Logo.webp" alt="TOSHIBA" />
             <img src="/assets/channel-partner/Sujan Industries.webp" alt="Sujan Industries" />

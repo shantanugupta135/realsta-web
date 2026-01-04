@@ -85,9 +85,9 @@ function IndividualBlogPage({blogUrl}: {blogUrl?: string}) {
                 </Col>
                 
             </Row>
-             <BlogFloatingForm />
             </div>
             </div>
+              <BlogFloatingForm />
             </div>
             {categoryBlogs && url &&<RelatedBlogs data={categoryBlogs} url={url}/>}
             <FloatingCallbackForm/>
