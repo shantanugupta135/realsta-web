@@ -19,6 +19,7 @@ import PropertiesAvailableTable from "../../components/propertiesAvailableTable"
 import PropertiesBrands from "../../components/PropertiesBrands";
 import PropertiesBrocure from "../../components/propertiesBrocure";
 import PropertiesFloorPlan from "../../components/PropertiesFloorPlan";
+import Page404 from "../Page404";
 
 
 interface desctiptionType{
@@ -63,6 +64,7 @@ function IndivisualPropertiesPage({prop_url}: {prop_url?: string}){
             setRelatedProperties(data.filter((property) => property.url !== url));
             }
             else{
+                <Page404/>
                 navigate.push('*')
             }
            
