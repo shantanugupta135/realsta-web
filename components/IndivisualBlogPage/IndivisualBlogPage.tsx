@@ -12,7 +12,6 @@ import { Col, Row } from "react-bootstrap";
 import { fetchBlogsByCategory, fetchBlogByURL, Blog } from '../../services/blogService';
 import './IndividualBlogPage.css'; 
 import FloatingCallbackForm from "../floatingCallBackForm/FloatingCallbackForm";
-import BlogFloatingForm from "../BlogFloatingForm";
 
 function IndividualBlogPage({blogUrl}: {blogUrl?: string}) {
     // const id = Number(useParams<{ id: string }>().id);
@@ -87,7 +86,6 @@ function IndividualBlogPage({blogUrl}: {blogUrl?: string}) {
             </Row>
             </div>
             </div>
-              <BlogFloatingForm />
             </div>
             {categoryBlogs && url &&<RelatedBlogs data={categoryBlogs} url={url}/>}
             <FloatingCallbackForm/>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./BlogContent.css";
+import BlogFloatingForm from "@/components/BlogFloatingForm";
 
 interface BlogContentProps {
    content: string ;
@@ -20,6 +21,7 @@ function BlogContent({data}:{ data : BlogContentProps}){
         // new DOMParser().parseFromString(data.title, "text/html").documentElement.textContent
         dangerouslySetInnerHTML={{ __html: data.content }}
       />
+        <BlogFloatingForm />
     </div>
   );
 }
