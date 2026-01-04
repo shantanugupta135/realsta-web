@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import WhatsappFloatingIcon from "@/components/WhatsappFloatingIcon";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
 import localFont from "next/font/local";
 
