@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import WhatsappFloatingIcon from "@/components/WhatsappFloatingIcon";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
 import localFont from "next/font/local";
+import FacebookPixel from "@/components/FacebookPixel";
+import LazyWhatsapp from "@/components/LazyWhatssapp";
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",
@@ -27,13 +27,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // <html lang="en" className={gilroy.className}>
     <html lang="en">
       <body>
-        <WhatsappFloatingIcon />
+        <LazyWhatsapp />
+        <FacebookPixel />
         {children}
         <Footer />
         <Script
           id="organization-schema"
           type="application/ld+json"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -64,21 +65,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
-        {/* Facebook Pixel (example) */}
-        <Script id="fb-pixel" strategy="lazyOnload">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', 'XXXX');
-            fbq('track', 'PageView');
-          `}
-        </Script>
       </body>
     </html>
   );
