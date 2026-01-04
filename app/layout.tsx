@@ -5,6 +5,7 @@ import Script from "next/script";
 import localFont from "next/font/local";
 import FacebookPixel from "@/components/FacebookPixel";
 import LazyWhatsapp from "@/components/LazyWhatssapp";
+import FontAwesomeLoader from "@/components/FontAwesomeLoader";
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <LazyWhatsapp />
         <FacebookPixel />
+        <FontAwesomeLoader />
         {children}
         <Footer />
         <Script
