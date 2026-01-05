@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Access Realsta’s latest Market View Reports for Gurgaon. Get quarterly insights on leasing trends, rental benchmarks, and investment performance across key micro-markets.",
   alternates: {
-    canonical: "https://realsta.com/resources",
+    canonical: "https://www.realsta.com/resources",
   },
 };
 

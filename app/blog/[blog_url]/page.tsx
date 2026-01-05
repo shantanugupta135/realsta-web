@@ -25,7 +25,7 @@ export async function generateMetadata(
     title: blog.data.seo_title || blog.data.blog_title,
     description: blog.data.seo_desc,
     alternates: {
-      canonical: `https://realsta.com/blog/${blog_url}`,
+      canonical: `https://www.realsta.com/blog/${blog_url}`,
     },
   };
 }

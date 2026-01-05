@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "With over a decade of experience, Realsta offers end-to-end commercial property investment services in Gurgaon, blending data, design, and deep market insight.",
   alternates: {
-    canonical: "https://realsta.com/",
+    canonical: "https://www.realsta.com/our-services",
   },
 };
 

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Realsta delivered a Vastu-compliant, brand-aligned 10,000 sq. ft. office for Cremica at Emaar Digital Greens—blending efficiency, premium design, and full compliance",
   alternates: {
-    canonical: "https://realsta.com/case-study/Cremica",
+    canonical: "https://www.realsta.com/case-study/Cremica",
   },
   openGraph: {
     title: "Cremica Corporate Office Case Study | Realsta",
     description:
       "Realsta delivered a Vastu-compliant, brand-aligned 10,000 sq. ft. office for Cremica at Emaar Digital Greens—blending efficiency, premium design, and full compliance.",
-    url: "https://realsta.com/about-us",
+    url: "https://www.realsta.com/case-study/Cremica",
     images: [
       {
         url: "https://realsta.com/og/home.png",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Cremica Corporate Office Case Study | Realsta",
     description:
       "Realsta delivered a Vastu-compliant, brand-aligned 10,000 sq. ft. office for Cremica at Emaar Digital Greens—blending efficiency, premium design, and full compliance.",
-    images: ["https://realsta.com/og/home.png"],
+    images: ["https://www.realsta.com/og/home.png"],
   },
 };
 

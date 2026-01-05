@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Looking to invest in commercial property in Gurgaon? Our expert advisory team delivers market intelligence, portfolio planning, and investment solutions for maximum ROI.",
   alternates: {
-    canonical: "https://realsta.com/our-services/investment-advisory",
+    canonical: "https://www.realsta.com/our-services/investment-advisory",
   },
     openGraph: {
     title: "Gurgaon Real Estate Investment Advisory Services | Realsta",
