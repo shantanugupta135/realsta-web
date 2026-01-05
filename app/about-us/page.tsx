@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description:
     "With 14+ years of experience, Realsta combines micro-market insight, risk mitigation, and a full CRE ecosystem to deliver value across Gurgaon’s commercial corridors.",
   alternates: {
-    canonical: "https://realsta.com/about-us",
+    canonical: "https://www.realsta.com/about-us",
   },
 
    openGraph: {
     title: "About Us – Realsta",
     description:
       "With 14+ years of experience, Realsta delivers commercial real estate expertise across Gurgaon.",
-    url: "https://realsta.com/about-us",
+    url: "https://www.realsta.com/about-us",
     images: [
       {
-        url: "https://realsta.com/og/about-us.png",
+        url: "https://www.realsta.com/og/about-us.png",
         width: 1200,
         height: 630,
         alt: "About Realsta",
@@ -29,10 +29,9 @@ export const metadata: Metadata = {
     title: "About Us – Realsta",
     description:
       "With 14+ years of experience, Realsta delivers commercial real estate expertise across Gurgaon.",
-    images: ["https://realsta.com/og/about-us.png"],
+    images: ["https://www.realsta.com/og/about-us.png"],
   },
 };
-
 export default function AboutUsPage() {
   return <AboutUs/>;
 }
