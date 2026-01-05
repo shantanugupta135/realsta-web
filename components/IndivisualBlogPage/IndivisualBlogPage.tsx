@@ -81,7 +81,7 @@ function IndividualBlogPage({blogUrl}: {blogUrl?: string}) {
                    {blogContentData && <BlogContent data={blogContentData}/>}
                 </Col>
                 <Col md={3} sm={10} className="p-0">
-                    <BlogCategories/>/
+                    <BlogCategories/>
                     <BlogFloatingForm />
                 </Col>
                 

@@ -29,8 +29,8 @@ export default function BlogFloatingForm() {
           <option>Virtual Office</option>
         </select>
 
-        <button onClick={handleSubmit} disabled={loading}>
-          {loading ? "Submitting..." : "Request Callback"}
+            <button className='btn-secondary-alternative-custom' type="button" onClick={handleSubmit}>
+                        Submit<i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
         </button>
       </div>
     </div>
