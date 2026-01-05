@@ -36,21 +36,6 @@
   font-size: 14px;
 }
 
-.formCard button {
-  width: 100%;
-  padding: 14px;
-  background: #1f2db5;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.formCard button:hover {
-  background: #1621a8;
-}
-
 /* Mobile: disable floating */
 @media (max-width: 1024px) {
   .wrapper {
