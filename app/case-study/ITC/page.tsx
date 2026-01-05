@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Discover how Realsta delivered a custom-built 14,000 sq. ft. workspace for ITC’s Agri Business Division—meeting strict SOPs and boosting strategic visibility in Gurgaon.",
   alternates: {
-    canonical: "https://realsta.com/case-study/ITC",
+    canonical: "https://www.realsta.com/case-study/ITC",
   },
   openGraph: {
     title: "Realsta Case Study | ITC’s Gurgaon Office at Emaar Digital Greens",
     description:
       "Discover how Realsta delivered a custom-built 14,000 sq. ft. workspace for ITC’s Agri Business Division—meeting strict SOPs and boosting strategic visibility in Gurgaon.",
-    url: "https://realsta.com/case-study/ITC",
+    url: "https://www.realsta.com/case-study/ITC",
     images: [
       {
         url: "https://realsta.com/og/home.png",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Realsta Case Study | ITC’s Gurgaon Office at Emaar Digital Greens",
     description:
       "Discover how Realsta delivered a custom-built 14,000 sq. ft. workspace for ITC’s Agri Business Division—meeting strict SOPs and boosting strategic visibility in Gurgaon.",
-    images: ["https://realsta.com/og/home.png"],
+    images: ["https://www.realsta.com/og/home.png"],
   },
 };
 

@@ -12,6 +12,7 @@ import { Col, Row } from "react-bootstrap";
 import { fetchBlogsByCategory, fetchBlogByURL, Blog } from '../../services/blogService';
 import './IndividualBlogPage.css'; 
 import FloatingCallbackForm from "../floatingCallBackForm/FloatingCallbackForm";
+import BlogFloatingForm from "../BlogFloatingForm";
 
 function IndividualBlogPage({blogUrl}: {blogUrl?: string}) {
     // const id = Number(useParams<{ id: string }>().id);
@@ -78,6 +79,9 @@ function IndividualBlogPage({blogUrl}: {blogUrl?: string}) {
                 <Col md={9} sm={12}>
                    {blogimage && <img loading="lazy" src={blogimage || "/assets/defaultBlogImage.webp"} alt="Blog" className="img-fluid blogimage"/>}
                    {blogContentData && <BlogContent data={blogContentData}/>}
+                   <div className="blogContentWithForm">
+                  <BlogFloatingForm />
+                    </div>
                 </Col>
                 <Col md={3} sm={10} className="p-0">
                     <BlogCategories/>

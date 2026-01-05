@@ -21,7 +21,6 @@ function BlogContent({data}:{ data : BlogContentProps}){
         // new DOMParser().parseFromString(data.title, "text/html").documentElement.textContent
         dangerouslySetInnerHTML={{ __html: data.content }}
       />
-        <BlogFloatingForm />
     </div>
   );
 }

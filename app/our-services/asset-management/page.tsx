@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information.",
   alternates: {
-    canonical: "https://realsta.com/our-services/asset-management",
+    canonical: "https://www.realsta.com/our-services/asset-management",
   },
     openGraph: {
     title: "Commercial Real Estate Asset Management in Gurgaon | Realsta",

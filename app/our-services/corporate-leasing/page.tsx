@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Need flexible, high-quality office space in Gurgaon? Realsta’s corporate leasing team offers tailored solutions. Contact us for office space leasing services.",
   alternates: {
-    canonical: "https://realsta.com/our-services/corporate-leasing",
+    canonical: "https://www.realsta.com/our-services/corporate-leasing",
   },
      openGraph: {
     title: "Commercial Real Estate Asset Management in Gurgaon | Realsta",

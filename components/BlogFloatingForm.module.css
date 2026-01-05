@@ -1,7 +1,9 @@
 .wrapper {
-  position: absolute;
-  top: 80px;
-  right: 60px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+  width: 320px;
   z-index: 10;
 }
 
