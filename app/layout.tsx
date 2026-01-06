@@ -9,6 +9,9 @@ import FontAwesomeLoader from "@/components/FontAwesomeLoader";
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",
+   verification: {
+    google: "LQJJkfOr4mt9ej_VjEFcPEJCtfWvdDwUF0G9EogKs0w",
+  },
 };
 
 const gilroy = localFont({
