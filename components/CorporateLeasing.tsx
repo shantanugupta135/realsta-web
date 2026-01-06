@@ -159,11 +159,6 @@ function CorporateLeasing() {
 
   return (
     <>
-    {/* <Head>
-      <title>Corporate Leasing in Gurgaon | Office Space Experts – Realsta</title> 
-                <meta name="description" content="Need flexible, high-quality office space in Gurgaon? Realsta’s corporate leasing team offers tailored solutions. Contact us for office space leasing services." />
-                <link rel="canonical" href="https://realsta.com/our-services/corporate-leasing" />
-    </Head> */}
       <section className="cl-hero-section">
         <NavigationMenu />
         <div className="customContainer">

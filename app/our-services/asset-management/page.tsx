@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     title: "Commercial Real Estate Asset Management in Gurgaon | Realsta",
     description:
       "Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information.",
-    url: "https://realsta.com/case-study/Vistara",
+    url: "https://www.realsta.com/our-services/asset-management",
     images: [
       {
-        url: "https://realsta.com/og/home.png",
+        url: "https://www.realsta.com/og/home.png",
         width: 1200,
         height: 630,
         alt: "About Realsta",

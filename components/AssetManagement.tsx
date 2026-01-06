@@ -179,11 +179,6 @@ const [show, setShow] = useState(false);
 
     return (
         <>
-            {/* <Head>
-                <title>Commercial Real Estate Asset Management in Gurgaon | Realsta</title> 
-                <meta name="description" content="Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information." />
-                <link rel="canonical" href="https://realsta.com/our-services/asset-management" />
-            </Head> */}
             <section className="hero-section">
                     <NavigationMenu />
                 <div className="customContainer">

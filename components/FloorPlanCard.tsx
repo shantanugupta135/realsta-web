@@ -105,7 +105,7 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
                                 }}
                             >
                                 <Image
-                                    src={img}
+                                    src={BASE_URL+img}
                                     alt={`Floor Plan ${idx + 1}`}
                                     style={{
                                         width: "100%",

@@ -11,6 +11,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.realsta.com/contact-us",
   },
+   openGraph: {
+    title: "Connect with Realsta | Let’s Talk Gurgaon Commercial Real Estate",
+    description:
+      "Have a question or need guidance? Contact Realsta to explore investment opportunities, leasing options, or advisory services in Gurugram’s top commercial micro-markets.",
+    url: "https://www.realsta.com/contact-us",
+    images: [
+      {
+        url: "https://www.realsta.com/og/home.png",
+        width: 1200,
+        height: 630,
+        alt: "About Realsta",
+      },
+    ],
+  },
+  twitter: {
+    title: "Connect with Realsta | Let’s Talk Gurgaon Commercial Real Estate",
+    description:
+      "Have a question or need guidance? Contact Realsta to explore investment opportunities, leasing options, or advisory services in Gurugram’s top commercial micro-markets.",
+    images: ["https://www.realsta.com/og/home.png"],
+  },
 };
 
 export default function PropertyPage() {

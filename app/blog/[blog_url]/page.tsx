@@ -15,7 +15,7 @@ export async function generateMetadata(
   const { blog_url } = await params;
 
   const blog = await fetchBlogByURL(blog_url);
-   if(!blog){
+   if (!blog) {
     return {
       title: "Blog not found",
     };
@@ -27,6 +27,27 @@ export async function generateMetadata(
     alternates: {
       canonical: `https://www.realsta.com/blog/${blog_url}`,
     },
+     openGraph: {
+      title: blog.data.seo_title || blog.data.blog_title,
+      description: blog.data.seo_desc,
+      url: `https://www.realsta.com/blog/${blog_url}`,
+      type: "article",
+      images: [
+        {
+          url: blog.data.blog_img || "https://www.realsta.com/og/home.png",
+          width: 1200,
+          height: 630,
+          alt: blog.data.seo_title || blog.data.blog_title,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: blog.data.seo_title || blog.data.blog_title,
+      description: blog.data.seo_desc,
+      images: [blog.data.blog_img || "https://www.realsta.com/og/home.png"],
+    }
   };
 }
 

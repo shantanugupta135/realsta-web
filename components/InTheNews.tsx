@@ -16,11 +16,6 @@ function InTheNews(){
 
     return(
     <>
-    <Head>
-          <title>Realsta Media Coverage & Press Highlights</title> 
-          <meta name="description" content="Catch the latest Realsta media coverage—featuring expert insights on Gurgaon’s commercial real estate trends, industry commentary, and company milestones." />
-          <link rel="canonical" href="https://realsta.com/in-the-news" />
-        </Head>
         <section className="newsHeaderSection">
             <NavigationMenu/>
             <h1 className="newsHeading customContainer">Press<br/>features</h1>

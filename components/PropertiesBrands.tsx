@@ -19,7 +19,7 @@ return(data.tenents?
                     {JSON.parse(data.tenents).map((logo: string, i: number) => (
                         <img
                             loading="lazy"
-                            src={'https://api.realsta.com/' + logo}
+                            src={'https://api.realsta.com' + logo}
                             alt="logo"
                             key={i}
                             className="mt-4"
