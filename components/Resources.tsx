@@ -105,11 +105,6 @@ const Resources = () => {
 
     return (
         <>
-        <Head>
-      <title>Gurgaon Commercial Real Estate Market View Reports</title> 
-          <meta name="description" content="Access Realsta’s latest Market View Reports for Gurgaon. Get quarterly insights on leasing trends, rental benchmarks, and investment performance across key micro-markets." />
-          <link rel="canonical" href="https://realsta.com/resources" />
-    </Head>
             <ResourcesModal show={showModal} onClose={handleModalClose} onDownload={handleModalDownload} />
             <section>
                 <NavigationMenu />

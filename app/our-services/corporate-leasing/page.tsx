@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     canonical: "https://www.realsta.com/our-services/corporate-leasing",
   },
      openGraph: {
-    title: "Commercial Real Estate Asset Management in Gurgaon | Realsta",
+    title: "Corporate Leasing in Gurgaon | Office Space Experts – Realsta",
     description:
-      "Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information.",
-    url: "https://realsta.com/case-study/Vistara",
+      "Need flexible, high-quality office space in Gurgaon? Realsta’s corporate leasing team offers tailored solutions. Contact us for office space leasing services.",
+    url: "https://www.realsta.com/our-services/corporate-leasing",
     images: [
       {
-        url: "https://realsta.com/og/home.png",
+        url: "https://www.realsta.com/og/home.png",
         width: 1200,
         height: 630,
         alt: "About Realsta",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Commercial Real Estate Asset Management in Gurgaon | Realsta",
+    title: "Corporate Leasing in Gurgaon | Office Space Experts – Realsta",
     description:
-      "Maximize ROI with Realsta’s strategic asset management services in Gurgaon. From lease optimization to value enhancement, call us for more information.",
-    images: ["https://realsta.com/og/home.png"],
+      "Need flexible, high-quality office space in Gurgaon? Realsta’s corporate leasing team offers tailored solutions. Contact us for office space leasing services.",
+    images: ["https://www.realsta.com/og/home.png"],
   },
 };
 

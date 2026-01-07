@@ -160,11 +160,6 @@ function InvestmentAdvisory() {
 
   return (
     <>
-    {/* <Head>
-          <title>Gurgaon Real Estate Investment Advisory Services | Realsta</title> 
-          <meta name="description" content="Looking to invest in commercial property in Gurgaon? Our expert advisory team delivers market intelligence, portfolio planning, and investment solutions for maximum ROI." />
-          <link rel="canonical" href="https://realsta.com/our-services/investment-advisory" />
-      </Head> */}
       <section className="hero-section">
           <NavigationMenu />
         <div className="customContainer">

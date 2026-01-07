@@ -1,4 +1,5 @@
 import IndivisualPropertiesPage from "@/components/IndivisualProperties/IndivisualPropertiesPage";
+import { getProperties } from "@/services/popertyService";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { Metadata } from "next";
@@ -8,22 +9,50 @@ interface PageProps {
     url: string;
   };
 }
-/* ✅ Dynamic metadata */
-export async function generateMetadata (
+
+export async function generateMetadata(
   { params }: PageProps
 ): Promise<Metadata> {
+  const { url } = await params;
 
-  const { url } = params;
+  const propertyAr = await getProperties();
+  const property = propertyAr.find((property) => property.url === url);
+   if (!property) {
+    return {
+      title: "Property not found",
+    };
+   }
 
   return {
-    title: "DLF Cybercity Gurgaon – Premium Commercial Office Spaces",
-    description:
-      "Explore top-grade office spaces at DLF Cybercity, Gurgaon – a modern business hub offering IT/ITES spaces with world-class infrastructure and seamless connectivity.",
+    title: property.metaTitle || "Property Details",
+    description: property.metaDescription || "Detailed information about the property.",
     alternates: {
       canonical: `https://www.realsta.com/property/${url}`,
     },
+     openGraph: {
+      title: property.metaTitle || "Property Details",
+      description: property.metaDescription || "Detailed information about the property.",
+      url: `https://www.realsta.com/property/${url}`,
+      type: "article",
+      images: [
+        {
+          url:  `https://api.realsta.com/${property.card_image}`,
+          width: 1200,
+          height: 630,
+          alt: property.metaTitle || "Property Details",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title:  property.metaTitle || "Property Details",
+      description: property.metaDescription || "Detailed information about the property.",
+      images: [`https://api.realsta.com/${property.card_image}`],
+    }
   };
 }
+
 
 
 export default async function Page({ params }: PageProps) {

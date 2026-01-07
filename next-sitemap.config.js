@@ -2,26 +2,22 @@
 module.exports = {
   siteUrl: 'https://www.realsta.com',
   generateRobotsTxt: false,
+  generateIndexSitemap: true,
   sitemapSize: 5000,
   autoLastmod: true,
-
-  changefreq: 'weekly',
-  priority: 0.7,
-
-  // We will split sitemaps manually
-  generateIndexSitemap: true,
-
   exclude: [
     '/api/*',
     '/_next/*',
     '/admin/*',
   ],
 
-  additionalPaths: async (config) => {
+  additionalPaths: async () => {
     const result = [];
 
-    // Static pages
-    const pages = [
+    /* ===============================
+       1️⃣ STATIC PAGES
+    =============================== */
+    const staticPages = [
       '/',
       '/about-us',
       '/our-services',
@@ -30,7 +26,7 @@ module.exports = {
       '/properties',
     ];
 
-    pages.forEach((url) => {
+    staticPages.forEach((url) => {
       result.push({
         loc: url,
         changefreq: 'weekly',
@@ -39,43 +35,50 @@ module.exports = {
       });
     });
 
-    // Properties (example – replace with API)
-    const properties = await fetch (
-      'https://api.realsta.com/get_properties.php'
-    ).then(res => res.json());
+    /* ===============================
+       2️⃣ PROPERTY PAGES
+    =============================== */
+    try {
+      const properties = await fetch(
+        'https://api.realsta.com/get_properties.php'
+      ).then(res => res.json());
 
-    properties.forEach((item) => {
-      result.push({
-        loc: `/properties/${item.url}`,
-        changefreq: 'daily',
-        priority: 0.9,
-        sitemap: 'sitemap-properties.xml',
+      properties.forEach((item) => {
+        if (item.url) {
+          result.push({
+            loc: `/properties/${item.url}`,
+            changefreq: 'daily',
+            priority: 0.9,
+            sitemap: 'property-sitemap.xml',
+          });
+        }
       });
-    });
+    } catch (e) {
+      console.error('❌ Property sitemap error', e);
+    }
 
-    // Blog posts (example)
-  try {
+    /* ===============================
+       3️⃣ BLOG PAGES
+    =============================== */
+    try {
       const res = await fetch('https://api.realsta.com/api/get_data.php');
       const json = await res.json();
 
-      // ✅ SAFETY CHECK
-      const blogs = Array.isArray(json)
-        ? json
-        : Array.isArray(json?.data)
-        ? json.data
-        : [];
+      const blogs = Array.isArray(json?.data) ? json.data : [];
 
       blogs.forEach((blog) => {
         if (blog.blog_url) {
           result.push({
             loc: `/blog/${blog.blog_url}`,
             lastmod: new Date().toISOString(),
+            sitemap: 'blog-sitemap.xml',
           });
         }
       });
-    } catch (err) {
-      console.error('❌ Sitemap blog fetch failed:', err);
+    } catch (e) {
+      console.error('❌ Blog sitemap error', e);
     }
+
     return result;
   },
 };
