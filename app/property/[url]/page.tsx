@@ -9,7 +9,6 @@ interface PageProps {
     url: string;
   };
 }
-let schema: any;
 
 function buildPropertySchema(property: any) {
   const prop_address = property.address.split(',');
@@ -63,8 +62,7 @@ export async function generateMetadata(
     return {
       title: "Property not found",
     };
-   }
-   schema = buildPropertySchema(property);
+  }
 
   return {
     title: property.metaTitle || "Property Details",
@@ -98,6 +96,15 @@ export async function generateMetadata(
 
 export default async function Page({ params }: PageProps) {
   const { url } = await params;
+
+  const properties = await getProperties();
+  const property = properties.find((p) => p.url === url);
+
+  if (!property) {
+    return null;
+  }
+
+  const schema = buildPropertySchema(property);
 
   return(
   <>
