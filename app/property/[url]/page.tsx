@@ -9,6 +9,48 @@ interface PageProps {
     url: string;
   };
 }
+let schema: any;
+
+function buildPropertySchema(property: any) {
+  const prop_address = property.address.split(',');
+  const postalCode = prop_address[4].split('-')[1].trim();
+
+  return {
+   "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "name": property.name,
+  "description": property.description,
+  "url": `https://www.realsta.com/property/${property.url}`,
+
+  "itemOffered": {
+    "@type": "{{PROPERTY_TYPE}}",
+    "name": property.name,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": prop_address[1].trim(),
+      "addressLocality": prop_address[2].trim(),
+      "addressRegion": prop_address[0].trim(),
+      "postalCode": postalCode,
+      "addressCountry": "IN"
+    },
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": property.location_description,
+        "value": true
+      }
+    ]
+  },
+
+  "offers": {
+    "@type": "Offer",
+    "businessFunction": "http://purl.org/goodrelations/LeaseOut",
+    "availability": "https://schema.org/InStock",
+    "description": "Contact for Rent / Lease Terms"
+   }
+  }
+  };
+
 
 export async function generateMetadata(
   { params }: PageProps
@@ -22,6 +64,7 @@ export async function generateMetadata(
       title: "Property not found",
     };
    }
+   schema = buildPropertySchema(property);
 
   return {
     title: property.metaTitle || "Property Details",
@@ -53,13 +96,18 @@ export async function generateMetadata(
   };
 }
 
-
-
 export default async function Page({ params }: PageProps) {
   const { url } = await params;
 
   return(
   <>
+   {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
   <IndivisualPropertiesPage prop_url={url}/>
   </>
 );
