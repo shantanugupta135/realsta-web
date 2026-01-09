@@ -1,0 +1,50 @@
+.hero {
+  min-height: 90vh;
+  background: url("/images/hero-bg.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heroContent {
+  max-width: 600px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+}
+
+.gridSection {
+  padding: 80px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.cardImage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.amenities {
+  background: #111;
+  color: white;
+  padding: 80px 20px;
+}
+
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.faq {
+  padding: 80px 20px;
+}

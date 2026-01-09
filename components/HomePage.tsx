@@ -98,13 +98,13 @@ function HomePage() {
     setIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndex((prev) => (prev + 1) % testimonials.length);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const serviceSectionRef = useRef<HTMLElement>(null);
   const leadersSectionRef = useRef<HTMLElement>(null);
@@ -485,7 +485,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-      {<GetInTouch />}
+       {<GetInTouch />}
     </>
   );
 };

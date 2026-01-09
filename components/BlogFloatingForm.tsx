@@ -25,7 +25,6 @@ export default function BlogFloatingForm() {
         <select>
           <option>Select Solution</option>
           <option>Office Space</option>
-          <option>Coworking</option>
           <option>Virtual Office</option>
         </select>
 

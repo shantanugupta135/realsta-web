@@ -14,11 +14,11 @@ export default function FloatingCallbackForm() {
 
   // show after 2 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setOpen(true), 2000);
+    const timer = setTimeout(() => setOpen(true), 5000);
     return () => clearTimeout(timer);
   }, []);
 
-    // show after 10 seconds
+    // show after 20 seconds
   useEffect(() => {
     const timer = setTimeout(() => setOpen(true), 20000);
     return () => clearTimeout(timer);

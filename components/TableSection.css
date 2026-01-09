@@ -61,7 +61,7 @@ font-size: clamp(30px,5vw,40px);
 font-style: normal;
 font-weight: 400;
 line-height: 153%; /* 76.5px */
-letter-spacing: 0.15px;
+letter-spacing: -0.874px;
 padding-left: 5%;
 padding-right: 1rem;
 
