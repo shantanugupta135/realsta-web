@@ -18,12 +18,13 @@ export interface ModalFormData {
   message: string;
 }
 
-export interface LandingPageData{
+export interface LandingPageData {
   contactTiming:string,
   fullName: string,
   emailAddress: string,
   phoneNumber: string,
 }
+
 export interface ModalResourcesFormData {
   emailId: string;
   phone: string;
@@ -52,7 +53,7 @@ export interface EnquiryFormData {
   message?: string;
 }
 
-const API_URL = "https://realsta.com/";
+const API_URL = "https://api.realsta.com/";
 
 export async function submitForm(data: FormData): Promise<string> {
   try {
