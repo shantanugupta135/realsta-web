@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import "./SuccessStories.css";
 import { Blog, fetchBlogsPaginated, BlogCategory } from "../../services/blogService";
 import Link from "next/link";
+import './RelatedArticles.css';
 
 const RelatedArticles = () => {
   const [blogData, setBlogData] = useState<Blog>({
@@ -29,7 +30,7 @@ const RelatedArticles = () => {
   useEffect(() => {
     fetchBlogsPaginated(9, 0)
       .then((data) => setBlogData(data))
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   const handleChannelPrev = () => {
@@ -87,46 +88,84 @@ const RelatedArticles = () => {
               const year = date.getFullYear();
 
               return (
-                <div className="example-2 card col-12 col-md-3 mb-5 mx-3" key={blog.id ?? idx}>
+                // <div className="example-2 card col-12 col-md-3 mb-5 mx-3" key={blog.id ?? idx}>
+                //   <div className="wrapper">
+                //     <img
+                //       loading="lazy"
+                //       src={blog.blog_img}
+                //       alt={blog.blog_title}
+                //     />
+
+                //     <div className="header">
+                //       <div className="date">
+                //         <span className="day">{day} </span>
+                //         <span className="month">{month} </span>
+                //         <span className="year">{year}</span>
+                //       </div>
+                //       <ul className="menu-content">
+                //         <li>{BlogCategory[blog.catid]}</li>
+                //       </ul>
+                //     </div>
+
+                //     <div className="data">
+                //       <div className="content">
+                //         <h2 className="blog-title">
+                //           <Link href={`/blog/${blog.blog_url}`}>
+                //             {new DOMParser()
+                //               .parseFromString(blog.blog_title, "text/html")
+                //               .documentElement.textContent}
+                //           </Link>
+                //         </h2>
+
+                //         <Link href={`/blog/${blog.blog_url}`} className="read-more-button">
+                //           Read more
+                //         </Link>
+                //       </div>
+                //     </div>
+                //   </div>
+                // </div>
+                <div
+                  className="example-2 card col-12 col-md-3 mb-5 mx-3" key={blog.id ?? idx}>
                   <div className="wrapper">
-                    <img
-                      loading="lazy"
-                      src={blog.blog_img}
-                      alt={blog.blog_title}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        filter: "brightness(0.6)",
-                      }}
-                    />
 
-                    <div className="header">
-                      <div className="date">
-                        <span className="day">{day} </span>
-                        <span className="month">{month} </span>
-                        <span className="year">{year}</span>
+                    {/* IMAGE CONTAINER */}
+                    <div className="image-wrapper">
+                      <img
+                        loading="lazy"
+                        src={blog.blog_img}
+                        alt={blog.blog_title}
+                      />
+
+                      {/* IMAGE OVERLAY */}
+                      <div className="image-overlay">
+                        <div className="contact">
+                          <i className="fa-solid fa-phone"></i>
+                          <span>Contact Us</span>
+                          <span>784-000-1269</span>
+                        </div>
                       </div>
-                      <ul className="menu-content">
-                        <li>{BlogCategory[blog.catid]}</li>
-                      </ul>
                     </div>
 
+                    {/* CONTENT */}
                     <div className="data">
-                      <div className="content">
-                        <h2 className="blog-title">
-                          <Link href={`/blog/${blog.blog_url}`}>
-                            {new DOMParser()
-                              .parseFromString(blog.blog_title, "text/html")
-                              .documentElement.textContent}
-                          </Link>
-                        </h2>
-
-                        <Link href={`/blog/${blog.blog_url}`} className="read-more-button">
-                          Read more
-                        </Link>
+                      <div className="date">
+                        <span>{day} {month} {year}</span>
+                        <span>• All Blogs</span>
                       </div>
+
+                      <h2 className="blog-title">
+                        <Link href={`/blog/${blog.blog_url}`}>
+                          {new DOMParser()
+                            .parseFromString(blog.blog_title, "text/html")
+                            .documentElement.textContent}
+                        </Link>
+                      </h2>
+
+                      <Link href={`/blog/${blog.blog_url}`} className="read-more">
+                        Read more
+                      </Link>
                     </div>
+
                   </div>
                 </div>
               );

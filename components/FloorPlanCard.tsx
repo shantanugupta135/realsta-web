@@ -104,8 +104,8 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
                                     position: "relative"
                                 }}
                             >
-                                <Image
-                                    src={BASE_URL+img}
+                                <img
+                                    src={img}
                                     alt={`Floor Plan ${idx + 1}`}
                                     style={{
                                         width: "100%",

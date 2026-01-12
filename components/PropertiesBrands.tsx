@@ -27,7 +27,6 @@ return(data.tenents?
                         />
                     ))}
                 </Col>
-                
             </Row>
     </section>:null
 )
