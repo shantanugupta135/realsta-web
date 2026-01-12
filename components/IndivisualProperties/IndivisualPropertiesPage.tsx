@@ -109,7 +109,7 @@ function IndivisualPropertiesPage({prop_url}: {prop_url?: string}){
     
 
     {propertyData?.available_space && <PropertiesAvailableTable data={propertyData}/> }
-    {propertyData?.tenents && <PropertiesBrands data={propertyData}/>}
+    {propertyData?.tenents && <PropertiesFBrands data={propertyData}/>}
     {propertyData &&<PropertyLocation data={propertyData}/>}
     {relatedProperties &&<RelatedProperties data={relatedProperties} />}
     <ReadyToTalk />
