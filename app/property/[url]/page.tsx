@@ -11,8 +11,8 @@ interface PageProps {
 }
 
 function buildPropertySchema(property: any) {
-  const prop_address = property.address.split(',');
-  const postalCode = prop_address[4].split('-')[1].trim();
+  const prop_address = property.address;
+  const postalCode = prop_address.match(/\b\d{6}\b/)?.[0] || "";
 
   return {
    "@context": "https://schema.org",
