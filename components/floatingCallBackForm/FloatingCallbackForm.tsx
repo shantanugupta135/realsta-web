@@ -1,56 +1,115 @@
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./FloatingCallbackForm.module.css";
+import { FormData, submitForm } from "../../services/formService";
+
+/* 🔹 UI form (3 mandatory fields) */
+interface ModalForm {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 export default function FloatingCallbackForm() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<ModalForm>({
     name: "",
     email: "",
     phone: "",
+    message: ""
   });
 
-  // show after 2 seconds
+  const [touched, setTouched] = useState<Record<keyof ModalForm, boolean>>({
+    name: false,
+    email: false,
+    phone: false,
+    message: false
+  });
+
+  /* ---------------- VALIDATION ---------------- */
+
+  const isEmailValid = (email: string) =>
+    /^[\w.-]+@[\w.-]+\.\w{2,}$/.test(email);
+
+  const isFormValid =
+    form.name.trim().length > 0 &&
+    isEmailValid(form.email) &&
+    form.phone.length === 10;
+
+  const isFieldInvalid = (field: keyof ModalForm) => {
+    if (!touched[field]) return false;
+
+    if (field === "email") return !isEmailValid(form.email);
+    if (field === "phone") return form.phone.length !== 10;
+    if (field === "name") return form.name.trim() === "";
+
+    return false;
+  };
+
+  /* ---------------- AUTO OPEN ---------------- */
+
   useEffect(() => {
-    const timer = setTimeout(() => setOpen(true), 5000);
-    return () => clearTimeout(timer);
+    const t1 = setTimeout(() => setOpen(true), 10000);
+    const t2 = setTimeout(() => setOpen(true), 25000);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
   }, []);
 
-    // show after 20 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => setOpen(true), 20000);
-    return () => clearTimeout(timer);
-  }, []);
+  /* ---------------- HANDLERS ---------------- */
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setForm(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleBlur = (field: keyof ModalForm) => {
+    setTouched(prev => ({ ...prev, [field]: true }));
+  };
+
+  /* 🔹 MAP UI FORM → API PAYLOAD */
+  const buildApiPayload = (): FormData => {
+    const parts = form.name.trim().split(" ");
+
+    return {
+      firstName: parts[0],
+      lastName: parts.slice(1).join(" ") || "NA",
+      emailId: form.email,
+      phone: form.phone,
+      dropdown: "Individual Blog Inquiry",
+      message: form.message || ""
+    };
   };
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email || !form.phone) {
-      alert("Please fill all fields");
-      return;
-    }
-
-    setLoading(true);
+    if (!isFormValid || loading) return;
 
     try {
-      const res = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      setLoading(true);
+      const payload = buildApiPayload();
+      const response = await submitForm(payload);
 
-      if (res.ok) {
-        alert("Thank you! We will contact you shortly.");
-        setOpen(false);
-      } else {
-        alert("Something went wrong. Try again.");
-      }
-    } catch (err) {
-      alert("Server error");
+      alert(response);
+
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+      setTouched({
+        name: false,
+        email: false,
+        phone: false,
+        message: false
+      });
+      setOpen(false);
+    } catch {
+      alert("Submission failed. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -58,83 +117,92 @@ export default function FloatingCallbackForm() {
 
   if (!open) return null;
 
+  /* ---------------- UI ---------------- */
+
   return (
+    <div className={styles.overlay}>
+      <div className={styles.modal}>
+        <span className={styles.closeIcon} onClick={() => setOpen(false)}>
+          ×
+        </span>
 
-  <div className={styles.overlay}>
-    <div className={styles.modal}>
+        <div className={styles.container}>
+          {/* LEFT SIDE */}
+          <div className={styles.left}>
+            <h3>
+              Trusted by <span>5,000+</span> Clients ✨
+            </h3>
 
-      <span
-        className={styles.closeIcon}
-        onClick={() => setOpen(false)}
-        aria-label="Close"
-      >
-        ×
-      </span>
+            <div className={styles.logos}>
+              <img src="/assets/channel-partner/walmart-logo.webp" alt="Walmart" />
+              <img src="/assets/channel-partner/Vistara.webp" alt="Vistara" />
+              <img src="/assets/channel-partner/TOSHIBA_Logo.webp" alt="Toshiba" />
+              <img src="/assets/channel-partner/sony-vector-logo.webp" alt="Sony" />
+              <img src="/assets/channel-partner/CREMICA-LOGO-1.webp" alt="Walmart" />
+              <img src="/assets/channel-partner/crimson.webp" alt="Vistara" />
+            </div>
 
-      {/* ✅ LEFT + RIGHT WRAPPER */}
-      <div className={styles.container}>
-
-        {/* 🔵 LEFT SIDE */}
-        <div className={styles.left}>
-          <h3>
-            Trusted by over <span>5,000+</span> Clients ✨
-          </h3>
-
-          <div className={styles.logos}>
-            <img src="/assets/channel-partner/walmart-logo.webp" alt="Walmart" />
-            <img src="/assets/channel-partner/Vistara.webp" alt="Vistara" />
-            <img src="/assets/channel-partner/TOSHIBA_Logo.webp" alt="TOSHIBA" />
-            <img src="/assets/channel-partner/Sujan Industries.webp" alt="Sujan Industries" />
-            <img src="/assets/channel-partner/sony-vector-logo.webp" alt="Sony Vector" />
-            <img src="/assets/channel-partner/Sebia.webp" alt="Sebia" />
+            <ul>
+              <li>Zero Brokerage</li>
+              <li>Verified Listings</li>
+              <li>Workspace Experts</li>
+            </ul>
           </div>
 
-          <h4>India’s Leading Office Space Provider ⭐</h4>
+          {/* RIGHT SIDE */}
+          <div className={styles.right}>
+            <h2>Find Your Perfect Office Space</h2>
+            <p>Talk to our workspace expert</p>
 
-          <ul>
-            <li>Zero Brokerage Fees</li>
-            <li>Largest Coverage</li>
-            <li>Dedicated Workspace Experts</li>
-            <li>100% Verified Listings</li>
-          </ul>
+            <input
+              name="name"
+              placeholder="Your Name *"
+              value={form.name}
+              onChange={handleChange}
+              onBlur={() => handleBlur("name")}
+              className={isFieldInvalid("name") ? styles.error : ""}
+            />
+
+            <input
+              name="email"
+              type="email"
+              placeholder="Your Email *"
+              value={form.email}
+              onChange={handleChange}
+              onBlur={() => handleBlur("email")}
+              className={isFieldInvalid("email") ? styles.error : ""}
+            />
+
+            <input
+              name="phone"
+              placeholder="Phone Number *"
+              value={form.phone}
+              onChange={e =>
+                setForm(prev => ({
+                  ...prev,
+                  phone: e.target.value.replace(/\D/g, "").slice(0, 10)
+                }))
+              }
+              onBlur={() => handleBlur("phone")}
+              className={isFieldInvalid("phone") ? styles.error : ""}
+            />
+
+            <button
+              className="btn-secondary-alternative-custom"
+              type="button"
+              onClick={handleSubmit}
+              disabled={!isFormValid || loading}
+              style={{
+                opacity: !isFormValid || loading ? 0.6 : 1,
+                cursor: !isFormValid || loading ? "not-allowed" : "pointer"
+              }}
+            >
+              {loading ? "Submitting..." : "Submit"}
+             <i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
+            </button>
+          </div>
         </div>
-
-        <div className={styles.right}>
-          <h2>Helping you find your perfect Office Space!</h2>
-          <p>Speak with a workspace solution expert</p>
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your name*"
-            value={form.name}
-            onChange={handleChange}
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter work email*"
-            value={form.email}
-            onChange={handleChange}
-          />
-
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Enter mobile number*"
-            value={form.phone}
-            onChange={handleChange}
-          />
-
-          <button className='btn-secondary-alternative-custom' type="button" onClick={handleSubmit}>
-                        Submit<i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
-          </button>
-        </div>
-
       </div>
     </div>
-  </div>
-);
-
+  );
 }

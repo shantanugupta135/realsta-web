@@ -8,7 +8,7 @@ import Image from 'next/image';
 // import { Helmet } from 'react-helmet';
 import ResourcesModal from './ResourcesModal';
 import { useRouter } from "next/navigation";
- import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 function AboutUs() {
 
@@ -26,17 +26,17 @@ function AboutUs() {
         { image: '/assets/AboutUs/inhousemonitization.webp', hoverImage: '/assets/AboutUs/inhousemonitizationGrayscale.webp', imgalt: 'In-House Monetization Ecosystem', title: 'In-House Monetization Ecosystem', description: 'Integrates all commercial real estate investment verticals—including acquisition, leasing, tenant management, office design, sale, and exit—under one roof to monetize results within a controlled environment.' },
     ]
 
-    const file= {
+    const file = {
         "name": "Realsta Profile",
         "path": "assets/download/resources/Realsta Profile - FINAL.pdf",
     }
-    
+
     const [index, setIndex] = useState(0);
     const cardsPerPage = 4;
 
     const router = useRouter();
-     const navigateTo = (path: string) => router.push(path);
- 
+    const navigateTo = (path: string) => router.push(path);
+
     // const [show, setShow] = useState(false);
 
     const consultantLogos = {
@@ -69,61 +69,61 @@ function AboutUs() {
     //     document.body.appendChild(link);
     //     link.click();
     //     document.body.removeChild(link);
-        // Optional: show alert after download starts
-        // setTimeout(() => {
-        //     alert(
-        //         "Thank you for downloading our report!\n\nWe’re excited to share these insights with you. Please feel free to reach out at enquiry@realsta.com if you'd like to discuss the findings further."
-        //     );
-        // }, 500);
+    // Optional: show alert after download starts
+    // setTimeout(() => {
+    //     alert(
+    //         "Thank you for downloading our report!\n\nWe’re excited to share these insights with you. Please feel free to reach out at enquiry@realsta.com if you'd like to discuss the findings further."
+    //     );
+    // }, 500);
     // };
 
     const [showModal, setShowModal] = useState(false);
-        const [pendingDownload, setPendingDownload] = useState<{ path: string; name: string } | null>(null);
-    
-        const handleDownloadRequest = (filePath: string, fileName: string) => {
-            setPendingDownload({ path: filePath, name: fileName });
-            setShowModal(true);
-        };
-    
-        const handleModalClose = () => {
-            setShowModal(false);
-            setPendingDownload(null);
-        };
-        const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
-                      loading: () => null,
-          });
-    
-        // Download file directly from modal
-        const handleModalDownload = () => {
-            if (pendingDownload) {
-                fetch(pendingDownload.path)
-                    .then(response => {
-                        if (!response.ok) throw new Error('Network response was not ok');
-                        return response.blob();
-                    })
-                    .then(blob => {
-                        const url = window.URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = pendingDownload.name;
-                        document.body.appendChild(a);
-                        a.click();
-                        a.remove();
-                        window.URL.revokeObjectURL(url);
-                        // Show thank you alert after download
-                        alert(
-                          "Thank you for downloading our report!\n\nWe’re excited to share these insights with you. Please feel free to reach out at enquiry@realsta.com if you'd like to discuss the findings further."
-                        );
-                    })
-                    .catch(() => {
-                        alert(
-                          "Sorry we couldn’t complete your request.\nPlease check your connection or try again."
-                        );
-                    });
-            }
-            setShowModal(false);
-            setPendingDownload(null);
+    const [pendingDownload, setPendingDownload] = useState<{ path: string; name: string } | null>(null);
+
+    const handleDownloadRequest = (filePath: string, fileName: string) => {
+        setPendingDownload({ path: filePath, name: fileName });
+        setShowModal(true);
+    };
+
+    const handleModalClose = () => {
+        setShowModal(false);
+        setPendingDownload(null);
+    };
+    const ReadyToTalk = dynamic(() => import("./ReadyToTalk"), {
+        loading: () => null,
+    });
+
+    // Download file directly from modal
+    const handleModalDownload = () => {
+        if (pendingDownload) {
+            fetch(pendingDownload.path)
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.blob();
+                })
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = pendingDownload.name;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    window.URL.revokeObjectURL(url);
+                    // Show thank you alert after download
+                    alert(
+                        "Thank you for downloading our report!\n\nWe’re excited to share these insights with you. Please feel free to reach out at enquiry@realsta.com if you'd like to discuss the findings further."
+                    );
+                })
+                .catch(() => {
+                    alert(
+                        "Sorry we couldn’t complete your request.\nPlease check your connection or try again."
+                    );
+                });
         }
+        setShowModal(false);
+        setPendingDownload(null);
+    }
 
     return (
         <>
@@ -259,7 +259,7 @@ function AboutUs() {
                         </div>
                         <div className="col-12 col-md-3 d-flex d-flex justify-content-start justify-content-md-end">
                             {/* <FormModal show={show} onClose={() => setShow(false)} /> */}
-                                <ResourcesModal show={showModal} onClose={handleModalClose} onDownload={handleModalDownload} />
+                            <ResourcesModal show={showModal} onClose={handleModalClose} onDownload={handleModalDownload} />
                             <button
                                 type="button"
                                 className="btn-secondary-alternative-custom"
@@ -277,8 +277,18 @@ function AboutUs() {
                     <div className="row">
                         <div className="col-12 col-md-6">
                             <div className='au-vision-heading'>VISION</div>
-                            <Image loading="lazy" className='au-vision-img' src='/assets/AboutUs/vision.webp' alt='vision' 
-                            width={480} height={134}/>
+                            {/* <Image loading="lazy" className='au-vision-img' src='/assets/AboutUs/vision.webp' alt='vision' 
+                            width={550} height={140}/> */}
+                            <div className="imageWrapper">
+                                <Image
+                                    src="/assets/AboutUs/vision.webp"
+                                    alt="vision"
+                                    fill
+                                    className="au-vision-img"
+                                    sizes="(max-width: 768px) 100vw, 550px"
+                                    priority={false}
+                                />
+                            </div>
                         </div>
                         <div className="col-12 col-md-6">
                             <div className="au-vision-text">
@@ -293,8 +303,8 @@ function AboutUs() {
                     <div className="row">
                         <div className="col-12 col-md-6">
                             <div className='au-mission-heading'>MISSION</div>
-                            <Image loading="lazy" className='au-mission-img' src='/assets/AboutUs/mission.webp' alt='vision' width={480}
-                                        height={134} />
+                            <Image loading="lazy" className='au-mission-img' src='/assets/AboutUs/mission.webp' alt='vision' width={550}
+                                height={140} />
                         </div>
                         <div className="col-12 col-md-6">
                             <div className="au-mission-text">
@@ -405,7 +415,7 @@ function AboutUs() {
                         <span className='au-international-heading'><span className='au-apart-text' style={{ color: '#DD2525' }}>International</span> Property Consultants</span>
                         <hr className='ip_hr' />
                     </div>
-                    
+
                     <div className="row mt4">
                         <div className="col-12 au-consultant-logo">
                             {consultantLogos.international.map((imgPath, idx) => (
@@ -417,7 +427,7 @@ function AboutUs() {
                         <span className='au-domestic-heading'><span className='au-apart-text' style={{ color: '#DD2525' }}>Domestic</span> Property Consultants</span>
                         <hr className='ip_hr' />
                     </div>
-                    
+
                     <div className="row mt3">
                         <div className="col-12 au-consultant-logo">
                             {consultantLogos.domestic.map((imgPath, idx) => (
@@ -427,7 +437,7 @@ function AboutUs() {
                     </div>
                 </div>
             </section>
-            { <ReadyToTalk />}
+            {<ReadyToTalk />}
         </>
     );
 }

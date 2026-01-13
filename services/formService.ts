@@ -7,6 +7,14 @@ export interface FormData {
   message: string;
 }
 
+export interface BlogFormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+
 export interface ModalFormData {
   lookingFor: string;
   salutation: string;
@@ -56,6 +64,29 @@ export interface EnquiryFormData {
 const API_URL = "https://api.realsta.com/";
 
 export async function submitForm(data: FormData): Promise<string> {
+  try {
+    const response = await fetch(API_URL + 'get-in-touch-homepage.php', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error ?? "Unknown error occurred");
+    }
+
+    return result.message;
+  } catch (error: any) {
+    console.error("Form submission error:", error.message);
+    throw error;
+  }
+};
+
+export async function submitBlogForm(data: BlogFormData): Promise<string> {
   try {
     const response = await fetch(API_URL + 'get-in-touch-homepage.php', {
       method: "POST",

@@ -267,12 +267,19 @@ button {
 .au-vision-text {
     color: #181A20;
     font-family: Rubik;
-    font-size: clamp(31px, 3vw, 45px);
+    font-size: clamp(28px, 3vw, 40px);
     font-style: normal;
     font-weight: 400;
     line-height: 137%;
     /* 61.65px */
     letter-spacing: 0.225px;
+}
+
+
+.imageWrapper {
+  position: relative;
+  width: 550px;
+  height: 140px;
 }
 
 /* Mission */
