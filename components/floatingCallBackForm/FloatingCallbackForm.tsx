@@ -135,10 +135,10 @@ export default function FloatingCallbackForm() {
 
             <div className={styles.logos}>
               <img src="/assets/channel-partner/walmart-logo.webp" alt="Walmart" />
-              <img src="/assets/channel-partner/Vistara.webp" alt="Vistara" />
+              <img src="/assets/channel-partner/vistara_1.webp" alt="Vistara" />
               <img src="/assets/channel-partner/TOSHIBA_Logo.webp" alt="Toshiba" />
               <img src="/assets/channel-partner/sony-vector-logo.webp" alt="Sony" />
-              <img src="/assets/channel-partner/CREMICA-LOGO-1.webp" alt="Walmart" />
+              <img src="/assets/channel-partner/sebia-logo-vector.webp" alt="Sebia" />
               <img src="/assets/channel-partner/crimson.webp" alt="Vistara" />
             </div>
 

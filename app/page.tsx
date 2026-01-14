@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     title: "Realsta – Gurgaon’s Most Trusted Real Estate Investment Advisor",
     description:
       "With over a decade of experience, Realsta offers end-to-end commercial property investment services in Gurgaon, blending data, design, and deep market insight.",
-    url: "https://realsta.com",
+    url: "https://www.realsta.com",
     images: [
       {
-        url: "https://realsta.com/og/home.png",
+        url: "https://www.realsta.com/og/home.png",
         width: 1200,
         height: 630,
         alt: "About Realsta",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Realsta – Gurgaon’s Most Trusted Real Estate Investment Advisor",
     description:
       "With over a decade of experience, Realsta offers end-to-end commercial property investment services in Gurgaon, blending data, design, and deep market insight.",
-    images: ["https://realsta.com/og/home.png"],
+    images: ["https://www.realsta.com/og/home.png"],
   },
 };
 
