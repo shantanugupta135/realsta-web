@@ -16,9 +16,9 @@
     color: #DD2525;
 }
 
-.card-wrapper:hover .card-redirect-btn {
+/* .card-wrapper:hover .card-redirect-btn {
     border: 1px solid white;
-}
+} */
 
 .card-wrapper:hover .card-location {
     color: #FFF;
@@ -39,9 +39,9 @@
     border-radius: 50%;
 }
 
-.card-redirect-btn:hover {
+/* .card-redirect-btn:hover {
     background: #FFFFFF
-}
+} */
 
 .card-property-name {
     color: #181A20;
