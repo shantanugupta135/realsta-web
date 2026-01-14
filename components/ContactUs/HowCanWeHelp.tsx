@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from 'react'
 import './HowCanWeHelp.css'
-import { usePathname } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
 import { submitResumeWithForm, ResumeFormData, EnquiryFormData, submitEnquiry } from '../../services/formService';
 

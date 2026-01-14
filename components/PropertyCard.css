@@ -31,7 +31,6 @@
 .card-redirect-btn {
     transform: rotate(-45deg);
     color: #DD2525;
-    border: 1px solid #000;
     display: flex;
     width: 35px;
     height: 35px;
