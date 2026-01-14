@@ -119,6 +119,10 @@
 
 @media (max-width: 768px) {
  
+  .left {
+    display: none;
+  }
+  
   .modal {
     width: 90%;
     padding: 20px;
