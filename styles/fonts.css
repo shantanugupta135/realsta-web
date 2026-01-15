@@ -1,0 +1,243 @@
+/* Gilroy Starts */
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/assets/fonts/Gilroy/gilroy-black.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('/assets/fonts/Gilroy/gilroy-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-ThinItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-thinitalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url('/assets/fonts/Gilroy/gilroy-ultralight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLightItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-ultralightitalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('/assets/fonts/Gilroy/gilroy-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-LightItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-lightitalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy/gilroy-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-RegularItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-regularitalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/assets/fonts/Gilroy/gilroy-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-MediumItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-mediumitalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('/assets/fonts/Gilroy/gilroy-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBoldItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-semibolditalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-BoldItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-bolditalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('/assets/fonts/Gilroy/gilroy-extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBoldItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-extrabolditalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('/assets/fonts/Gilroy/gilroy-black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-BlackItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-blackitalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url('/assets/fonts/Gilroy/gilroy-heavy.otf') format('opentype');
+    font-weight: 950;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-HeavyItalic';
+    src: url('/assets/fonts/Gilroy/gilroy-heavyitalic.otf') format('opentype');
+    font-weight: 950;
+    font-style: italic;
+}
+
+/* Gilroy Ends */
+
+/* Rubik Starts */
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik/Rubik-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
