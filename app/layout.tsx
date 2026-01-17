@@ -6,6 +6,7 @@ import FacebookPixel from "@/components/FacebookPixel";
 import LazyWhatsapp from "@/components/LazyWhatssapp";
 import FontAwesomeLoader from "@/components/FontAwesomeLoader";
 import "../styles/fonts.css";
+import "../styles/index.css";
 
 export const metadata: Metadata = {
   title: "RealSta - Real Estate React Template",

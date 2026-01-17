@@ -76,6 +76,7 @@
   margin: 0;
 }
 
+
 .card input[type='checkbox'] {
   display: none;
 }
@@ -158,6 +159,7 @@
 .example-2 .blog-title a {
   color: #fff;
   text-decoration: none;
+  font-size: inherit;
 }
 
 .example-2 .read-more-button {
@@ -245,6 +247,9 @@
   font-weight: 300;
   line-height: 153%;
   letter-spacing: 0.075px;
+}
+.content {
+  min-height: 120px;
 }
 
 .blog-image{

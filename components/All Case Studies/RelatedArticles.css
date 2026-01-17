@@ -62,3 +62,19 @@
 .blog-title a:hover {
   text-decoration: underline;
 }
+
+.hp-our-services-heading-bold {
+  font-family: Gilroy, sans-serif;
+  font-weight: 900;
+}
+
+.hp-our-services-heading {
+  color: #181A20;
+  font-family: Gilroy, sans-serif;
+  font-size: clamp(29px, 3vw, 40px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 144%;
+  letter-spacing: 0.245px;
+  text-transform: uppercase;
+}

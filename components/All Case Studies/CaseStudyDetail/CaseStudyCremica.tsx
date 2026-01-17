@@ -39,13 +39,13 @@ const CaseStudyDetailCremica = () => {
                         <div className="row mt9 csd-cta-sction">
                             <div className="col-12 col-md-5">
                                 <div className='p-heading'>Designing Specialty Office for Cremica</div>
-                                <p className='p-subtext mt-3'>
+                                <div className='p-subtext mt-3'>
                                     <ul className='csd-subtext-list'>
                                         {details.map((point, idx) => (
                                             <li key={idx}>{point}</li>
                                         ))}
                                     </ul>
-                                </p>
+                                </div>
                             </div>
                         </div>
                         <div className="row">
@@ -65,10 +65,10 @@ const CaseStudyDetailCremica = () => {
                 <div className="customContainer">
                     <div className="csd-heading">The Challenge</div>
                     <hr />
-                    <p className="csd-text">
-                        <p>Cremica, a leading Indian food company, widely recognized for its biscuits and diverse food products, sought a 10,000 sq. ft. corporate office in Gurugram to streamline its operations. The requirements were multifaceted, demanding maximized efficiency and a design that mirrors their prestigious brand identity.
+                    <div className="csd-text">
+                        <div>Cremica, a leading Indian food company, widely recognized for its biscuits and diverse food products, sought a 10,000 sq. ft. corporate office in Gurugram to streamline its operations. The requirements were multifaceted, demanding maximized efficiency and a design that mirrors their prestigious brand identity.
                             <div>The key challenges were:</div>
-                        </p>
+                        </div>
                         <ul className='csd-list'>
                             <li>A Vastu-compliant, highly efficient workspace</li>
                             <li>Premium Grade A office space in a prime location with attached M.D. workstations. This project required significant effort, as we had to penetrate three floors to connect to a septic tank in the basement and install a separate line throughout.</li>
@@ -80,7 +80,7 @@ const CaseStudyDetailCremica = () => {
                                 </ul>
                             </li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </section>
             <section>

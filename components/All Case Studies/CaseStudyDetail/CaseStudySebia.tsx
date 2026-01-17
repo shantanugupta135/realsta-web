@@ -53,7 +53,7 @@ const CaseStudyDetailSebia = () => {
                 <div className="customContainer">
                     <div className="csd-heading">The Challenge</div>
                     <hr />
-                    <p className="csd-text">
+                    <div className="csd-text">
                         <p>Sebia Diagnostics India, a leading diagnostic company approached Realsta to develop a customised laboratory environment in Gurgaon, with one critical mandate: clinical precision. These labs weren’t just spaces - they were integral to life-saving diagnostics, including testing for serious medical conditions like blood cancer and thalassemia.<br />
                             The requirements were:</p>
                         <ul className='csd-list'>
@@ -63,37 +63,37 @@ const CaseStudyDetailSebia = () => {
                             <li>Confidential housing of patent-secret machinery</li>
                         </ul>
                         <p>This was a space where even the smallest compromise could impact results and risk lives. Every square inch had to be engineered for precision, safety, and compliance.</p>
-                    </p>
+                    </div>
                 </div>
             </section>
             <section>
                 <div className="customContainer">
                     <div className="csd-heading">Our Approach</div>
                     <hr />
-                    <p className="csd-text">
+                    <div className="csd-text">
                         <p>Realsta conceptualised a customised diagnostic lab environment designed for high-end testing and absolute sample integrity.</p>
-                        <p>
+                        <div>
                             <b>Sealed Zones</b>
                             <div>The lab was divided into multiple sealed compartments - each lockable, access-controlled, and equipped with specialised ventilation systems. These zones helped prevent cross-contamination and preserved the sanctity of each diagnostic workflow.</div>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <b>Access Control Systems</b>
                             <p>Biometric and RFID-based systems were integrated at critical junctions to restrict movement, ensuring only authorised personnel could access sensitive zones.</p>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <b>Confidential Integration of Patent-Secret Machinery</b>
                             <p>Several areas were designed to house cutting-edge diagnostic machines used in the testing of life-threatening conditions like blood cancer and thalassemia. These machines, protected under patent secrecy, required highly specialised infrastructure including vibration-dampening flooring, electromagnetic shielding, and secure access systems.</p>
-                        </p>
-                    </p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section>
                 <div className="customContainer">
                     <div className="csd-heading">The Result</div>
                     <hr />
-                    <p className="csd-text">
+                    <div className="csd-text">
                         A secure, diagnostic lab environment - engineered to support cutting-edge testing, housing sensitive patent-secret medical technologies, and built to the highest clinical standards.
-                    </p>
+                    </div>
                 </div>
             </section>
             <RelatedArticles />
