@@ -20,36 +20,36 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
     //     }
     // };
 
-        const handleModalDownload = async () => {
-        setShowModal(false);
+    const handleModalDownload = async () => {
+    setShowModal(false);
 
-        if (!data.brocher) return;
+    if (!data.brocher) return;
 
-        try {
-            const response = await fetch(data.brocher, {
-                mode: "cors",
-            });
+    try {
+        const response = await fetch(data.brocher);
 
-            if (!response.ok) {
-                throw new Error("Failed to fetch image");
-            }
-
-            const blob = await response.blob();
-            const blobUrl = window.URL.createObjectURL(blob);
-
-            const link = document.createElement("a");
-            link.href = blobUrl;
-            link.download = "FloorPlan.jpg";
-            document.body.appendChild(link);
-            link.click();
-
-            document.body.removeChild(link);
-            window.URL.revokeObjectURL(blobUrl);
-        } catch (error) {
-            console.error("Download failed:", error);
-            alert("Unable to download floor plan. Please try again.");
+        if (!response.ok) {
+            throw new Error("Failed to fetch PDF");
         }
-    };
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(
+            new Blob([blob], { type: "application/pdf" })
+        );
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Brochure.pdf";
+        document.body.appendChild(a);
+        a.click();
+
+        a.remove();
+        window.URL.revokeObjectURL(url);
+    } catch (err) {
+        console.error("Download failed:", err);
+        alert("Unable to download brochure.");
+    }
+};
 
     return data.brocher ? (
         <section style={{ height: "100%" }}>
