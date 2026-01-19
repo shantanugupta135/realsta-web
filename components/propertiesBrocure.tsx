@@ -26,7 +26,7 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
     if (!data.brocher) return;
 
     try {
-        const response = await fetch(data.brocher);
+        const response = await fetch("https://api.realsta.com/" + data.brocher);
 
         if (!response.ok) {
             throw new Error("Failed to fetch PDF");
@@ -68,7 +68,7 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
                 <Col md={8} className="brochure-container d-flex flex-column justify-content-end align-items-center" style={{ height: "100%" }}>
                     <img src={'https://api.realsta.com/' + data.brocher_image} alt="brocher" className="brochure-image" />
                     <button
-                        className="btn-primary-alternative-custom download-btn"
+                        className="btn-primary-alternative-custom download-btn mt-3"
                         onClick={() => setShowModal(true)}
                     >
                         Download Brochure
