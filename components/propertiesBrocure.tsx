@@ -8,15 +8,46 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
     const [showModal, setShowModal] = useState(false);
 
     // Download handler after modal form is submitted
-    const handleModalDownload = () => {
+    // const handleModalDownload = () => {
+    //     setShowModal(false);
+    //     if (data.brocher) {
+    //         const link = document.createElement("a");
+    //         link.href = data.brocher;
+    //         link.download = "Brochure.pdf";
+    //         document.body.appendChild(link);
+    //         link.click();
+    //         document.body.removeChild(link);
+    //     }
+    // };
+
+        const handleModalDownload = async () => {
         setShowModal(false);
-        if (data.brocher) {
+
+        if (!data.brocher) return;
+
+        try {
+            const response = await fetch(data.brocher, {
+                mode: "cors",
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to fetch image");
+            }
+
+            const blob = await response.blob();
+            const blobUrl = window.URL.createObjectURL(blob);
+
             const link = document.createElement("a");
-            link.href = data.brocher;
-            link.download = "Brochure.pdf";
+            link.href = blobUrl;
+            link.download = "FloorPlan.jpg";
             document.body.appendChild(link);
             link.click();
+
             document.body.removeChild(link);
+            window.URL.revokeObjectURL(blobUrl);
+        } catch (error) {
+            console.error("Download failed:", error);
+            alert("Unable to download floor plan. Please try again.");
         }
     };
 
