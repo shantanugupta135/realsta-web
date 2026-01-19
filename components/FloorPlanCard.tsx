@@ -56,17 +56,49 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
     }, []);
 
     // Download handler after modal form is submitted
-    const handleModalDownload = () => {
-        setShowModal(false);
-        if (selectedImage) {
-            const link = document.createElement("a");
-            link.href = selectedImage;
-            link.download = "FloorPlan.jpg";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    };
+    // const handleModalDownload = () => {
+    //     setShowModal(false);
+    //     if (selectedImage) {
+    //         const link = document.createElement("a");
+    //         link.href = selectedImage;
+    //         link.download = "FloorPlan.jpg";
+    //         document.body.appendChild(link);
+    //         link.click();
+    //         document.body.removeChild(link);
+    //     }
+    // };
+
+  const handleModalDownload = async () => {
+     setShowModal(false);
+
+  if (!selectedImage) return;
+
+  try {
+    const response = await fetch(selectedImage, {
+      mode: "cors",
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch image");
+    }
+
+    const blob = await response.blob();
+    const blobUrl = window.URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = blobUrl;
+    link.download = "FloorPlan.jpg";
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(blobUrl);
+  } catch (error) {
+    console.error("Download failed:", error);
+    alert("Unable to download floor plan. Please try again.");
+  }
+};
+
 
     return images.length ? (
         <section style={{ height: "100%" }}>
