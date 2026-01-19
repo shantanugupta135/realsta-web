@@ -18,7 +18,7 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
         : typeof data.floor_plan === "string" && data.floor_plan.trim() !== ""
             ? JSON.parse(data.floor_plan)
             : [];
-     const images = rawImages.map(img => img.startsWith('http') ? img : `${BASE_URL}${img}`);
+    const images = rawImages.map(img => img.startsWith('http') ? img : `${BASE_URL}${img}`);
     // Horizontal scroll on wheel (like RelatedProperties)
     useEffect(() => {
         const el = scrollRef.current;
@@ -68,36 +68,36 @@ function PropertiesBrocure({ data }: { data: CardItem }) {
     //     }
     // };
 
-  const handleModalDownload = async () => {
-     setShowModal(false);
+    const handleModalDownload = async () => {
+        setShowModal(false);
 
-  if (!selectedImage) return;
+        if (!selectedImage) return;
 
-  try {
-    const response = await fetch(selectedImage, {
-      mode: "cors",
-    });
+        try {
+            const response = await fetch(selectedImage, {
+                mode: "cors",
+            });
 
-    if (!response.ok) {
-      throw new Error("Failed to fetch image");
-    }
+            if (!response.ok) {
+                throw new Error("Failed to fetch image");
+            }
 
-    const blob = await response.blob();
-    const blobUrl = window.URL.createObjectURL(blob);
+            const blob = await response.blob();
+            const blobUrl = window.URL.createObjectURL(blob);
 
-    const link = document.createElement("a");
-    link.href = blobUrl;
-    link.download = "FloorPlan.jpg";
-    document.body.appendChild(link);
-    link.click();
+            const link = document.createElement("a");
+            link.href = blobUrl;
+            link.download = "FloorPlan.jpg";
+            document.body.appendChild(link);
+            link.click();
 
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(blobUrl);
-  } catch (error) {
-    console.error("Download failed:", error);
-    alert("Unable to download floor plan. Please try again.");
-  }
-};
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(blobUrl);
+        } catch (error) {
+            console.error("Download failed:", error);
+            alert("Unable to download floor plan. Please try again.");
+        }
+    };
 
 
     return images.length ? (

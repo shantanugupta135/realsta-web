@@ -128,6 +128,7 @@ const HowCanWeHelp = () => {
                 ...prev,
                 ...touchedFields,
             }));
+            alert("Please fill all required fields correctly.");
             return;
         }
         try {
@@ -288,8 +289,9 @@ const HowCanWeHelp = () => {
                                             />
                                         </div>
                                         <div className="col-6">
-                
-                                        <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={enquiryFormData.phone} onChange={handleEnquiryChange} />
+                                            <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={careerFormData.phone} onChange={handleCareerChange}
+                                            minLength={10}
+                                            maxLength={10} />
                                       </div>
                                     </div>
                                     <div className="row">
@@ -462,7 +464,9 @@ const HowCanWeHelp = () => {
                                             />
                                         </div>
                                         <div className="col-6">
-                                          <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={enquiryFormData.phone} onChange={handleEnquiryChange} />
+                                          <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={enquiryFormData.phone} onChange={handleEnquiryChange}
+                                          minLength={10}
+                                            maxLength={10} />
                                         </div>
                                     </div>
                                     <div className="row">

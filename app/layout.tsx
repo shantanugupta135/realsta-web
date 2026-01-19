@@ -13,6 +13,10 @@ export const metadata: Metadata = {
    verification: {
     google: "LQJJkfOr4mt9ej_VjEFcPEJCtfWvdDwUF0G9EogKs0w",
   },
+   icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 // const gilroy = localFont({
