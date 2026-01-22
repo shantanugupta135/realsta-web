@@ -41,7 +41,7 @@ const logos = [
   "/assets/channel-partner/mercados.webp",
   "/assets/channel-partner/purse.webp",
   "/assets/channel-partner/walmart-logo.webp",
-  "/assets/channel-partner/vistara-logo_brandlogos.net_pvmrk.webp",
+  "/assets/channel-partner/vistara_1.webp",
   "/assets/channel-partner/TOSHIBA_Logo.webp",
   "/assets/channel-partner/Sujan Industries.webp",
   "/assets/channel-partner/sony-vector-logo.webp",
