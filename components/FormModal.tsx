@@ -24,6 +24,7 @@ const FormModal: React.FC<FormModalProps> = ({ show, onClose }) => {
 
     // Track touched fields
     const [touched, setTouched] = useState<{ [key: string]: boolean }>({});
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -51,6 +52,7 @@ const FormModal: React.FC<FormModalProps> = ({ show, onClose }) => {
             return;
         }
         try {
+            setLoading(true);
             const message = await submitPopupForm(formData);
             alert(
               "Thank you for reaching out to us!\n\nYour form has been successfully submitted. Our team will review your details and get back to you shortly. In the meantime, feel free to explore our resources or contact us directly if you need immediate assistance."
@@ -68,6 +70,9 @@ const FormModal: React.FC<FormModalProps> = ({ show, onClose }) => {
             setTouched({});
         } catch (error: any) {
             alert("Error: " + error.message);
+        }
+        finally {           
+             setLoading(false); 
         }
     };
 
@@ -252,13 +257,24 @@ const FormModal: React.FC<FormModalProps> = ({ show, onClose }) => {
                         onChange={handleChange}
                         onBlur={() => setTouched(prev => ({ ...prev, message: true }))}
                     />
-                    <button
+                    {/* <button
                         className='btn-secondary-alternative-custom'
                         type="button"
                         onClick={handleSubmit}
                     >
                         Submit<i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
-                    </button>
+                    </button> */}
+                    <button
+                                className="btn-secondary-alternative-custom"
+                                type="button"
+                                onClick={handleSubmit}
+                                style={{
+                                    opacity: !isFormValid || loading ? 0.6 : 1
+                                }}
+                            >
+                                {loading ? "Submitting..." : "Submit"}
+                                <i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
+                            </button>
                 </form>
             </Modal.Body>
             <Modal.Footer>
