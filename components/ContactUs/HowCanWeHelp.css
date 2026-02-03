@@ -20,6 +20,12 @@
     text-transform: uppercase;
 }
 
+/* Learn More Button */
+.au-learn-more-button {
+    transform: rotate(-45deg);
+    color: #DD2525;
+}
+
 .help-acc-wrap {
     padding-left: 0;
     padding-right: 0;

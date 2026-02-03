@@ -175,8 +175,7 @@ export default function BlogFloatingForm() {
           onClick={handleSubmit}
           disabled={!isFormValid || loading}
           style={{
-            opacity: !isFormValid || loading ? 0.6 : 1,
-            cursor: !isFormValid || loading ? "not-allowed" : "pointer"
+            opacity: !isFormValid || loading ? 0.6 : 1
           }}
         >
           {loading ? "Submitting..." : "Submit"}

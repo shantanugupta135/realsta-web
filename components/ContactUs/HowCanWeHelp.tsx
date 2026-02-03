@@ -5,117 +5,118 @@ import { useSearchParams } from 'next/navigation';
 import { submitResumeWithForm, ResumeFormData, EnquiryFormData, submitEnquiry } from '../../services/formService';
 
 const HowCanWeHelp = () => {
-     const careerSectionRef = useRef<HTMLDivElement>(null);
-  const searchParams = useSearchParams();
-  const openCareer = searchParams.get("openCareer");
+    const careerSectionRef = useRef<HTMLDivElement>(null);
+    const searchParams = useSearchParams();
+    const openCareer = searchParams.get("openCareer");
 
-  const [isCareerOpen, setIsCareerOpen] = useState(false);
-  const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+    const [isCareerOpen, setIsCareerOpen] = useState(false);
+    const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+    const [loading, setLoading] = useState(false);
 
-  /* ---------------- CAREER FORM ---------------- */
-  const [careerFormData, setCareerFormData] = useState({
-    salutation: "Mr.",
-    firstName: "",
-    lastName: "",
-    emailId: "",
-    phone: "",
-    city: "",
-    message: "",
-  });
+    /* ---------------- CAREER FORM ---------------- */
+    const [careerFormData, setCareerFormData] = useState({
+        salutation: "Mr.",
+        firstName: "",
+        lastName: "",
+        emailId: "",
+        phone: "",
+        city: "",
+        message: "",
+    });
 
-  const [careerTouched, setCareerTouched] = useState<{ [key: string]: boolean }>({});
-  const [resumeFile, setResumeFile] = useState<File | null>(null);
-  const [resumeError, setResumeError] = useState("");
+    const [careerTouched, setCareerTouched] = useState<{ [key: string]: boolean }>({});
+    const [resumeFile, setResumeFile] = useState<File | null>(null);
+    const [resumeError, setResumeError] = useState("");
 
-  /* ---------------- ENQUIRY FORM ---------------- */
-  const [enquiryFormData, setEnquiryFormData] = useState({
-    lookingFor: "OfficeForLease",
-    salutation: "Mr.",
-    firstName: "",
-    lastName: "",
-    emailId: "",
-    phone: "",
-    city: "",
-    organization: "",
-    message: "",
-  });
+    /* ---------------- ENQUIRY FORM ---------------- */
+    const [enquiryFormData, setEnquiryFormData] = useState({
+        lookingFor: "OfficeForLease",
+        salutation: "Mr.",
+        firstName: "",
+        lastName: "",
+        emailId: "",
+        phone: "",
+        city: "",
+        organization: "",
+        message: "",
+    });
 
-  const [enquiryTouched, setEnquiryTouched] = useState<{ [key: string]: boolean }>({});
+    const [enquiryTouched, setEnquiryTouched] = useState<{ [key: string]: boolean }>({});
 
-  /* ---------------- HELPERS ---------------- */
-  const isEmailValid = (email: string) =>
-    /^[\w.-]+@[\w.-]+\.\w{2,}$/.test(email);
+    /* ---------------- HELPERS ---------------- */
+    const isEmailValid = (email: string) =>
+        /^[\w.-]+@[\w.-]+\.\w{2,}$/.test(email);
 
-  const careerRequiredFields = [
-    "salutation",
-    "firstName",
-    "lastName",
-    "emailId",
-    "phone",
-    "city",
-  ];
+    const careerRequiredFields = [
+        "salutation",
+        "firstName",
+        "lastName",
+        "emailId",
+        "phone",
+        "city",
+    ];
 
-  const enquiryRequiredFields = [
-    "salutation",
-    "firstName",
-    "lastName",
-    "emailId",
-    "phone",
-  ];
+    const enquiryRequiredFields = [
+        "salutation",
+        "firstName",
+        "lastName",
+        "emailId",
+        "phone",
+    ];
 
-  /* ---------------- VALIDATION ---------------- */
-  const isCareerFieldInvalid = (field: string) => {
-    if (!careerTouched[field]) return false;
-    const value = careerFormData[field as keyof typeof careerFormData];
+    /* ---------------- VALIDATION ---------------- */
+    const isCareerFieldInvalid = (field: string) => {
+        if (!careerTouched[field]) return false;
+        const value = careerFormData[field as keyof typeof careerFormData];
 
-    if (!value) return true;
-    if (field === "emailId") return !isEmailValid(value);
-    if (field === "phone") return value.length !== 10;
+        if (!value) return true;
+        if (field === "emailId") return !isEmailValid(value);
+        if (field === "phone") return value.length !== 10;
 
-    return value.trim() === "";
-  };
+        return value.trim() === "";
+    };
 
-  const isEnquiryFieldInvalid = (field: string) => {
-    if (!enquiryTouched[field]) return false;
-    const value = enquiryFormData[field as keyof typeof enquiryFormData];
+    const isEnquiryFieldInvalid = (field: string) => {
+        if (!enquiryTouched[field]) return false;
+        const value = enquiryFormData[field as keyof typeof enquiryFormData];
 
-    if (!value) return true;
-    if (field === "emailId") return !isEmailValid(value);
-    if (field === "phone") return value.length !== 10;
+        if (!value) return true;
+        if (field === "emailId") return !isEmailValid(value);
+        if (field === "phone") return value.length !== 10;
 
-    return value.trim() === "";
-  };
+        return value.trim() === "";
+    };
 
-  const isCareerFormValid =
-    careerRequiredFields.every(
-      f => careerFormData[f as keyof typeof careerFormData]?.trim()
-    ) &&
-    isEmailValid(careerFormData.emailId) &&
-    careerFormData.phone.length === 10;
+    const isCareerFormValid =
+        careerRequiredFields.every(
+            f => careerFormData[f as keyof typeof careerFormData]?.trim()
+        ) &&
+        isEmailValid(careerFormData.emailId) &&
+        careerFormData.phone.length === 10;
 
-  const isEnquiryFormValid =
-    enquiryRequiredFields.every(
-      f => enquiryFormData[f as keyof typeof enquiryFormData]?.trim()
-    ) &&
-    isEmailValid(enquiryFormData.emailId) &&
-    enquiryFormData.phone.length === 10;
+    const isEnquiryFormValid =
+        enquiryRequiredFields.every(
+            f => enquiryFormData[f as keyof typeof enquiryFormData]?.trim()
+        ) &&
+        isEmailValid(enquiryFormData.emailId) &&
+        enquiryFormData.phone.length === 10;
 
-  /* ---------------- HANDLERS ---------------- */
-  const handleCareerChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setCareerFormData(prev => ({ ...prev, [name]: value }));
-    setCareerTouched(prev => ({ ...prev, [name]: true }));
-  };
+    /* ---------------- HANDLERS ---------------- */
+    const handleCareerChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    ) => {
+        const { name, value } = e.target;
+        setCareerFormData(prev => ({ ...prev, [name]: value }));
+        setCareerTouched(prev => ({ ...prev, [name]: true }));
+    };
 
-  const handleEnquiryChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setEnquiryFormData(prev => ({ ...prev, [name]: value }));
-    setEnquiryTouched(prev => ({ ...prev, [name]: true }));
-  };
+    const handleEnquiryChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    ) => {
+        const { name, value } = e.target;
+        setEnquiryFormData(prev => ({ ...prev, [name]: value }));
+        setEnquiryTouched(prev => ({ ...prev, [name]: true }));
+    };
 
     const handleCareerSubmit = async () => {
         if (!isCareerFormValid) {
@@ -132,6 +133,7 @@ const HowCanWeHelp = () => {
             return;
         }
         try {
+            setLoading(true);
             const resumeData: ResumeFormData = {
                 salutation: careerFormData.salutation,
                 firstName: careerFormData.firstName,
@@ -158,6 +160,8 @@ const HowCanWeHelp = () => {
             setCareerTouched({});
         } catch (error: any) {
             alert("Error: " + error.message);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -175,6 +179,7 @@ const HowCanWeHelp = () => {
             return;
         }
         try {
+            setLoading(true);
             const resumeData: EnquiryFormData = {
                 lookingFor: enquiryFormData.lookingFor,
                 salutation: enquiryFormData.salutation,
@@ -202,6 +207,9 @@ const HowCanWeHelp = () => {
         } catch (error: any) {
             alert("Error: " + error.message);
         }
+        finally {           
+             setLoading(false);
+        }   
     };
 
     // Scroll to career section if openCareer is set
@@ -290,9 +298,9 @@ const HowCanWeHelp = () => {
                                         </div>
                                         <div className="col-6">
                                             <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={careerFormData.phone} onChange={handleCareerChange}
-                                            minLength={10}
-                                            maxLength={10} />
-                                      </div>
+                                                minLength={10}
+                                                maxLength={10} />
+                                        </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-12">
@@ -367,12 +375,23 @@ const HowCanWeHelp = () => {
                                             )}
                                         </div>
                                         <div className="col-2">
-                                            <button
+                                            {/* <button
                                                 className='btn-secondary-custom'
                                                 type="button"
                                                 onClick={handleCareerSubmit}
                                             >
                                                 Submit<i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
+                                            </button> */}
+                                            <button
+                                                className="btn-secondary-alternative-custom"
+                                                type="button"
+                                                onClick={handleCareerSubmit}
+                                                style={{
+                                                    opacity: !isCareerFormValid || loading ? 0.6 : 1
+                                                }}
+                                            >
+                                                {loading ? "Submitting..." : "Submit"}
+                                                <i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -464,9 +483,9 @@ const HowCanWeHelp = () => {
                                             />
                                         </div>
                                         <div className="col-6">
-                                          <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={enquiryFormData.phone} onChange={handleEnquiryChange}
-                                          minLength={10}
-                                            maxLength={10} />
+                                            <input type="text" className="form-control border-0 border-bottom" placeholder="Phone Number *" name="phone" value={enquiryFormData.phone} onChange={handleEnquiryChange}
+                                                minLength={10}
+                                                maxLength={10} />
                                         </div>
                                     </div>
                                     <div className="row">
@@ -507,11 +526,15 @@ const HowCanWeHelp = () => {
                                     <div className="row">
                                         <div className="col-2">
                                             <button
-                                                className='btn-secondary-custom'
+                                                className="btn-secondary-alternative-custom"
                                                 type="button"
                                                 onClick={handleEnquirySubmit}
+                                                style={{
+                                                    opacity: !isEnquiryFormValid || loading ? 0.6 : 1
+                                                }}
                                             >
-                                                Submit<i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
+                                                {loading ? "Submitting..." : "Submit"}
+                                                <i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
                                             </button>
                                         </div>
                                     </div>
