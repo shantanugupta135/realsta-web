@@ -33,6 +33,18 @@
     letter-spacing: 0.06px;
 }
 
+.btn-secondary-alternative-custom {
+  border: none;
+  background: #181A20;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+.au-learn-more-button {
+    transform: rotate(-45deg);
+    color: #DD2525;
+}
+
 .git-form {}
 
 .git-myform input,

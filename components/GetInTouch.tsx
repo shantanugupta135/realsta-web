@@ -15,6 +15,7 @@ function GetInTouch() {
 
     // Track touched fields
     const [touched, setTouched] = useState<{ [key: string]: boolean }>({});
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -43,6 +44,7 @@ function GetInTouch() {
             return;
         }
         try {
+            setLoading(true);
             const message = await submitForm(formData);
             alert(message);
             setFormData({
@@ -56,6 +58,8 @@ function GetInTouch() {
             setTouched({});
         } catch (error: any) {
             alert("Error: " + error.message);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -187,12 +191,24 @@ function GetInTouch() {
                             </div>
                         </div>
                         <div className="col-4 col-md-2 d-flex flex-column justify-content-center align-items-center mt-4 mt-md-0">
-                            <button
+                            {/* <button
                                 className='btn-primary-custom'
                                 onClick={handleSubmit}
                                 type="button"
                             >
                                 Submit<i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
+                            </button> */}
+
+                            <button
+                                className="btn-secondary-alternative-custom"
+                                type="button"
+                                onClick={handleSubmit}
+                                style={{
+                                    opacity: !isFormValid || loading ? 0.6 : 1
+                                }}
+                            >
+                                {loading ? "Submitting..." : "Submit"}
+                                <i className="fa-solid fa-arrow-right ms-2 au-learn-more-button"></i>
                             </button>
                         </div>
                     </div>
