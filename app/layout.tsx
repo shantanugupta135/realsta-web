@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     google: "LQJJkfOr4mt9ej_VjEFcPEJCtfWvdDwUF0G9EogKs0w",
   },
    icons: {
-    icon: "/favicon-realsta.ico",
+    icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
 };
