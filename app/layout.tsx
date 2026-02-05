@@ -14,7 +14,12 @@ export const metadata: Metadata = {
     google: "LQJJkfOr4mt9ej_VjEFcPEJCtfWvdDwUF0G9EogKs0w",
   },
    icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
     apple: "/apple-touch-icon.png",
   },
 };
@@ -38,6 +43,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     // <html lang="en" className={gilroy.className}>
     <html lang="en">
+       <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+      </head>
       <body>
         <LazyWhatsapp />
         <FacebookPixel />
